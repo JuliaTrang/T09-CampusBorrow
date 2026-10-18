@@ -13,6 +13,7 @@ Team **T09 – TetraBo** · Introduction to Software Engineering, University of 
 | Database | PostgreSQL on Supabase |
 | Hosting | Vercel, Cloudflare DNS/CDN |
 | Testing & CI | Jest, Supertest, Playwright, GitHub Actions |
+| Code quality | ESLint, Prettier, TypeScript strict, Husky + lint-staged |
 
 Rationale: `docs/design/adr/ADR-001-tech-stack.md`.
 

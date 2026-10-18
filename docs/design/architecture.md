@@ -26,3 +26,4 @@ Chi tiết và lý do: `docs/design/adr/ADR-001-tech-stack.md`.
 | Auth | JWT trong cookie `httpOnly` + bcrypt | Serverless không giữ session trong bộ nhớ |
 | Hosting | Vercel (2 project) + Cloudflare DNS/CDN | Preview deploy theo PR |
 | CI | GitHub Actions trên pull request | Lint, unit test + coverage, build, E2E |
+| Code quality | ESLint + Prettier + TS `strict`, Husky + lint-staged | Static analysis, cùng một style; CI chặn PR khi lỗi lint/type/coverage |

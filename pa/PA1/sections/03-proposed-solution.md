@@ -35,6 +35,7 @@ The diagram renders in GitHub and Obsidian. For the PDF submission, export it as
 | Database | PostgreSQL on Supabase (database only), Prisma ORM | ACID transactions and row locks (`SELECT … FOR UPDATE`) support atomic approve-and-reserve (F03). An exclusion constraint (`btree_gist`) blocks overlapping approved room bookings inside the database (F07). Prisma gives typed queries and versioned migrations. |
 | Hosting / deployment | Vercel (static client + NestJS on Vercel Functions); Cloudflare DNS/CDN | Git-based deployment with a preview environment for each pull request and production from `main`. The client rewrites `/api/*` to the API, so both are served from one origin and cookies stay first-party. Cloudflare provides the custom domain, TLS and CDN. |
 | Testing & CI | Jest (unit + coverage), Supertest (API), Playwright (E2E), GitHub Actions | Covers the PA5 criteria: unit tests with a coverage report, ≥ 2 use cases × 2 scenarios automated end-to-end, and CI that runs lint, tests and build on every pull request. |
+| Code quality | ESLint (typescript-eslint), Prettier, TypeScript `strict`, Husky + lint-staged, pull-request reviews | Static analysis and one shared formatting style (PA5 "code quality and review"). lint-staged checks changed files before every commit. CI blocks a pull request when lint, format check, type check (`tsc --noEmit`) or the coverage threshold fails. `main` needs one approving review. |
 
 ## 3.3 Hardware and Operating Environment
 
