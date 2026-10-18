@@ -3,6 +3,7 @@ node_modules/
 
 # Build output
 dist/
+*.tsbuildinfo
 build/
 
 # Test and coverage reports
@@ -26,3 +27,6 @@ Thumbs.db
 
 # Office lock files (when a .docx in /pa is open)
 ~$*
+
+# Generated code (Prisma client)
+generated/
