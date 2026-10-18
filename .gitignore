@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Test and coverage reports
+coverage/
+playwright-report/
+test-results/
+
+# Environment and secrets (never commit)
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Office lock files (when a .docx in /pa is open)
+~$*
