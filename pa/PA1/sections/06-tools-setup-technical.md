@@ -10,21 +10,21 @@
 | Host | GitHub (private): https://github.com/JuliaTrang/T09-CampusBorrow |
 | Default branch | `main` (protected, see below) |
 | Access | All 4 members have write access. The instructor and TA are added as collaborators by the repository owner. |
-| Secrets | `.env` is ignored by `.gitignore`. `.env.example` lists the required variables. Real values are stored only in Vercel and GitHub Actions secrets. |
+| Secrets | `.env` is ignored by `.gitignore`. `src/server/.env.example` lists the required variables. Real values are stored only in Vercel and GitHub Actions secrets. |
 
 ## Repository structure
 
 | Folder | Content |
 | :---- | :---- |
-| /src/client | React + Vite front end (created when the project is scaffolded) |
-| /src/server | NestJS back end and Prisma schema (created when the project is scaffolded) |
+| /src/client | React + Vite front end |
+| /src/server | NestJS back end and Prisma schema |
 | /docs/management | Project plan and PA1 assignment; weekly status reports in /docs/management/weekly (`W<week>-status.md`) |
 | /docs/requirements | Vision, SRS, use cases, mockups |
 | /docs/design | Architecture (C4), ADRs in /docs/design/adr, UML models, UI design |
 | /docs/test | Test plan, test cases, test reports |
 | /docs/ai-usage | AI usage logs: one folder per member (`Trang`, `Phuc`, `PAnh`, `Minh`), one file per PA (`ai-log-PA<x>.md`) |
 | /pa/PA0 … /pa/PA5 | One sub-folder per PA submission (PDF + source files) |
-| /.github | Pull-request template; CI workflows (added with the scaffold) |
+| /.github | Pull-request template; CI workflow (`workflows/ci.yml`) |
 
 ## Branching and pull-request process
 
