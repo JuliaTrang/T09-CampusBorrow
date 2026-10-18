@@ -9,4 +9,4 @@
 - [ ] Tests added or updated (code changes)
 - [ ] No secrets or `.env` files committed
 - [ ] Docs updated if behaviour or requirements changed
-- [ ] AI use recorded in `docs/ai-usage/` (if any)
+- [ ] AI use recorded in `docs/ai-usage/<Name>/ai-log-PA<x>.md` (if any)

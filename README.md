@@ -26,7 +26,7 @@ Rationale: `docs/design/adr/ADR-001-tech-stack.md`.
 | `docs/requirements` | Vision, SRS, use cases, mockups |
 | `docs/design` | Architecture (C4), ADRs, UML, UI design |
 | `docs/test` | Test plan, test cases, test reports |
-| `docs/ai-usage` | AI usage logs |
+| `docs/ai-usage` | AI usage logs: `<Name>/ai-log-PA<x>.md` per member |
 | `pa/PA0` … `pa/PA5` | PA submissions (PDF + source) |
 
 ## Setup

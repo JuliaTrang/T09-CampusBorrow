@@ -1,6 +1,6 @@
-# PA1 – AI Usage Log
+# PA1 – AI Usage Log (Nguyen Tien Minh)
 
-Uses the AI Usage Log table from PA1 section 7. Required in every PA under the course GenAI policy. Each member adds their own rows. Trang merges this table into PA1 section 7.
+Uses the AI Usage Log table from PA1 section 7. Required in every PA under the course GenAI policy. Each member keeps their own log in `docs/ai-usage/<Name>/ai-log-PA<x>.md`. Trang merges the rows into PA1 section 7.
 
 | # | Member | Tool | Task / purpose | How the output was verified and changed |
 | :---- | :---- | :---- | :---- | :---- |

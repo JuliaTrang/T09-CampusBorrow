@@ -22,7 +22,7 @@
 | /docs/requirements | Vision, SRS, use cases, mockups |
 | /docs/design | Architecture (C4), ADRs in /docs/design/adr, UML models, UI design |
 | /docs/test | Test plan, test cases, test reports |
-| /docs/ai-usage | AI usage logs, one file per PA |
+| /docs/ai-usage | AI usage logs: one folder per member (`Trang`, `Phuc`, `PAnh`, `Minh`), one file per PA (`ai-log-PA<x>.md`) |
 | /pa/PA0 … /pa/PA5 | One sub-folder per PA submission (PDF + source files) |
 | /.github | Pull-request template; CI workflows (added with the scaffold) |
 
