@@ -24,7 +24,7 @@ flowchart TB
     class system sys
 ```
 
-The diagram renders in GitHub and Obsidian. For the PDF submission, export it as an image (e.g. mermaid.live → PNG).
+The diagram renders in GitHub and Obsidian. Exported image for the PDF submission: [`docs/design/c4-context.png`](../../../docs/design/c4-context.png) (source: [`c4-context.mmd`](../../../docs/design/c4-context.mmd)).
 
 ## 3.2 Technology Stack
 
