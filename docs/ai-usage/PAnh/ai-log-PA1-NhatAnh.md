@@ -1,0 +1,9 @@
+# PA1 AI Usage Log Phan Nhat Anh
+
+Entries for PA1 Section 4.3 Estimation and Section 5 Risk Management, using the AI Usage Log columns in PA1 Section 7.
+
+| # | Member | Tool | Task / purpose | How the output was verified and changed |
+| --- | --- | --- | --- | --- |
+| 1 | Phan Nhat Anh | ChatGPT (OpenAI) | Draft PA1 Section 5 Risk Management for CampusBorrow, including risks, categories, Probability, Loss, risk exposure, mitigation, contingency and proposed owners. | provided the project documents and requested revisions to keep the risks relevant to equipment loans, room bookings and the three user roles. The draft used RE = Probability × Loss and a 1–5 planning scale; the ratings and proposed owners remain subject to team confirmation. |
+| 2 | Phan Nhat Anh | ChatGPT (OpenAI) | Suggest additional risks and revise the risk register. |  requested additional risks concerning equipment status, access to request history and frontend–backend integration.  then edited the document: the revised register retains 9 risks, removes the separate equipment-status risk, and changes member unavailability to apply in any week with Probability 2, Loss 4 and RE 8. |
+| 3 | Phan Nhat Anh | ChatGPT (OpenAI) | Draft PA1 Section 4.3 using three-point effort estimation and proposed task assignments, then align it with T09 WBS version 3. | supplied the updated WBS and the agreed technology stack and requested matching task codes and assignments. The revised table covers all 124 lowest-level work packages and uses the triangular mean E = (O + M + P) / 3. The generated totals were reconciled to 409.5 person-hours, with parent branches treated as summaries. The capacity check shows 352–440 available person-hours and a 30.5-hour margin at 10 hours per member per week. The estimates remain planning proposals for team review. |
