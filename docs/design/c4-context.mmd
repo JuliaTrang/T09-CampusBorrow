@@ -1,0 +1,15 @@
+flowchart TB
+    borrower["<b>Borrower</b><br/>[Person]<br/>Student or club representative"]
+    manager["<b>Resource Manager</b><br/>[Person]<br/>Manages assigned equipment and rooms"]
+    admin["<b>Admin</b><br/>[Person]<br/>Manages accounts, roles and assignments"]
+
+    system["<b>CampusBorrow</b><br/>[Software System]<br/>Equipment loans and room bookings<br/>with manager approval and full history"]
+
+    borrower -- "Browses catalogue and room schedule;<br/>submits, tracks and cancels requests<br/>[HTTPS, web browser]" --> system
+    manager -- "Approves or rejects requests; records<br/>hand-over and return; monitors overdue<br/>[HTTPS, web browser]" --> system
+    admin -- "Creates and deactivates accounts;<br/>assigns roles and resources; views all history<br/>[HTTPS, web browser]" --> system
+
+    classDef person fill:#08427b,color:#fff,stroke:#052e56
+    classDef sys fill:#1168bd,color:#fff,stroke:#0b4884
+    class borrower,manager,admin person
+    class system sys
