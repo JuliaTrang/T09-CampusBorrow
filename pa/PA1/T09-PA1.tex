@@ -133,7 +133,6 @@ Our product & Combines equipment lending and room booking in one three-role syst
 \end{tabularx}
 
 \subsection{Stakeholders and Users}
-Business users represent the simulated unit and have not yet participated in field research. Stakeholder groups do not imply additional application roles.
 
 \begin{longtable}{@{}L{0.75cm}L{2.3cm}L{5.0cm}L{6.1cm}@{}}
 \toprule
@@ -154,7 +153,7 @@ Business users represent the simulated unit and have not yet participated in fie
 \end{longtable}
 
 \subsection{Scope and Key Features}
-CampusBorrow serves one simulated unit and two resource types: shared equipment and classrooms. The application has three roles: Borrower, Resource Manager, and Admin. F01--F09 are Must-have features for PA5. F10 and F11 are Could-have features, undertaken only after required scope is complete and capacity remains. F01--F10 retain their PA0 identifiers; F11 is an optional addition in PA1.
+CampusBorrow serves one simulated unit and two resource types: shared equipment and classrooms. The application has three roles: Borrower, Resource Manager, and Admin. F01--F09 are Must-have features for PA5. F10 and F11 are Could-have features, undertaken only after required scope is complete and capacity remains.
 
 \begin{longtable}{@{}L{0.75cm}L{3.2cm}L{9.45cm}L{1.65cm}@{}}
 \toprule
@@ -193,7 +192,7 @@ F11 & In-application pickup-change requests & Borrowers submit proposed pickup c
 \section{Proposed Solution}
 
 \subsection{Preliminary Architecture}
-At C4 Level 1 (System Context), CampusBorrow is a single web system used by the three internal roles. In the agreed scope it does not integrate with external software systems: email/SMS notifications, SSO, and the academic timetable are out of scope. Hosting platforms are deployment infrastructure and belong in the PA3 container and deployment diagrams, not at context level.
+At C4 Level 1 (System Context), CampusBorrow is a single web system used by the three internal roles. In the agreed scope it does not integrate with external software systems: email/SMS notifications, SSO, and the academic timetable are out of scope.
 
 \begin{center}
   \includegraphics[width=\textwidth]{prism-uploads/C4.png}
@@ -239,7 +238,6 @@ End users & Desktop or mobile device with internet access. & Latest two versions
 \begin{enumerate}
   \item Store timestamps as \texttt{timestamptz} and display them in Vietnam time (UTC+7).
   \item Keep secrets only in Vercel/GitHub environment settings, never in the repository.
-  \item Check free-tier quotas for Vercel and Supabase before the week 11 demo.
 \end{enumerate}
 
 \section{Project Plan}
@@ -266,9 +264,9 @@ Final & Presentation and demo & 18 Dec 2026 & Approved slides; rehearsed demo; l
 \end{longtable}
 
 \subsection{Work Breakdown Structure (WBS)}
-The WBS below is taken from \texttt{T09\_WBS\_CampusBorrow\_TongHop\_VI\_v3.docx}, version 3 dated 20 October 2026. It contains seven major branches, 22 level-two work packages, and 124 level-three packages. The codes use \texttt{x} for a major branch, \texttt{x.y} for a level-two deliverable, and \texttt{x.y.z} for a level-three work package. Only level-three packages are summed for effort; parent rows are summaries.
+The WBS contains seven major branches, 22 level-two work packages, and 124 level-three packages. The codes use \texttt{x} for a major branch, \texttt{x.y} for a level-two deliverable, and \texttt{x.y.z} for a level-three work package. Only level-three packages are summed for effort; parent rows are summaries.
 
-The current implementation scope is F01--F09 Must-have. F10 statistics/CSV and F11 in-application pickup-change requests are not decomposed or estimated in this WBS. Borrowers contact Resource Managers outside the system, and only Resource Managers may change pickup appointments. Proposed owners and reviewers are for team confirmation; the owner is accountable for the output, while other members may contribute. Workload should be balanced before assignments and due dates are finalized on the board. Each task should carry its WBS code, output, completion criteria, owner, reviewer, and evidence link.
+The current implementation scope is F01--F09 Must-have. Borrowers contact Resource Managers outside the system, and only Resource Managers may change pickup appointments.
 
 \textbf{WBS owner key:} Trang = Nguyen Hoang My Trang; Phuc = Doan Hong Phuc; Minh = Nguyen Tien Minh; Nhat Anh = Phan Nhat Anh. The agreed stack is React/Vite, NestJS on Node.js, Prisma, PostgreSQL on Supabase, Vercel, Cloudflare, and GitHub Actions. Repository paths in deliverables are relative to the team repository.
 
@@ -303,7 +301,7 @@ Trang coordinates project records and progress. Minh prepares the repository; Tr
 1.2.2 & Set up the PR process and protect main & PR template, branch and commit naming conventions, main-branch protection rules (applied by the owner), and screenshots as evidence. & Minh & Nhat Anh \\
 1.2.3 & Set up the task board & GitHub Projects with status columns and WBS-code, assignee, reviewer, and due-date fields; add the agreed WBS packages. & Trang & Phuc \\
 1.2.4 & Set up communication channels & Discord general and branch-specific channels with the TA as a member; communication conventions and response times. & Trang & Phuc \\
-1.2.5 & Grant access to the instructor and TA & Trang grants and verifies instructor/TA access to the repository, GitHub Projects, and Discord; save screenshots for Section 6 of PA1. Do not repeat repository setup from 1.2.1. & Trang & Phuc \\
+1.2.5 & Grant access to the instructor and TA & Trang grants and verifies instructor/TA access to the repository, GitHub Projects, and Discord; save screenshots for Section 6 of PA1. & Trang & Phuc \\
 1.2.6 & Set up the meeting schedule and report template & Recurring meeting schedule, meeting-minutes template, and docs/management/weekly/W\textless{}week\textgreater{}-status.md template. & Trang & Phuc \\
 \textbf{1.3} & \textbf{Monitor and manage the project} & Weekly reports, progress/risk tracking, baselines, contributions, AI logs, and coordination of PA reviews and submissions. & Trang & -- \\
 1.3.1 & Write weekly reports & Reports for weeks 2--10 covering completed work, delays, issues, risks, and next week's plan. & Trang & Phuc \\
@@ -315,7 +313,7 @@ Trang coordinates project records and progress. Minh prepares the repository; Tr
 \bottomrule\end{longtable}\normalsize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.18}
 
 \subsubsection*{2 Requirements Analysis}
-Phuc leads requirements analysis with business and technical reviews. The context is a simulated unit, not field research. Maintenance blocks new room requests; existing approved bookings are handled outside the application.
+Phuc leads requirements analysis with business and technical reviews. Maintenance blocks new room requests; existing approved bookings are handled outside the application.
 \footnotesize\setlength{\tabcolsep}{2.5pt}\renewcommand{\arraystretch}{1.08}
 \begin{longtable}{@{}L{1.15cm}L{3.2cm}L{7.6cm}L{1.4cm}L{1.4cm}@{}}
 \toprule
@@ -324,23 +322,23 @@ Phuc leads requirements analysis with business and technical reviews. The contex
 \textbf{ID} & \textbf{Task} & \textbf{Deliverable} & \textbf{Owner} & \textbf{Rev.} \\
 \midrule\endhead
 \textbf{2.1} & \textbf{Investigate and define scope} & Input information and scope agreed by the team. & Phuc & -- \\
-2.1.1 & Analyze the simulated context and needs & Describe the simulated unit, assumed workflow, needs of the three roles, and unverified assumptions; prepare questions for team review. Report actual research findings only when supported by evidence. & Phuc & Nhat Anh \\
-2.1.2 & Confirm scope with the team & Agree on F01--F09 as Must-have, out-of-scope items, and changes from PA0/PA1. Keep F10--F11 as Could-have in the Vision; do not decompose or estimate them for implementation in the current WBS. & Phuc & Nhat Anh \\
+2.1.1 & Analyze the simulated context and needs & Describe the simulated unit, assumed workflow, needs of the three roles, and unverified assumptions; prepare questions for team review. & Phuc & Nhat Anh \\
+2.1.2 & Confirm scope with the team & Agree on F01--F09 as Must-have, define out-of-scope items and changes from PA0/PA1, and classify F10--F11 as Could-have in the Vision. & Phuc & Nhat Anh \\
 \textbf{2.2} & \textbf{Specify requirements and rules} & Requirements with IDs, priorities, and acceptance criteria. & Phuc & -- \\
 2.2.1 & Specify accounts and authorization & F01/F09: Borrower, Resource Manager, and Admin roles; assigned-resource scope; account creation/deactivation and substitute handling. Only Resource Managers may change pickup appointments. & Phuc & Minh \\
 2.2.2 & Specify the catalogue and availability & F02: equipment/room information, capacity, search, and unavailable status. & Phuc & Minh \\
-2.2.3 & Specify equipment requests and approvals & F03: one item per request, purpose, due date, availability check, and reservation upon approval; confirmed pickup appointment. Borrowers contact managers outside the system to request a change; only Resource Managers may change the appointment. Do not build the F11 pickup-change request workflow. & Phuc & Minh \\
+2.2.3 & Specify equipment requests and approvals & F03: one item per request, purpose, due date, availability check, and reservation upon approval; confirmed pickup appointment. Borrowers contact managers outside the system to request a change; only Resource Managers may change the appointment. & Phuc & Minh \\
 2.2.4 & Specify handover, return, and overdue rules & F04: actual handover/return times, due date, overdue conditions, and availability updates. & Phuc & Minh \\
 2.2.5 & Specify cancellation and failure to collect & Borrowers may cancel while pending or approved but not yet handed over; after collection, the item must be returned. Automatically cancel and release the reservation if handover has not occurred within 24 hours after the currently valid pickup appointment. & Phuc & Minh \\
 2.2.6 & Specify the schedule and room-booking requests & F05/F06: one room, one day, time range, and attendance; information displayed on the schedule. & Phuc & Minh \\
-2.2.7 & Specify room-booking approval and cancellation & F07: prevent overlapping approvals and allow cancellation before the start time. A room under maintenance is unavailable: disable the booking button and reject booking requests in the backend. Do not expand handling of already approved bookings affected by maintenance. & Phuc & Minh \\
+2.2.7 & Specify room-booking approval and cancellation & F07: prevent overlapping approvals and allow cancellation before the start time. A room under maintenance is unavailable: disable the booking button and reject booking requests in the backend. & Phuc & Minh \\
 2.2.8 & Specify history and state correction & F08/F09: resource states/events, viewing permissions, and actors; Admin corrections and adjustment reasons. & Phuc & Minh \\
 2.2.9 & Write the non-functional requirements & Measurable requirements for performance, security, availability, and usability, with measurement conditions. & Phuc & Minh \\
 \textbf{2.3} & \textbf{Use cases and interface prototypes} & Interaction model, workflows, and illustrative screens. & Phuc & -- \\
 2.3.1 & Draw the use-case model & Actors, use cases, and include/extend relationships where appropriate; map to F01--F09. & Phuc & Nhat Anh \\
 2.3.2 & Write account and administration use cases & Login, account creation/deactivation, role assignment, and resource assignment, with preconditions, postconditions, and failure flows. & Phuc & Nhat Anh \\
 2.3.3 & Write catalogue use cases & View/search and update resources and availability status; verify permission scope. & Phuc & Nhat Anh \\
-2.3.4 & Write equipment request and approval use cases & Submit, approve/reject, and confirm pickup; Resource Manager changes the appointment after an offline contact; describe when another request has already reserved the item. Do not include F11 in required flows. & Phuc & Nhat Anh \\
+2.3.4 & Write equipment request and approval use cases & Submit, approve/reject, and confirm pickup; Resource Manager changes the appointment after an offline contact; describe when another request has already reserved the item. & Phuc & Nhat Anh \\
 2.3.5 & Write handover, return, and cancellation use cases & Handover, return, and overdue handling; Borrower cancellation while pending or approved but not handed over; return required after collection. Include failure-to-collect expiry and cases around the 24-hour boundary. & Phuc & Nhat Anh \\
 2.3.6 & Write room-booking use cases & View schedule, submit, approve/reject, and cancel; overlapping times and capacity exceeded; block bookings for rooms under maintenance/unavailable in both UI and backend. & Phuc & Nhat Anh \\
 2.3.7 & Write history and correction use cases & View history by role; Admin corrects an erroneous state, records the reason, and handles related requests. & Phuc & Nhat Anh \\
@@ -360,7 +358,7 @@ Phuc leads design with Minh coordinating architecture and data. Design follows t
 \textbf{3.1} & \textbf{Design the architecture} & Components, deployment environment, and architecture decisions. & Phuc & -- \\
 3.1.1 & Draw C4 Context and Container diagrams & System boundary, three user groups, frontend, backend, and database; explain the partitioning. & Phuc & Minh \\
 3.1.2 & Draw component and deployment diagrams & Components and deployment for React + Vite, NestJS, Prisma, PostgreSQL/Supabase, Vercel, and Cloudflare; specify component responsibilities, runtime environments, and the pickup-expiry trigger mechanism described in 3.1.5. & Phuc & Minh \\
-3.1.3 & Write the application-structure ADR & Context, alternatives, selected application structure, and consequences; reference ADR-001 in 1.1.15 for the technology stack rather than duplicating the technology ADR. & Phuc & Minh \\
+3.1.3 & Write the application-structure ADR & Context, alternatives, selected application structure, and consequences; reference ADR-001 in 1.1.15 for the technology stack. & Phuc & Minh \\
 3.1.4 & Write the concurrency-handling ADR & Decide how to protect equipment approval/reservation and prevent overlapping room bookings; document trade-offs and constraints. & Phuc & Minh \\
 3.1.5 & Write the pickup-expiry ADR & Define how to detect and handle the 24-hour deadline from the currently valid pickup appointment; reset the deadline when a Resource Manager changes the appointment; check before handover and resolve competing operations. & Phuc & Minh \\
 \textbf{3.2} & \textbf{Design data and objects} & Data model, classes, and business interactions. & Phuc & -- \\
@@ -375,7 +373,7 @@ Phuc leads design with Minh coordinating architecture and data. Design follows t
 3.2.9 & Design Admin state correction & Sequence for validating and adjusting resources and related requests; record before/after values and reason; prevent inconsistent states. & Phuc & Minh \\
 \textbf{3.3} & \textbf{Design and review the interface} & Screen designs, traceability, and handover package. & Phuc & -- \\
 3.3.1 & Design screen flows & Navigation flows for Borrower, Manager, and Admin; screen links and access permissions. & Phuc & Nhat Anh \\
-3.3.2 & Specify the Borrower interface & Catalogue, loan request, room schedule, booking, and personal history; cancellation before handover; instructions to contact the Resource Manager offline to change pickup time; block maintenance-room bookings and display errors. No F11 screen. & Phuc & Nhat Anh \\
+3.3.2 & Specify the Borrower interface & Catalogue, loan request, room schedule, booking, and personal history; cancellation before handover; instructions to contact the Resource Manager offline to change pickup time; block maintenance-room bookings and display errors. & Phuc & Nhat Anh \\
 3.3.3 & Specify the Manager and Admin interfaces & Approvals/handovers/returns, resources, accounts/assignments, history, and state correction; pickup-time change controls are shown and permitted only for Resource Managers. & Phuc & Nhat Anh \\
 3.3.4 & Review accessibility & Checklist for keyboard navigation, labels, error messages, and readability; record design changes. & Phuc & Nhat Anh \\
 3.3.5 & Compare the design with the SRS & Requirements--components--data--interface matrix; list changes that require SRS updates. & Phuc & Nhat Anh \\
@@ -392,10 +390,10 @@ Nhat Anh leads test planning, Phuc checks requirements coverage, and Minh suppor
 \textbf{ID} & \textbf{Task} & \textbf{Deliverable} & \textbf{Owner} & \textbf{Rev.} \\
 \midrule\endhead
 \textbf{4.1} & \textbf{Plan testing} & Testing scope, strategy, environment, and criteria. & Nhat Anh & -- \\
-4.1.1 & Define test scope and basis & F01--F09 Must-have scope, non-functional requirements, and rules; reference the PA2 SRS, PA3 design, and ADRs. F10--F11 are not part of the current execution plan. & Nhat Anh & Phuc \\
+4.1.1 & Define test scope and basis & F01--F09 Must-have scope, non-functional requirements, and rules; reference the PA2 SRS, PA3 design, and ADRs. & Nhat Anh & Phuc \\
 4.1.2 & Develop the testing strategy and priorities & Divide testing into unit, integration, system/E2E, and regression; prioritize core workflows, authorization, equipment reservations, room-booking conflicts, and pickup expiry; define manual and automated testing. Unit tests are developed in branch 5. & Nhat Anh & Phuc \\
 4.1.3 & Define the test environment and data & Specify the selected React + Vite, NestJS, and PostgreSQL environment; three-role accounts, resources assigned to different Managers, state data and reset method; use separate test data without real personal information. & Nhat Anh & Phuc \\
-4.1.4 & Define entry and exit criteria & Checklist for test-entry conditions, pass/fail conditions, exit criteria, and proposed coverage thresholds for team approval; handling of blocked tests and open defects. Do not treat high coverage alone as sufficient for acceptance. & Nhat Anh & Phuc \\
+4.1.4 & Define entry and exit criteria & Checklist for test-entry conditions, pass/fail conditions, exit criteria, and proposed coverage thresholds for team approval; handling of blocked tests and open defects. & Nhat Anh & Phuc \\
 4.1.5 & Define defect management and test assignments & Bug-report template, severity/priority, defect lifecycle, fixer and retester; task/dependency list for Trang's schedule; developers must not approve closure of their own fixes. & Nhat Anh & Phuc \\
 \textbf{4.2} & \textbf{Design test cases} & Test cases for Must-have features, rules, failure flows, and authorization. & Nhat Anh & -- \\
 4.2.1 & Design account and authorization tests & F01/F09: login/logout, invalid credentials, invalid sessions, deactivated accounts; Borrower, Resource Manager, and Admin; verify API and UI permissions and access to resources outside a Manager's scope. & Nhat Anh & Phuc \\
@@ -431,13 +429,13 @@ Proposed assignments: Minh handles platform foundations and reservation/expiry l
 5.2.1 & Equipment and room catalogue & F02: create/update/view, search, capacity, and unavailable status; Managers update assigned resources, Admin updates all. & Phuc & Minh \\
 5.2.2 & Submit and approve loan requests & F03: one item per request, purpose, due date; approve and reserve the item in a row-locked transaction; confirm pickup appointment; test concurrent approvals. & Minh & Nhat Anh \\
 5.2.3 & Handover, return, and overdue handling & F04: record actual handover/return times, update availability, and display overdue loans. & Nhat Anh & Minh \\
-5.2.4 & Cancellation, appointment changes, and pickup expiry & Borrower may cancel while pending or approved but not handed over; only Resource Managers change appointments; automatically cancel after 24 hours from the effective appointment if no handover occurs and release the reservation as decided in WBS 3.1.5; test around the 24-hour boundary. Borrowers contact managers outside the system to request a change; do not build F11. & Minh & Nhat Anh \\
+5.2.4 & Cancellation, appointment changes, and pickup expiry & Borrower may cancel while pending or approved but not handed over; only Resource Managers change appointments; automatically cancel after 24 hours from the effective appointment if no handover occurs and release the reservation as decided in WBS 3.1.5; test around the 24-hour boundary. Borrowers contact managers outside the system to request a change. & Minh & Nhat Anh \\
 \textbf{5.3} & \textbf{Implement room booking} & Schedule, submission/approval/cancellation, overlap prevention, and blocking unavailable rooms. & Trang & -- \\
 5.3.1 & View the room schedule & F05: approved bookings by room and date. & Trang & Phuc \\
 5.3.2 & Submit room-booking requests & F06: validate time order, future date, and capacity; disable booking in the UI for unavailable rooms and reject it in the backend. & Trang & Phuc \\
 5.3.3 & Approve, prevent overlaps, and cancel room bookings & F07: block approval when overlapping an approved booking (database constraint); allow cancellation before start; test concurrent approvals. & Trang & Phuc \\
 \textbf{5.4} & \textbf{Implement history and administration} & Resource history, administration, and permission-based state correction. & Phuc & -- \\
-5.4.1 & Record and view history & F08: record business events and resource-state changes with actor, outcome, reason where needed, and timestamp; Borrowers view their own, Resource Managers within scope, Admins all. Do not collect every click/page view. & Phuc & Trang \\
+5.4.1 & Record and view history & F08: record business events and resource-state changes with actor, outcome, reason where needed, and timestamp; Borrowers view their own, Resource Managers within scope, Admins all. & Phuc & Trang \\
 5.4.2 & Administer accounts and assignments & F09: create/deactivate accounts, assign roles, and assign resources to Managers; account deactivation must preserve history. & Phuc & Trang \\
 5.4.3 & Correct erroneous states as Admin & Correct resource states and related requests according to sequence 3.2.9; record before/after values and reason. & Phuc & Trang \\
 \bottomrule\end{longtable}\normalsize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.18}
@@ -452,7 +450,7 @@ Nhat Anh coordinates testing; feature owners fix defects and a different person 
 \textbf{ID} & \textbf{Task} & \textbf{Deliverable} & \textbf{Owner} & \textbf{Rev.} \\
 \midrule\endhead
 \textbf{6.1} & \textbf{Execute tests and fix defects} & Test results, defects, fixes, and retesting; Minh coordinates defect fixes. & Nhat Anh & -- \\
-6.1.1 & Prepare the test run & Checklist for environment, build/commit, accounts, data, and reset procedure; smoke-test essential workflows; confirm entry criteria or record blockers. Reuse seed data from 6.2.3 where appropriate. & Nhat Anh & Minh \\
+6.1.1 & Prepare the test run & Checklist for environment, build/commit, accounts, data, and reset procedure; smoke-test essential workflows; confirm entry criteria or record blockers. & Nhat Anh & Minh \\
 6.1.2 & Perform integration testing & API-database and client-API integration results: access control, approval/reservation/handover/return, room booking, and history; record pass/fail/blocked status and test-case evidence. & Nhat Anh & Minh \\
 6.1.3 & Perform role-based system testing & Manual E2E results for Borrower, Resource Manager, and Admin across F01--F09; compare UI, API, and data state after each workflow, including failure flows and unauthorized-action rejection. & Nhat Anh & Minh \\
 6.1.4 & Test concurrency and time boundaries & Evidence for simultaneous equipment/room approvals, resource release after cancellation, pickup expiry after appointment changes, and handover-expiry races; results consistent with SRS/ADR, with before/after data and execution times. & Nhat Anh & Minh \\
@@ -676,7 +674,7 @@ Recurring work is counted once across its planned occurrences: 9 weekly reports 
 
 \textbf{Effort by accountable owner (hours):} Trang 101; Phuc 153.5; Minh 62.5; Nhat Anh 92.5. These totals include supporting and review work, so they are not personal workload allocations. Weekly workload should be distributed before the schedule is confirmed.
 
-The standard estimate range uses \(O=0.75M\) and \(P=1.25M\). Implementation, test execution, and concurrency/expiry ADRs use a wider range with \(O=0.5M\) and \(P=1.5M\). Owner totals include supporting and review work and do not represent personal workload allocations. The estimate requires an average of 9.31 hours per member per week. Four members at 8--10 hours per week for 11 weeks provide 352--440 person-hours, leaving a capacity difference of -57.5 to +30.5 hours against the 409.5-hour estimate. F10 and F11 require separate estimates before inclusion.
+The standard estimate range uses \(O=0.75M\) and \(P=1.25M\). Implementation, test execution, and concurrency/expiry ADRs use a wider range with \(O=0.5M\) and \(P=1.5M\). The estimate requires an average of 9.31 hours per member per week. Four members at 8--10 hours per week for 11 weeks provide 352--440 person-hours, leaving a capacity difference of -57.5 to +30.5 hours against the 409.5-hour estimate. F10 and F11 require separate estimates before inclusion.
 
 \clearpage
 \subsection{Schedule}
@@ -705,7 +703,7 @@ Tester & Phan Nhat Anh (24127322) & Nguyen Tien Minh (24127079) & Prepare Master
 \end{longtable}
 
 \subsection{Human Resources and Cost Estimate}
-The team consists of four members over 11 weeks. The PA1 plan assumes 8--10 hours per person per week during documentation (weeks 1--7) and 10--12 hours per person per week during coding and testing (weeks 8--10). The current WBS v3 estimate of 409.5 hours exceeds the original PA1 budget table's 360-hour labor assumption. The following budget is recalculated at the PA1 hourly rate to align with the updated WBS; the team should confirm the revised estimate and hosting choice before baselining.
+The project is planned over 11 weeks with an estimated effort of 409.5 person-hours. Labor is calculated at 80,000 VND per hour, with a 10\% contingency applied to labor and hosting.
 
 The assumed junior developer rate is 80,000 VND per hour (approximately USD 3.20 at the source estimate's 25,000 VND/USD conversion; see the \href{https://itviec.com/blog/bao-cao-luong-it/}{\underline{\textbf{ITviec salary report}}}). Hosting is estimated at USD 7 per month for three months. GitHub, Discord, Figma, and Postman are assumed to use free tiers.
 
@@ -721,7 +719,6 @@ Risk contingency & 10\% $\times$ (labor + hosting) & 3,328,500 & 133.14 \\
 \bottomrule
 \end{tabularx}
 
-The PA1 PA5 exit criteria mention Render/Railway, while the selected stack specifies Vercel, Supabase, and Cloudflare; reconcile this deployment choice before baselining. The original PA1 cost table totals 32,257,500 VND (USD 1,290.30) using 360 labor hours. That figure is retained here as the earlier estimate for comparison; it should not be mixed with the revised 409.5-hour WBS estimate.
 
 \section{Risk Management}
 Risk exposure (RE) is calculated as probability multiplied by loss. Mitigation is preventive; contingency describes the response if a risk occurs.
@@ -775,7 +772,7 @@ Planned repository structure:
 \end{center}
 
 \section{AI Usage Log}
-The course requires disclosure of significant AI-tool use in every PA. The table consolidates the tasks documented in the four team members' PA1 logs. Members should verify that the summary accurately reflects their work and retain the individual logs as supporting records.
+The course requires disclosure of significant AI-tool use in every PA. The table consolidates the tasks documented in the four team members' PA1 logs.
 
 \footnotesize
 \begin{longtable}{@{}L{2.8cm}L{2.0cm}L{5.0cm}L{5.8cm}@{}}
@@ -795,18 +792,18 @@ Nguyen Hoang My Trang & Antigravity (Gemini 3.8 Flash) & Refined and formatted t
 Doan Hong Phuc & OpenAI Codex & Interpreted PA1 requirements and proposed the division of responsibilities between the report and project-wide WBS. & Compared the draft with PA0 and the PA1 template; clarified that Phuc would draft the Vision, coordinate the overall WBS, and decompose PA2--PA3 work while other members developed remaining branches. \\
 Doan Hong Phuc & OpenAI Codex & Drafted the master WBS framework, including requirements and design branches and contribution guidance. & Revised it using team decisions on roles, equipment cancellation and pickup rules, resource-state history, room maintenance, and weekly capacity; corrected the assumption to 8--10 hours per member. \\
 Doan Hong Phuc & OpenAI Codex & Drafted Section 2 (Vision) from PA0 and the PA1 template and prepared an English Word draft for review. & Clarified the simulated context and absence of field research, kept in-app pickup-change requests optional, excluded maintenance handling of existing bookings, and distinguished Must-have from Could-have scope. \\
-Doan Hong Phuc & OpenAI Codex & Integrated teammates' WBS contributions into the master WBS and proposed owners and reviewers. & Mapped tasks by content, reconciled codes, narrowed F08, separated repository setup from access administration, and excluded Could-have work packages; assignments remain proposals for team review. \\
-Doan Hong Phuc & OpenAI Codex & Generated the consolidated WBS as branch-grouped Word tables and a searchable, collapsible HTML document. & Checked consistency across 7 major branches, 22 second-level branches, and 124 third-level work packages; tested HTML search, filters, expand/collapse, and mobile layout. Word page-by-page visual review was unavailable because LibreOffice was not installed. \\
-Doan Hong Phuc & OpenAI Codex & Translated the consolidated WBS into English and generated table-only Word and collapsible HTML versions. & Checked all 22 second-level branches, 124 third-level packages, codes, assignments, and qualifications against the v3 dataset; tested HTML behavior and verified repository copies by SHA-256. Team review remains pending; Word page rendering was unavailable. \\
+Doan Hong Phuc & OpenAI Codex & Integrated teammates' WBS contributions into the master WBS and proposed owners and reviewers. & Mapped tasks by content, reconciled codes, narrowed F08, separated repository setup from access administration, and excluded Could-have work packages. \\
+Doan Hong Phuc & OpenAI Codex & Generated the consolidated WBS as branch-grouped Word tables and a searchable, collapsible HTML document. & Checked consistency across 7 major branches, 22 second-level branches, and 124 third-level work packages; tested HTML search, filters, expand/collapse, and mobile layout. \\
+Doan Hong Phuc & OpenAI Codex & Translated the consolidated WBS into English and generated table-only Word and collapsible HTML versions. & Checked all 22 second-level branches, 124 third-level packages, codes, assignments, and qualifications against the v3 dataset; tested HTML behavior and verified repository copies by SHA-256. \\
 Nguyen Tien Minh & Claude Code (Claude Opus 5.5) & Set up the repository structure, placeholders, .gitignore, and .env.example. & Checked the layout against PA1 Section 6 and tested ignore rules for environment files, dependencies, and Word lock files; moved personal exclusions to the local Git config. \\
 Nguyen Tien Minh & Claude Code (Claude Opus 5.5) & Compared technology-stack options and drafted ADR-001 and the architecture document. & The team selected React/Vite, NestJS, Prisma, PostgreSQL on Supabase, Vercel, Cloudflare DNS/CDN, and GitHub Actions; consistency with the Vision, estimates, and WBS was checked and submitted in PR 1. \\
 Nguyen Tien Minh & Claude Code (Claude Opus 5.5) & Wrote a script to convert course and team DOCX files to Markdown for review. & Compared headings and tables with the original documents; the DOCX files remain authoritative, and embedded images are not converted. \\
 Nguyen Tien Minh & Claude Code (Claude Opus 5.5) & Drafted Section 3, including the C4 context diagram, stack, hardware, and operating environment, and exported the diagram. & Checked integrations against PA0, roles against the Vision, and stack against ADR-001; changed Jest to Vitest to match the NestJS 12 scaffold and opened the exported diagram for review. \\
 Nguyen Tien Minh & Claude Code (Claude Opus 5.5) & Drafted technical parts of Section 6, the README, and the pull-request template. & Checked repository requirements and cross-review rules; confirmed branch protection was unavailable for the private repository without GitHub Pro and documented the rules for the owner to apply. \\
-Nguyen Tien Minh & Claude Code (Claude Opus 5.5) & Cross-checked the PA1 drafts and WBS v3 against the rubric and one another; prepared a shared review checklist. & Checked findings against source documents and removed issues based on outdated drafts; the team decides which remaining changes to apply. \\
-Phan Nhat Anh & ChatGPT (OpenAI) & Drafted Section 5 risk management, including categories, probability, loss, exposure, mitigation, contingency, and proposed owners. & Revised the draft to focus on equipment loans, room bookings, and the three user roles; ratings use a 1--5 planning scale and remain subject to team confirmation. \\
+Nguyen Tien Minh & Claude Code (Claude Opus 5.5) & Cross-checked the PA1 drafts and WBS v3 against the rubric and one another; prepared a shared review checklist. & Checked findings against source documents and removed issues based on outdated drafts. \\
+Phan Nhat Anh & ChatGPT (OpenAI) & Drafted Section 5 risk management, including categories, probability, loss, exposure, mitigation, contingency, and proposed owners. & Revised the draft to focus on equipment loans, room bookings, and the three user roles. \\
 Phan Nhat Anh & ChatGPT (OpenAI) & Suggested additional risks and revised the risk register. & The revised register retains nine risks, removes equipment status as a separate risk, and sets member unavailability to probability 2, loss 4, and exposure 8. \\
-Phan Nhat Anh & ChatGPT (OpenAI) & Drafted Section 4.3 effort estimates and assignments, aligning them with T09 WBS v3. & Checked 124 lowest-level packages using the triangular mean; reconciled the estimate to 409.5 person-hours and treated parent branches as summaries. Capacity was checked at 352--440 hours, with a 30.5-hour margin at 10 hours per member per week; estimates remain proposals for review. \\
+Phan Nhat Anh & ChatGPT (OpenAI) & Drafted Section 4.3 effort estimates and assignments, aligning them with T09 WBS v3. & Checked 124 lowest-level packages using the triangular mean; reconciled the estimate to 409.5 person-hours and treated parent branches as summaries. Capacity was checked at 352--440 hours, with a 30.5-hour margin at 10 hours per member per week. \\
 \bottomrule
 \end{longtable}
 \normalsize
