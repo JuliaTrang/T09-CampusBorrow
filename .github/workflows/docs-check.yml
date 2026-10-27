@@ -1,0 +1,41 @@
+name: Document checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  docs:
+    name: Document format and extensions
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PRETTIER_CLI: ${{ runner.temp }}/docs-tools/node_modules/prettier/bin/prettier.cjs
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install the document formatter
+        run: >
+          npm install --prefix "$RUNNER_TEMP/docs-tools"
+          --no-package-lock --ignore-scripts --no-audit --no-fund
+          --save-exact prettier@3.9.10
+
+      - name: Test the document checker
+        run: node --test scripts/check-docs.test.mjs
+
+      - name: Check document extensions and Markdown formatting
+        env:
+          DOCS_BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: node scripts/check-docs.mjs --base "$DOCS_BASE"
