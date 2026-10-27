@@ -13,9 +13,6 @@ jobs:
     name: Document format and extensions
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    env:
-      PRETTIER_CLI: ${{ runner.temp }}/docs-tools/node_modules/prettier/bin/prettier.cjs
-
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,10 +24,11 @@ jobs:
           node-version: 24
 
       - name: Install the document formatter
-        run: >
-          npm install --prefix "$RUNNER_TEMP/docs-tools"
-          --no-package-lock --ignore-scripts --no-audit --no-fund
-          --save-exact prettier@3.9.10
+        run: |
+          npm install --prefix "$RUNNER_TEMP/docs-tools" \
+            --no-package-lock --ignore-scripts --no-audit --no-fund \
+            --save-exact prettier@3.9.10
+          echo "PRETTIER_CLI=$RUNNER_TEMP/docs-tools/node_modules/prettier/bin/prettier.cjs" >> "$GITHUB_ENV"
 
       - name: Test the document checker
         run: node --test scripts/check-docs.test.mjs
