@@ -20,12 +20,16 @@ Dùng [bản Trang cập nhật trên Drive](https://docs.google.com/document/d/
 
 ## Nguồn và thứ tự đối chiếu
 
-- [Template PA3](sources/PA3-template.md): cấu trúc mục, 6–8 lớp, 3–5 UC, ít nhất một `alt`, mọi message phải khớp operation.
-- [SRS PA2 Markdown tham chiếu](sources/PA2-reference.md), đối chiếu thêm [DOCX đang có trong worktree](../../requirements/T09-PA2.docx). DOCX là bản đang chỉnh, có điểm khác Markdown; không tự chọn một bản làm baseline cuối. Các FR còn mâu thuẫn cần Phúc xác nhận ở #50.
-- [ADR-001](../adr/ADR-001-tech-stack.md): stack có sẵn. File này vốn đã thay đổi trong worktree trước phiên này; không sửa tiếp.
-- [Snapshot ADR-002](sources/ADR-002-authentication-session.snapshot.md): sao chép nguyên bản, gồm dòng `Status: Accepted` của tác giả. **Chỉ là nguồn lịch sử, đã bị thay thế:** ADR-002 hiện hành là layered modular monolith; xác thực nằm ở ADR-003 (JWT + `token_version` + denylist `revoked_tokens`, không có bảng session), Accepted, đóng I-05. Không dùng bảng `sessions` trong snapshot này.
-- [Phân công](sources/PA3-assignment.md), issue hiện hành và [biên bản kiểm tra Project](../../management/pa3-project-report.md) là nguồn deadline. Không suy ngày bắt đầu từ ngày tạo issue hoặc ngày prerequisite hết hạn.
-- [Manifest nguồn](sources/manifest.md) ghi vị trí và hash bản sao. Bản nháp 3.3/3.4, hai draw.io và hai PNG được giữ nguyên byte từ `C:/Users/Minh/Desktop/T09-pa3-arch`.
+Từ 19/11, nguồn yêu cầu chính là **PA2 v2** (`T09-PA2-v2.docx`, [thư mục pa3 trên Drive](https://drive.google.com/file/d/17ab28ngt-XOrnY1qsv9IaxK4VRCzCddZ/view), chủ sở hữu Trang). Bản này đã gộp 13 thay đổi ở mục 8 của PA3. Bản PA2 đã nộp ([T09-PA2.pdf](../../../pa/PA2/T09-PA2.pdf)) chỉ dùng để so khi cần. Khi hai bản khác nhau thì theo v2.
+
+Đã đối chiếu với v2 ngày 19/11: 37 mã FR, BR, NFR, UC trích dẫn trong các file này đều có trong v2; nội dung BR-03, BR-04, BR-13, BR-16, BR-20, NFR-09, FR-01-02, FR-03-06, FR-03-15, UC-01, UC-11, UC-13, UC-18 và 8 Period P1–P8 khớp. Chưa có danh sách 13 thay đổi nên chưa đối chiếu được từng thay đổi.
+
+Thứ tự đối chiếu còn lại:
+
+1. `docs/design/kickoff/PA3-Kickoff.md` (PR #59, chưa merge): tên entity, thuộc tính, enum, mã sơ đồ.
+2. [DM-01 Domain Model](../domain-model/README.md): bội số và mã `CorrectionOperation`.
+3. [ADR-001](../adr/ADR-001-tech-stack.md) và ADR-002 đến ADR-006 (PR #59, chưa merge). ADR-005 và ADR-006 còn Proposed.
+4. Issue hiện hành trên GitHub là nguồn deadline. Không suy ngày bắt đầu từ ngày tạo issue.
 
 ## TODO có nguồn phụ thuộc
 
