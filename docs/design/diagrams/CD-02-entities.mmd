@@ -1,0 +1,144 @@
+classDiagram
+%% Names follow PA3-Kickoff glossary (18 Nov 2026). Attributes in camelCase (team decision). Cardinalities await DM-01 (#40).
+class Account {
+  +Id id
+  +string username
+  +string email
+  +string displayName
+  +string passwordHash
+  +Role role
+  +AccountStatus status
+  +integer tokenVersion
+}
+class RevokedToken {
+  +UUID id
+  +Id accountId
+  +Instant expiresAt
+}
+class Resource {
+  <<abstract>>
+  +Id id
+  +string code
+  +ResourceType type
+  +string name
+  +string location
+  +string description
+  +Visibility visibility
+  +OperationalStatus operationalStatus
+  +string outOfServiceReason
+  +integer version
+}
+class Equipment
+class Room {
+  +integer capacity
+}
+class EquipmentRequest {
+  +Id id
+  +Id borrowerId
+  +Id resourceId
+  +string purpose
+  +Instant proposedPickupAt
+  +Instant confirmedPickupAt
+  +Instant returnDueAt
+  +EquipmentRequestStatus status
+  +Id decidedBy
+  +Instant decidedAt
+  +string decisionReason
+  +Instant handedOverAt
+  +Id handedOverBy
+  +Instant returnedAt
+  +Id returnedBy
+  +CancellationCause cancellationCause
+  +string cancellationReason
+  +integer version
+  +effectiveExpiry() Instant
+}
+class RoomBooking {
+  +Id id
+  +Id borrowerId
+  +Id resourceId
+  +Date bookingDate
+  +string firstPeriod
+  +string lastPeriod
+  +Instant startAt
+  +Instant endAt
+  +integer headcount
+  +string purpose
+  +RoomBookingStatus status
+  +Id decidedBy
+  +Instant decidedAt
+  +string decisionReason
+  +string cancellationReason
+  +integer version
+}
+class Period {
+  +string code
+  +DaySession session
+  +LocalTime startTime
+  +LocalTime endTime
+  +integer seq
+}
+class HistoryEvent {
+  +Id id
+  +HistoryEventType eventType
+  +Id actorId
+  +Role actorRole
+  +TargetType targetType
+  +Id targetId
+  +string fromState
+  +string toState
+  +string reason
+  +json details
+  +Instant occurredAt
+}
+class StateCorrection {
+  +Id id
+  +CorrectionOperation operationCode
+  +Id adminId
+  +TargetType targetType
+  +Id targetId
+  +json before
+  +json after
+  +string reason
+  +Instant appliedAt
+}
+class AccountStatus {
+  <<enumeration>>
+  ACTIVE
+  INACTIVE
+}
+class EquipmentRequestStatus {
+  <<enumeration>>
+  PENDING
+  APPROVED
+  REJECTED
+  CANCELLED
+  ON_LOAN
+  RETURNED
+}
+class RoomBookingStatus {
+  <<enumeration>>
+  PENDING
+  APPROVED
+  REJECTED
+  CANCELLED
+}
+class DaySession {
+  <<enumeration>>
+  MORNING
+  AFTERNOON
+}
+Resource <|-- Equipment
+Resource <|-- Room
+Account "1" -- "0..*" RevokedToken : logout denylist entry
+Account "1" -- "0..*" EquipmentRequest : borrower
+Equipment "1" -- "0..*" EquipmentRequest : requested item
+Account "1" -- "0..*" RoomBooking : borrower
+Room "1" -- "0..*" RoomBooking : requested room
+Period "1" -- "0..*" RoomBooking : firstPeriod
+Period "1" -- "0..*" RoomBooking : lastPeriod
+Account "0..1" -- "0..*" HistoryEvent : actor or system
+Account "1" -- "0..*" StateCorrection : admin
+StateCorrection "1" -- "1" HistoryEvent : STATE_CORRECTED
+note for RevokedToken "ADR-003: id is the jti of the JWT. Not a session table."
+note for EquipmentRequest "expiry_at and Overdue are computed, not stored. Reservation = APPROVED, Loan = ON_LOAN."

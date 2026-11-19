@@ -1,0 +1,24 @@
+sequenceDiagram
+    autonumber
+    actor User as User via Web App
+    participant API as :AuthController
+    participant Auth as :AuthService
+    participant Time as :Clock
+    User->>API: login(identifier,password)
+    API->>Auth: login(identifier,password)
+    Note over Auth: Trim and lowercase the identifier. Preserve password UTF-8 exactly.<br/>Read account and tokenVersion. Verify pre-hashed bcrypt cost 12.<br/>Run dummy bcrypt when the account is absent.
+    alt Invalid credential or inactive account
+        Auth-->>API: Generic authentication failure
+        API-->>User: Generic sign-in error
+    else Active account and valid credentials
+        Auth->>Time: now()
+        Time-->>Auth: iat
+        Note over Auth: Sign HS256 JWT with sub, jti, tv, iat and exp.<br/>exp = iat + 24 h. No active-session row is created.
+        alt JWT signing fails
+            Auth-->>API: Failure
+            API-->>User: No authenticated response
+        else JWT issued
+            Auth-->>API: Signed JWT and safe account summary
+            API-->>User: HttpOnly Secure SameSite=Lax cookie and safe account summary
+        end
+    end

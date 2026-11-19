@@ -1,0 +1,41 @@
+sequenceDiagram
+    autonumber
+    actor Borrower as Borrower via controller
+    participant SG as :SessionGuard
+    participant RG as :RolesGuard
+    participant Booking as :RoomBookingService
+    participant Timetable as :TimetableService
+    participant DB as :PrismaService
+    participant Time as :Clock
+    participant History as :HistoryService
+    Borrower->>SG: canActivate(cookie)
+    SG-->>Borrower: Principal or 401
+    Borrower->>RG: authorize(principal,Borrower)
+    RG-->>Borrower: Allow or 403
+    Note over Borrower,Booking: Proceed only if both guards allow, requester comes from session.
+    Borrower->>Booking: submit(input,actor)
+    Booking->>Timetable: deriveInterval(bookingDate,firstPeriod,lastPeriod)
+    Timetable-->>Booking: Interval or invalid selection
+    Booking->>Time: now()
+    Time-->>Booking: serverNow
+    alt Invalid period selection or input
+        Booking-->>Borrower: Field error, retain entered values, no request
+    else Valid period/input format
+        Booking->>DB: $transaction(validateRoomAndInsertPending)
+        Note over Booking,DB: Recheck current account/role, room Visible+In service and capacity.<br/>Start > now, purpose nonblank, integer headcount 1..capacity.<br/>Reject Approved overlap over full derived interval including intervening break.<br/>Pending requests do not block each other.<br/>Approval uses ADR-004 GiST exclusion and returns 409 on overlap.
+        alt Room unavailable, overlap, stale input or lost authority
+            DB-->>Booking: Rollback
+            Booking-->>Borrower: Field/conflict error, preserve input
+        else Eligible new request
+            Booking->>History: append(submissionEvent,tx)
+            History-->>Booking: Stored or failure
+            Note over Booking,DB: Save Pending with session borrowerId, no room reservation.<br/>Commit Pending and audit together.
+            alt Persistence/history/commit fails
+                DB-->>Booking: Rollback
+                Booking-->>Borrower: Failure, no partial request
+            else Commit succeeds
+                DB-->>Booking: Booking identifier and Pending
+                Booking-->>Borrower: Submitted successfully, awaiting decision
+            end
+        end
+    end
