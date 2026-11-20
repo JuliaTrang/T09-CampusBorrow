@@ -3,6 +3,7 @@
 - **Status:** Accepted
 - **Date:** 2026-10-18
 - **Deciders:** Team T09 (TetraBo)
+- **Refined by:** [ADR-003](ADR-003-jwt-cookie-auth.md) (authentication details, 2026-11-17)
 
 ## Context
 
@@ -16,16 +17,16 @@ Options considered for the application layer: **NestJS + React** and **Next.js (
 
 ## Decision
 
-| Layer | Choice |
-|---|---|
-| Front end | React + Vite (TypeScript), deployed as a static site on Vercel |
-| Back end | NestJS (TypeScript), deployed on Vercel Functions |
-| Database | PostgreSQL hosted on Supabase (database only; Supabase Auth is not used) |
-| Data access | Prisma ORM; one hand-written SQL migration for the booking exclusion constraint |
-| Auth | NestJS: bcrypt password hashes, JWT in an `httpOnly` cookie, `RolesGuard` for RBAC |
-| CI | GitHub Actions on every pull request: lint, unit tests with coverage, build, E2E |
-| CD | Vercel Git integration: preview deployment per pull request, production from `main` |
-| DNS / CDN | Cloudflare, in front of the Vercel deployments for the custom domain |
+| Layer       | Choice                                                                              |
+| ----------- | ----------------------------------------------------------------------------------- |
+| Front end   | React + Vite (TypeScript), deployed as a static site on Vercel                      |
+| Back end    | NestJS (TypeScript), deployed on Vercel Functions                                   |
+| Database    | PostgreSQL hosted on Supabase (database only; Supabase Auth is not used)            |
+| Data access | Prisma ORM; one hand-written SQL migration for the booking exclusion constraint     |
+| Auth        | NestJS: bcrypt password hashes, JWT in an `httpOnly` cookie, `RolesGuard` for RBAC  |
+| CI          | GitHub Actions on every pull request: lint, unit tests with coverage, build, E2E    |
+| CD          | Vercel Git integration: preview deployment per pull request, production from `main` |
+| DNS / CDN   | Cloudflare, in front of the Vercel deployments for the custom domain                |
 
 We chose NestJS + React over Next.js because:
 
