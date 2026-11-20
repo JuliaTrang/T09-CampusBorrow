@@ -1,0 +1,139 @@
+classDiagram
+%% DRAFT: package mapping retained; operations require #48/#44 approval.
+namespace CMP_01_AuthModule {
+  class AuthController {
+    +login(identifier, password) Result
+    +logout(cookie) Result
+  }
+  class AuthService {
+    -prisma PrismaService
+    -clock Clock
+    +login(identifier, password) Result
+    +logout(cookie) Result
+  }
+  class SessionGuard {
+    -prisma PrismaService
+    -clock Clock
+    +canActivate(cookie) Principal
+  }
+  class RolesGuard {
+    +authorize(principal, allowedRoles) boolean
+  }
+}
+namespace CMP_02_AccountModule {
+  class AccountController {
+    +changeSecurity(accountId, change) Result
+  }
+  class AccountService {
+    +changeSecurity(accountId, change) Result
+  }
+}
+namespace CMP_03_CatalogModule {
+  class ResourceController {
+    +getEligibility(resourceId, tx) Result
+  }
+  class ResourceService {
+    +getEligibility(resourceId, tx) Result
+  }
+}
+namespace CMP_04_EquipmentLoanModule {
+  class EquipmentRequestController {
+    +decide(requestId, decision, expectedVersion, actor) Result
+    +handover(requestId, actor) Result
+  }
+  class EquipmentRequestService {
+    -prisma PrismaService
+    -clock Clock
+    -history HistoryService
+    +decide(requestId, decision, expectedVersion, actor) Result
+    +handover(requestId, actor) Result
+    +expireIfDue(resourceId, tx) Result
+  }
+}
+namespace CMP_05_RoomBookingModule {
+  class RoomBookingController {
+    +submit(input, actor) Result
+    +decide(bookingId, decision, expectedVersion, actor) Result
+  }
+  class RoomBookingService {
+    -prisma PrismaService
+    -clock Clock
+    -timetable TimetableService
+    -history HistoryService
+    +submit(input, actor) Result
+    +decide(bookingId, decision, expectedVersion, actor) Result
+  }
+  class TimetableService {
+    -prisma PrismaService
+    +deriveInterval(bookingDate, firstPeriod, lastPeriod) Interval
+  }
+}
+namespace CMP_06_HistoryModule {
+  class HistoryController {
+    +listVisible(actor, query) Result
+  }
+  class HistoryService {
+    -prisma PrismaService
+    +append(event, tx) Result
+    +listVisible(actor, query) Result
+  }
+}
+namespace CMP_07_CorrectionModule {
+  class CorrectionController {
+    +correct(input, actor) Result
+  }
+  class CorrectionService {
+    +correct(input, actor) Result
+  }
+}
+namespace CMP_08_SchedulerModule {
+  class ExpiryJob {
+    +run() Result
+  }
+}
+namespace CMP_09_CommonModule {
+  class PrismaService {
+    +$transaction(work) Result
+  }
+  class Clock {
+    +now() Instant
+  }
+  class HttpExceptionFilter {
+    +catch(error) Result
+  }
+}
+AuthController --> AuthService
+AccountController --> AccountService
+ResourceController --> ResourceService
+EquipmentRequestController --> EquipmentRequestService
+RoomBookingController --> RoomBookingService
+HistoryController --> HistoryService
+CorrectionController --> CorrectionService
+AuthService ..> PrismaService
+AuthService ..> Clock
+SessionGuard ..> PrismaService
+SessionGuard ..> Clock
+AccountService ..> AuthService : coordinate token version invalidation
+AccountService ..> PrismaService
+AccountService ..> HistoryService
+ResourceService ..> PrismaService
+ResourceService ..> HistoryService
+EquipmentRequestService ..> ResourceService
+EquipmentRequestService ..> PrismaService
+EquipmentRequestService ..> HistoryService
+EquipmentRequestService ..> Clock
+RoomBookingService ..> ResourceService
+RoomBookingService ..> TimetableService
+RoomBookingService ..> PrismaService
+RoomBookingService ..> HistoryService
+RoomBookingService ..> Clock
+TimetableService ..> PrismaService
+HistoryService ..> PrismaService
+CorrectionService ..> EquipmentRequestService
+CorrectionService ..> RoomBookingService
+CorrectionService ..> HistoryService
+CorrectionService ..> PrismaService
+ExpiryJob ..> EquipmentRequestService
+ExpiryJob ..> Clock
+HttpExceptionFilter ..> Clock
+note for SessionGuard "Cross-cutting on protected routes; no reverse module import"

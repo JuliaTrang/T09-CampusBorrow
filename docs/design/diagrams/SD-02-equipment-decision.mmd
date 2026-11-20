@@ -1,0 +1,35 @@
+sequenceDiagram
+    autonumber
+    actor Staff as RM/Admin via controller
+    participant SG as :SessionGuard
+    participant RG as :RolesGuard
+    participant Loan as :EquipmentRequestService
+    participant DB as :PrismaService
+    participant Time as :Clock
+    participant History as :HistoryService
+    Staff->>SG: canActivate(cookie)
+    SG-->>Staff: Principal or 401
+    Staff->>RG: authorize(principal,RM_or_Admin)
+    RG-->>Staff: Allow or 403
+    Note over Staff,Loan: Proceed only if both guards allow.
+    Staff->>Loan: decide(requestId,decision,expectedVersion,actor)
+    Loan->>DB: $transaction(currentDecision)
+    Note over Loan,DB: Inside tx: lock resources row first, then read request and occupancy, recheck role, Pending, eligibility/occupancy.<br/>Approval: future pickup before unchanged returnDue, reserve and reject all competing Pending.<br/>Rejection: reason required, 1-500 characters. Borrower inactivity alone does not block approval.
+    Loan->>Time: now()
+    Time-->>Loan: serverNow
+    alt Invalid input, stale state, lost authority or conflict
+        Note over Loan,DB: 409 on stale version/state. Keep the competing committed result.
+        DB-->>Loan: Failure with current authorized result
+        Loan-->>Staff: Rejected action, no partial mutation
+    else Eligible approval or valid rejection
+        Loan->>History: append(decisionEvent,tx)
+        History-->>Loan: Stored or failure
+        Note over Loan,DB: Approval includes audit for winner and automatic competing rejections.<br/>Conditional state/version update. Append history for each successful transition.<br/>Commit state, reservation and history together.
+        alt Write/history/commit fails
+            DB-->>Loan: Rollback
+            Loan-->>Staff: Failure, no false success
+        else Transaction commits
+            DB-->>Loan: Approved+reservation or Rejected+reason
+            Loan-->>Staff: Decision and Collect before if approved
+        end
+    end

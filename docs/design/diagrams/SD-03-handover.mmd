@@ -1,0 +1,35 @@
+sequenceDiagram
+    autonumber
+    actor Staff as RM/Admin via controller
+    participant SG as :SessionGuard
+    participant RG as :RolesGuard
+    participant Loan as :EquipmentRequestService
+    participant DB as :PrismaService
+    participant Time as :Clock
+    participant History as :HistoryService
+    Staff->>SG: canActivate(cookie)
+    SG-->>Staff: Principal or 401
+    Staff->>RG: authorize(principal,RM_or_Admin)
+    RG-->>Staff: Allow or 403
+    Note over Staff,Loan: Continue only if guards allow and physical handover confirmed.
+    Staff->>Loan: handover(requestId,actor)
+    Loan->>DB: $transaction(convertReservationToLoan)
+    Note over Loan,DB: Lock the resources row first in READ COMMITTED.<br/>Reload request, reservation, borrower and actor.<br/>Approved and uncollected, correct reservation, borrower active, item In service.<br/>Hidden alone does not prohibit handover.
+    Loan->>Time: now()
+    Time-->>Loan: serverNow
+    Note over Loan,Time: expiry=min(confirmedPickupAt+24h,returnDueAt)<br/>confirmedPickupAt <= now < expiry required
+    alt Early, expired, inactive, out of service, stale state or no reservation
+        DB-->>Loan: Reject handover with no loan. A due expiry follows ADR-005 Proposed.
+        Loan-->>Staff: Deny handover even if stored label is Approved
+    else Eligible current handover
+        Note over Loan,DB: Inside same tx: record staff/time and convert reservation to loan.<br/>No free occupancy gap, serialize with expiry and pickup editing.
+        Loan->>History: append(handoverEvent,tx)
+        History-->>Loan: Stored or failure
+        alt Persistence/history/commit fails
+            DB-->>Loan: Rollback all changes
+            Loan-->>Staff: Failure, no partial loan
+        else Commit succeeds
+            DB-->>Loan: On loan and actual handover time
+            Loan-->>Staff: Success and unchanged return deadline
+        end
+    end

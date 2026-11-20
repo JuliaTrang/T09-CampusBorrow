@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="drawio" version="24.7.17">
+  <diagram id="c4-l2" name="C4-L2 Container">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="&lt;b&gt;C4-L2 · Container diagram · CampusBorrow&lt;/b&gt;&lt;br&gt;PA3 §3.3 · Team T09 · last edited 2026-11-18" style="text;html=1;align=left;verticalAlign=top;fontFamily=Arial;fontSize=12;fontColor=#111827;strokeColor=#111827;fillColor=#FFFFFF;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="330" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p-borrower" value="&lt;b&gt;Borrower&lt;/b&gt;&lt;br&gt;[Person]&lt;br&gt;&lt;br&gt;Student or club representative. Browses resources, submits and tracks own requests." style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;fillColor=#2563EB;strokeColor=#1E40AF;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="55" y="110" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p-rm" value="&lt;b&gt;Resource Manager&lt;/b&gt;&lt;br&gt;[Person]&lt;br&gt;&lt;br&gt;Unit staff with equal unit-wide access (BR-01). Processes requests, handover and return." style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;fillColor=#15803D;strokeColor=#14532D;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="325" y="110" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p-admin" value="&lt;b&gt;Admin&lt;/b&gt;&lt;br&gt;[Person]&lt;br&gt;&lt;br&gt;Manages accounts and roles, resets passwords, corrects inconsistent states." style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;fillColor=#7E22CE;strokeColor=#581C87;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="595" y="110" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" value="CampusBorrow [Software System]" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4;fillColor=none;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#111827;verticalAlign=bottom;align=left;spacingLeft=10;spacingBottom=6;container=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="320" width="1040" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="ctn01" value="&lt;b&gt;CTN-01 Web App&lt;/b&gt;&lt;br&gt;[Container: React, Vite, TypeScript (SPA)]&lt;br&gt;&lt;br&gt;Registration and UI for the three roles. Responsive from 360 to 1920 px (NFR-10). Holds no business rules; every decision is made by the API Server." style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;fillColor=#EFF6FF;strokeColor=#111827;fontColor=#111827;" vertex="1" parent="boundary">
+          <mxGeometry x="380" y="70" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ctn02" value="&lt;b&gt;CTN-02 API Server&lt;/b&gt;&lt;br&gt;[Container: NestJS (Node.js, TypeScript), Prisma]&lt;br&gt;&lt;br&gt;All business rules and server-side authorization on every protected call (NFR-03). JWT authorization, request and booking lifecycles, history, and the pickup-expiry job (FR-03-13)." style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;fillColor=#EFF6FF;strokeColor=#111827;fontColor=#111827;" vertex="1" parent="boundary">
+          <mxGeometry x="380" y="250" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ctn03" value="&lt;b&gt;CTN-03 Database&lt;/b&gt;&lt;br&gt;[Container: PostgreSQL on Supabase]&lt;br&gt;&lt;br&gt;Accounts, revoked tokens, resources, requests, bookings and history. Constraints block double reservation and overlapping approved bookings (NFR-09)." style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fontFamily=Arial;fontSize=12;fillColor=#F3EEFF;strokeColor=#111827;fontColor=#111827;" vertex="1" parent="boundary">
+          <mxGeometry x="790" y="240" width="230" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Person colour: Borrower blue, Resource&lt;br&gt;Manager green, Admin purple&lt;br&gt;Light box: container · Cylinder: data store&lt;br&gt;Dashed frame: system boundary&lt;br&gt;Arrow: request direction [protocol]&lt;br&gt;Hosting: see DEP-D (PA3 §3.5)" style="text;html=1;align=left;verticalAlign=top;fontFamily=Arial;fontSize=12;fontColor=#111827;strokeColor=#111827;fillColor=#FFFFFF;spacing=8;" vertex="1" parent="boundary">
+          <mxGeometry x="20" y="235" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="e-b" value="Uses&lt;br&gt;[HTTPS, web browser]" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.1;entryY=0;" edge="1" parent="1" source="p-borrower" target="ctn01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-rm" value="Uses&lt;br&gt;[HTTPS, web browser]" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="p-rm" target="ctn01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-ad" value="Uses&lt;br&gt;[HTTPS, web browser]" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.9;entryY=0;" edge="1" parent="1" source="p-admin" target="ctn01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-api" value="Calls REST API&lt;br&gt;[JSON over HTTPS, session cookie]" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;labelPosition=right;align=left;spacingLeft=6;" edge="1" parent="boundary" source="ctn01" target="ctn02">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-db" value="Reads and writes&lt;br&gt;[SQL over TLS,&lt;br&gt;Prisma]" style="verticalAlign=bottom;edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="boundary" source="ctn02" target="ctn03">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p-visitor" value="&lt;b&gt;Prospective Borrower&lt;/b&gt;&lt;br&gt;[Unauthenticated person]&lt;br&gt;&lt;br&gt;Registers a Borrower account (UC-06)." style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;fillColor=#2563EB;strokeColor=#1E40AF;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="865" y="110" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="e-visitor" value="Registers&lt;br&gt;[HTTPS]" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.95;entryY=0;" edge="1" parent="1" source="p-visitor" target="ctn01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
