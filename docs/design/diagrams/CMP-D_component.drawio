@@ -62,7 +62,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e04-03" value="Reads item status" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=open;endSize=10;dashed=1;labelBackgroundColor=#FFFFFF;exitX=0.25;exitY=1;entryX=0.75;entryY=0;" edge="1" parent="grp" source="c04" target="c03">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="0.45" relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e05-03" value="Reads&lt;br&gt;room" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=open;endSize=10;dashed=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="grp" source="c05" target="c03">
           <mxGeometry relative="1" as="geometry" />
@@ -82,7 +82,7 @@
         <mxCell id="legend" value="&lt;b&gt;Legend&lt;/b&gt; · Solid arrow: call between containers [protocol] · Dashed arrow: in-process dependency (A uses B) · Grey bar: shared infrastructure module" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontFamily=Arial;fontSize=12;fontColor=#111827;strokeColor=#111827;fillColor=#FFFFFF;spacing=8;" vertex="1" parent="1">
           <mxGeometry x="40" y="990" width="1080" height="36" as="geometry" />
         </mxCell>
-      </root>
+      <mxCell id="e04-02" value="Reads&lt;br&gt;borrower" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=open;endSize=10;dashed=1;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="grp" source="c04" target="c02"><mxGeometry relative="1" as="geometry"></mxGeometry></mxCell><mxCell id="e05-02" value="Display name" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=open;endSize=10;dashed=1;labelBackgroundColor=#FFFFFF;exitX=0.15;exitY=0;entryX=0.9;entryY=1;" edge="1" parent="grp" source="c05" target="c02"><mxGeometry x="0.8" relative="1" as="geometry"></mxGeometry></mxCell><mxCell id="e07-02" value="Borrower role (CO-02)" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=open;endSize=10;dashed=1;labelBackgroundColor=#FFFFFF;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="grp" source="c07" target="c02"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="752" y="255"/><mxPoint x="752" y="40"/><mxPoint x="120" y="40"/></Array></mxGeometry></mxCell></root>
     </mxGraphModel>
   </diagram>
 </mxfile>
