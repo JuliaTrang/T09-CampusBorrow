@@ -2,6 +2,7 @@
 
 - **Status:** Proposed (I-04). Waits for confirmation by the owners of I-04 (Minh with Nhat Anh) before the PA3 design freeze; accepting it closes the I-04 subdecisions on the expiry delay target and the scheduling design.
 - **Date:** 2026-11-17
+- **Revised:** 2026-11-21 after the I-04 review in [#39](https://github.com/JuliaTrang/T09-CampusBorrow/issues/39) (points 5.1 – 5.4) and the PR #59 review
 - **Deciders:** Team T09 (TetraBo)
 - **Drivers:** BR-04, FR-03-13 – FR-03-15, DR-09
 - **Affects:** CMP-04, CMP-08, CMP-09, SD-03, SM-01
@@ -18,8 +19,9 @@
 
 - **Time.** Store `timestamptz` (UTC). The API exchanges ISO 8601 with an offset, and intervals are half-open `[start, end)`. Every time-based decision uses the injectable `Clock` (CMP-09); client time is never trusted. Periods come from the fixed `periods` table (BR-03).
 - **Computed expiry.** `expiry_at` is never stored. `EquipmentRequestService` computes it, and SQL uses `LEAST(confirmed_pickup_at + interval '24 hours', return_due_at)`. The "Collect before" time shown on screens is this value, and read views show an `APPROVED` request with `now ≥ expiry_at` as Expired immediately.
-- **Enforcement on access (primary).** Inside the ADR-004 locked transaction, submission, approval, pickup change, cancellation, handover and correction CO-01 for an item first call `expireIfDue(resourceId)`, so an immediate expiry becomes part of the same consistent outcome (BR-20). Handover then requires `confirmed_pickup_at ≤ now < expiry_at`, and a pickup change requires `now < expiry_at`.
-- **Background sweep (secondary).** Supabase `pg_cron` runs every minute and calls `POST /api/internal/jobs/expire` through `pg_net` with a secret header. `ExpiryJob` then applies the same `expireIfDue` logic to all due requests: status `CANCELLED`, `cancellation_cause` `SYSTEM_EXPIRY`, and a `HistoryEvent` `EQ_REQUEST_EXPIRED` with `actor_id` NULL (`SYSTEM`) and the computed `expiry_at` in `details`. The same job deletes `revoked_tokens` rows whose `expires_at` has passed (ADR-003).
+- **Enforcement on access (primary).** Inside the ADR-004 locked transaction, submission, approval, pickup change, cancellation, handover and correction CO-01 for an item first call `expireIfDue(resourceId, tx)` with the transaction that holds the lock, so an immediate expiry becomes part of the same consistent outcome (BR-20). Handover then requires `confirmed_pickup_at ≤ now < expiry_at`, and a pickup change requires `now < expiry_at`.
+- **Background sweep (secondary).** Supabase `pg_cron` runs every minute and calls `POST /api/internal/jobs/expire` through `pg_net` with a secret header. `ExpiryJob` then applies the same `expireIfDue(resourceId, tx)` logic to all due requests: status `CANCELLED`, `cancellation_cause` `SYSTEM_EXPIRY`, and a `HistoryEvent` `EQ_REQUEST_EXPIRED` with `actor_id` NULL (`SYSTEM`) and the computed `expiry_at` in `details`. The same job deletes `revoked_tokens` rows whose `expires_at` has passed (ADR-003).
+- **Job route security.** `POST /api/internal/jobs/expire` has no user session, so it is explicitly marked public for `SessionGuard` and `RolesGuard` and is added to the public routes listed in ADR-002. It accepts only the job secret header: the value is compared with the stored secret in constant time (`crypto.timingSafeEqual`), a user cookie is ignored and never grants access, and any other request receives 401 without running the job. The secret is kept in Supabase Vault and in Vercel environment settings, never in the repository.
 - **Target for I-04.** The stored status changes within 5 minutes after `expiry_at` in normal operation. Correctness never depends on the sweep.
 - **Overdue** is always derived (`ON_LOAN` and `now > return_due_at`). It has no job and no event.
 
@@ -35,6 +37,8 @@
 ## Consequences
 
 - **Positive:** I-04 can close with a measurable target. Boundary tests use a fixed `Clock` (pickup − 1 s, pickup, expiry − 1 s, expiry).
-- **Negative:** the `pg_cron` and `pg_net` extensions must be enabled, with the job secret kept in Supabase Vault and in Vercel environment settings. If the API is down, the next run catches up because the job is idempotent.
+- **Negative:** the `pg_cron` and `pg_net` extensions must be enabled on the Supabase project; that they can be enabled on the Free plan is checked when the production project is created. If the API is down, the next run catches up because the job is idempotent.
+- **Sweep depends on an active project:** the sweep runs only while the Supabase project is active. Keeping the project active relies on the health check of ADR-006. Correctness is not affected, because enforcement on access always runs.
+- **Sweep errors are silent:** `pg_net` sends each request asynchronously and reports no error back to `pg_cron`. The result of each call can be seen only in `net._http_response`, which keeps rows for a limited time (6 hours by default). A failed call is made up by the next run because the job is idempotent.
 - **History:** `occurred_at` records the processing time, and the exact threshold is kept in `details`.
-- **Follow-up:** SM-01 and SD-03 show expiry as a guard on handover and as a system transition.
+- **Follow-up:** SM-01 and SD-03 show expiry as a guard on handover and as a system transition. ERD-01 must have `equipment_requests.cancellation_cause` and `history_events.details` (4.3 open points E-06 and E-09, [#46](https://github.com/JuliaTrang/T09-CampusBorrow/issues/46)).

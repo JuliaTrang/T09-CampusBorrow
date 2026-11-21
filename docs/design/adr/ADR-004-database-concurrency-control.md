@@ -2,6 +2,7 @@
 
 - **Status:** Accepted
 - **Date:** 2026-11-17
+- **Revised:** 2026-11-21 – the locked operations now include pickup change and CO-03, and CO-04 is covered under rooms (PR #59 review, aligned with ADR-005 and DM-01). The decision itself is unchanged.
 - **Deciders:** Team T09 (TetraBo)
 - **Refines:** the concurrency consequences of ADR-001
 - **Drivers:** FR-03-03, FR-03-06, FR-07-03, BR-17, NFR-09
@@ -18,9 +19,9 @@
 
 Each operation runs in one Prisma interactive transaction (`READ COMMITTED`) and the database enforces the invariants:
 
-- **Equipment – row lock.** Every operation that changes an item's occupancy (submit, approve, cancel, hand over, return, expire, CO-01, CO-02) first locks the item's `resources` row (`SELECT … FOR UPDATE`). It then rechecks the current state and writes. Approval sets `APPROVED`, rejects all other `PENDING` requests for the item with the system reason "Equipment has been reserved for another request" (`EQ_REQUEST_AUTO_REJECTED`, actor `SYSTEM`) and appends history, all in the same transaction.
+- **Equipment – row lock.** Every operation that changes an item's occupancy (submit, approve, pickup change, cancel, hand over, return, expire, CO-01, CO-02, CO-03) first locks the item's `resources` row (`SELECT … FOR UPDATE`). It then rechecks the current state and writes. CO-03 rechecks occupancy and event order before it changes a handover or return time. Approval sets `APPROVED`, rejects all other `PENDING` requests for the item with the system reason "Equipment has been reserved for another request" (`EQ_REQUEST_AUTO_REJECTED`, actor `SYSTEM`) and appends history, all in the same transaction.
 - **Equipment – safety net.** Partial unique indexes on `equipment_requests`: `(resource_id) WHERE status IN (APPROVED, ON_LOAN)`, and `(borrower_id, resource_id) WHERE status IN (PENDING, APPROVED, ON_LOAN)`.
-- **Rooms – exclusion constraint.** `EXCLUDE USING gist (resource_id WITH =, tstzrange(start_at, end_at, '[)') WITH &&) WHERE status = APPROVED`, using `btree_gist`. Pending bookings do not block each other. If an approval violates the constraint (SQLSTATE `23P01`), the transaction rolls back, the API returns 409 and the request stays `PENDING`.
+- **Rooms – exclusion constraint.** `EXCLUDE USING gist (resource_id WITH =, tstzrange(start_at, end_at, '[)') WITH &&) WHERE status = APPROVED`, using `btree_gist`. Pending bookings do not block each other. If an approval violates the constraint (SQLSTATE `23P01`), the transaction rolls back, the API returns 409 and the request stays `PENDING`. Releasing an interval (cancellation, CO-04) cannot create an overlap, so it needs no lock: CO-04 is a conditional update `WHERE status = APPROVED AND version = ?` that also requires `now < start_at`, so the interval is released exactly once.
 - **Stale edits – optimistic version.** `resources`, `equipment_requests` and `room_bookings` carry an integer `version`. Updates use `WHERE id = ? AND version = ?` and increment it; 0 rows updated returns 409 "record changed – reload".
 - **Idempotent transitions.** Each state change is a conditional update on the expected source state, for example `WHERE status = PENDING`. History is appended only when exactly one row changed (FR-07-09, AC-03-14).
 - **Uniqueness.** Case-insensitive unique indexes on `lower(resources.code)`, `lower(accounts.username)` and `lower(accounts.email)`.
