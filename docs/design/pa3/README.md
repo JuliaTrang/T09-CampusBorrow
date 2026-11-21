@@ -16,7 +16,7 @@ CD-01, CD-02 và SD-01 đến SD-05 đã vẽ bằng draw.io theo quy ước c�
 
 ## Bản cập nhật ngày 18/11
 
-Dùng [bản Trang cập nhật trên Drive](https://docs.google.com/document/d/1gGg8x3rT3SiIO70aaPSqNGK-r8pEZVWT/edit), mục 2.1, 3.1–3.2 và 3.6. [Bản tiếng Anh để ghép 3.3–3.4](3.3-3.4-drive-aligned.md) bám theo ADR-001–004 Accepted. ADR-005/006 đang Proposed. Domain Model trong Word còn mục mẫu và [#40](https://github.com/JuliaTrang/T09-CampusBorrow/issues/40) vẫn Open. Các bản nháp gốc trong manifest là nguồn lịch sử.
+Dùng [bản Trang cập nhật trên Drive](https://docs.google.com/document/d/1gGg8x3rT3SiIO70aaPSqNGK-r8pEZVWT/edit), mục 2.1, 3.1–3.2 và 3.6. [Bản tiếng Anh để ghép 3.3–3.4](3.3-3.4-drive-aligned.md) bám theo ADR-001–006 Accepted. Domain Model trong Word còn mục mẫu và [#40](https://github.com/JuliaTrang/T09-CampusBorrow/issues/40) vẫn Open. Các bản nháp gốc trong manifest là nguồn lịch sử.
 
 ## Nguồn và thứ tự đối chiếu
 
@@ -28,7 +28,7 @@ Thứ tự đối chiếu còn lại:
 
 1. `docs/design/kickoff/PA3-Kickoff.md` (PR #59, chưa merge): tên entity, thuộc tính, enum, mã sơ đồ.
 2. [DM-01 Domain Model](../domain-model/README.md): bội số và mã `CorrectionOperation`.
-3. [ADR-001](../adr/ADR-001-tech-stack.md) và ADR-002 đến ADR-006 (PR #59, chưa merge). ADR-005 và ADR-006 còn Proposed.
+3. [ADR-001](../adr/ADR-001-tech-stack.md) và ADR-002 đến ADR-006 (PR #59, chưa merge). ADR-005 và ADR-006 đã Accepted.
 4. Issue hiện hành trên GitHub là nguồn deadline. Không suy ngày bắt đầu từ ngày tạo issue.
 
 ## TODO có nguồn phụ thuộc
@@ -40,7 +40,7 @@ Thứ tự đối chiếu còn lại:
 | TODO-AUTH | ADR-003 Accepted, đóng I-05. RevokedToken và token_version đã có trong glossary; đồng bộ ERD                     | Bản Trang §3.6, #46/#49                                                                             | CD-02, SD-01                     |
 | TODO-SRS  | Đã đóng 19/11: PA2 v2 đã bỏ cụm "assigned scope" ở FR-07 (BR-01). CO-01–04 và FR-05-06 có trong v2               | [#50](https://github.com/JuliaTrang/T09-CampusBorrow/issues/50), SRS FR-07/BR-01/BR-20              | Quyền, CorrectionModule          |
 | TODO-TIME | Period cố định P1–P8 (BR-03, C-08); thời gian từng tiết theo SRS, chờ #49 về schema                              | Bản Trang §2.1, #49                                                                                 | TimetableService, RoomBooking    |
-| TODO-JOB  | Chốt đề xuất pg_cron/pg_net và mục tiêu xử lý trong 5 phút, cùng hosting/backup                                  | ADR-005/006 Proposed, I-04, #45                                                                     | CMP-08, DEP-D                    |
+| TODO-JOB  | Đã chốt 21/11: pg_cron/pg_net, mục tiêu 5 phút và hosting/backup                                                 | ADR-005/006 Accepted, I-04, #45                                                                     | CMP-08, DEP-D                    |
 | TODO-OPS  | Duyệt chữ ký operation/DTO và mã lỗi nghiệp vụ; đây là thiết kế đề xuất, không phải API đã tồn tại               | #48 trước #51/#53/#54                                                                               | Tất cả sơ đồ/đặc tả              |
 
 Để chuyển sang bản nộp: giải quyết các TODO theo nguồn, đồng bộ CD ↔ specs ↔ SD ↔ ERD/state machine, gắn traceability #58, rồi render và review bản ghép. Không đánh dấu issue Done chỉ vì đã có khung.

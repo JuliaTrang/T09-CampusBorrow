@@ -1,6 +1,6 @@
 # ADR-005: Time handling and pickup-expiry processing
 
-- **Status:** Proposed (I-04). Waits for confirmation by the owners of I-04 (Minh with Nhat Anh) before the PA3 design freeze; accepting it closes the I-04 subdecisions on the expiry delay target and the scheduling design.
+- **Status:** Accepted – 2026-11-21 (I-04; confirmed by Minh, owner of I-04); closes the I-04 subdecisions on the expiry delay target and the scheduling design.
 - **Date:** 2026-11-17
 - **Revised:** 2026-11-21 after the I-04 review in [#39](https://github.com/JuliaTrang/T09-CampusBorrow/issues/39) (points 5.1 – 5.4) and the PR #59 review
 - **Deciders:** Team T09 (TetraBo)
