@@ -2,6 +2,7 @@
 
 - **Status:** Accepted
 - **Date:** 2026-11-17
+- **Revised:** 2026-11-21 – the internal job route is added to the public routes (ADR-005, [#39](https://github.com/JuliaTrang/T09-CampusBorrow/issues/39)); the guard reads accounts through `AccountService` ([#44](https://github.com/JuliaTrang/T09-CampusBorrow/issues/44)). The decision itself is unchanged.
 - **Deciders:** Team T09 (TetraBo)
 - **Based on:** the container and component tables agreed at the PA3 kickoff (2026-11-14)
 - **Drivers:** NFR-03, NFR-09, team constraints (PA2 §3.5)
@@ -20,8 +21,8 @@ PA1 WBS 3.1.3 requires an application-structure decision. The structure must:
 
 - Build one NestJS application divided into nine modules: `AuthModule`, `AccountModule`, `CatalogModule`, `EquipmentLoanModule`, `RoomBookingModule`, `HistoryModule`, `CorrectionModule`, `SchedulerModule` and `CommonModule` (CMP-01 – CMP-09).
 - In each module the path is Controller → Service → `PrismaService`. Controllers only receive requests and return responses; all business rules live in services.
-- `SessionGuard` and `RolesGuard` are registered globally. A route is public only when it is explicitly marked (sign-in, registration, health).
-- Cross-module calls go through exported services that accept the caller's transaction. In particular, every module writes history through `HistoryService`.
+- `SessionGuard` and `RolesGuard` are registered globally. A route is public only when it is explicitly marked (sign-in, registration, health, and the internal job route `POST /api/internal/jobs/expire`, which accepts only the job secret header and never a user cookie; see ADR-005).
+- Cross-module calls go through exported services that accept the caller's transaction. In particular, every module writes history through `HistoryService`, and `SessionGuard` and `AuthService` read the `accounts` table only through `AccountService`, never through `PrismaService` directly.
 - REST/JSON under `/api`. Errors are mapped to 400 / 401 / 403 / 404 / 409 as agreed. A record that belongs to someone else, or a hidden resource, returns the same 403 so the response does not reveal that the record exists (UC-21 E2).
 - The front end mirrors the modules in `features/` folders.
 
