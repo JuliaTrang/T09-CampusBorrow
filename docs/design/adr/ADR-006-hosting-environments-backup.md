@@ -1,6 +1,6 @@
 # ADR-006: Hosting, environments and backup
 
-- **Status:** Proposed (I-04). Waits for confirmation by the owners of I-04 (Minh with Nhat Anh) before the PA3 design freeze; accepting it closes the I-04 subdecision on hosting and backup assumptions.
+- **Status:** Accepted – 2026-11-21 (I-04; confirmed by Minh, owner of I-04); closes the I-04 subdecision on hosting and backup assumptions.
 - **Date:** 2026-11-17
 - **Revised:** 2026-11-21 after the I-04 review in [#39](https://github.com/JuliaTrang/T09-CampusBorrow/issues/39) (points 6.1 – 6.6) and the PR #59 review
 - **Deciders:** Team T09 (TetraBo)
