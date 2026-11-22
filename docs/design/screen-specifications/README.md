@@ -4,7 +4,7 @@ T18 · PA3 section 6.2 · WBS 3.3.2 and 3.3.3 · Draft for team review
 
 This contribution specifies the six screens selected at Kickoff: S01, S04, S05, S06, S08 and S09. Each screen has an authored design image, controls, events, validation, failure behavior and data references. It can be merged into PA3 section 6.2 after team review.
 
-The six images below come from the same native-layer source used by the Penpot plugin. They incorporate the four follow-up review points on commit 3621dd8 and the subsequent S05 item-status correction in v5.1. The previous green schematic set has been replaced with the blue Penpot layouts and consistent sample data/navigation. These are generated reference renders, not live Penpot screenshots. Phuc’s positive preliminary review covered v4.1; Phuc subsequently confirmed that the v5 update ran in Penpot without reporting errors. The v5.1 source and reference renders are prepared; its live Penpot update remains pending. Detailed visual/scenario verification remains for team review. Final team approval and accessibility verification remain pending.
+The six images below come from the same native-layer source used by the Penpot plugin. They incorporate the four follow-up review points on commit 3621dd8 and the subsequent S05 item-status correction in v5.1. The previous green schematic set has been replaced with the blue Penpot layouts and consistent sample data/navigation. These are generated reference renders, not live Penpot screenshots. Phuc’s positive preliminary review covered v4.1; Phuc subsequently confirmed that the v5 update ran in Penpot without reporting errors. Phuc also confirmed that the v5.1 update completed successfully in Penpot. Detailed visual/scenario verification remains for team review. Final team approval and accessibility verification remain pending.
 
 ## PA3 design and prototype handoff
 
@@ -409,4 +409,4 @@ UUID identifiers and revoked_tokens.jti remain unchanged. The supplied review im
 
 ## Subsequent required review corrections
 
-The two required corrections are prepared for review: S05-08 opens S14 for Manage resources, and S05-01 shows the selected item’s operational status and occupancy in the main review view for RM/Admin. The same fields remain visible in the rejection-reason and pickup-edit variants. Source and reference images use v5.1; applying that update in the live Penpot file remains pending. The lower-priority review suggestions are outside this update.
+The two required corrections are prepared for review: S05-08 opens S14 for Manage resources, and S05-01 shows the selected item’s operational status and occupancy in the main review view for RM/Admin. The same fields remain visible in the rejection-reason and pickup-edit variants. Source and reference images use v5.1, and Phuc confirmed successful application in the live Penpot file. The lower-priority review suggestions are outside this update.

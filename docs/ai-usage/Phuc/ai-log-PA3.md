@@ -2,7 +2,7 @@
 
 ## S05 readiness and occupancy review correction - 22 November 2026
 
-Phuc authorized the remaining required T18 correction and excluded the lower-priority suggestions and T20 from this update. ChatGPT/Codex added separately labelled operational status and occupancy for the selected S05 item, carried the display to RM/Admin, rejection and pickup-edit variants, and regenerated the canonical previews. Plugin v5.1 updates existing boards through the cumulative review migration. Offline checks cover upgrades from v4.1 and the installed v5 baseline, preserved IDs/links and unrelated user edits, repeat-run safety and conflict preflight. RM/Admin reference renders were inspected; live v5.1 execution and final team approval remain pending. The prior S11-to-S14 documentation correction is retained.
+Phuc authorized the remaining required T18 correction and excluded the lower-priority suggestions and T20 from this update. ChatGPT/Codex added separately labelled operational status and occupancy for the selected S05 item, carried the display to RM/Admin, rejection and pickup-edit variants, and regenerated the canonical previews. Plugin v5.1 updates existing boards through the cumulative review migration. Offline checks cover upgrades from v4.1 and the installed v5 baseline, preserved IDs/links and unrelated user edits, repeat-run safety and conflict preflight. RM/Admin reference renders were inspected; Phuc subsequently confirmed that v5.1 updated successfully in Penpot. Detailed live scenario verification and final team approval remain pending. The prior S11-to-S14 documentation correction is retained.
 
 ## T18 screen-reference correction - 22 November 2026
 
