@@ -5,7 +5,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" value="&lt;b&gt;C4-L2 · Container diagram · CampusBorrow&lt;/b&gt;&lt;br&gt;PA3 §3.3 · Team T09 · last edited 2026-11-18" style="text;html=1;align=left;verticalAlign=top;fontFamily=Arial;fontSize=12;fontColor=#111827;strokeColor=#111827;fillColor=#FFFFFF;spacing=8;" vertex="1" parent="1">
+        <mxCell id="title" value="&lt;b&gt;C4-L2 · Container diagram · CampusBorrow&lt;/b&gt;&lt;br&gt;PA3 §3.3 · Team T09 · last edited 2026-11-22" style="text;html=1;align=left;verticalAlign=top;fontFamily=Arial;fontSize=12;fontColor=#111827;strokeColor=#111827;fillColor=#FFFFFF;spacing=8;" vertex="1" parent="1">
           <mxGeometry x="20" y="20" width="330" height="50" as="geometry" />
         </mxCell>
         <mxCell id="p-borrower" value="&lt;b&gt;Borrower&lt;/b&gt;&lt;br&gt;[Person]&lt;br&gt;&lt;br&gt;Student or club representative. Browses resources, submits and tracks own requests." style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;fillColor=#2563EB;strokeColor=#1E40AF;fontColor=#FFFFFF;" vertex="1" parent="1">
@@ -29,7 +29,7 @@
         <mxCell id="ctn03" value="&lt;b&gt;CTN-03 Database&lt;/b&gt;&lt;br&gt;[Container: PostgreSQL on Supabase]&lt;br&gt;&lt;br&gt;Accounts, revoked tokens, resources, requests, bookings and history. Constraints block double reservation and overlapping approved bookings (NFR-09)." style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fontFamily=Arial;fontSize=12;fillColor=#F3EEFF;strokeColor=#111827;fontColor=#111827;" vertex="1" parent="boundary">
           <mxGeometry x="790" y="240" width="230" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="legend" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Person colour: Borrower blue, Resource&lt;br&gt;Manager green, Admin purple&lt;br&gt;Light box: container · Cylinder: data store&lt;br&gt;Dashed frame: system boundary&lt;br&gt;Arrow: request direction [protocol]&lt;br&gt;Hosting: see DEP-D (PA3 §3.5)" style="text;html=1;align=left;verticalAlign=top;fontFamily=Arial;fontSize=12;fontColor=#111827;strokeColor=#111827;fillColor=#FFFFFF;spacing=8;" vertex="1" parent="boundary">
+        <mxCell id="legend" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Person colour: Borrower blue, Resource&lt;br&gt;Manager green, Admin purple, Prospective&lt;br&gt;Borrower orange&lt;br&gt;Light box: container · Cylinder: data store&lt;br&gt;Dashed frame: system boundary&lt;br&gt;Arrow: request direction [protocol]&lt;br&gt;Hosting: see DEP-D (PA3 §3.5)" style="text;html=1;align=left;verticalAlign=top;fontFamily=Arial;fontSize=12;fontColor=#111827;strokeColor=#111827;fillColor=#FFFFFF;spacing=8;" vertex="1" parent="boundary">
           <mxGeometry x="20" y="235" width="300" height="140" as="geometry" />
         </mxCell>
         <mxCell id="e-b" value="Uses&lt;br&gt;[HTTPS, web browser]" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.1;entryY=0;" edge="1" parent="1" source="p-borrower" target="ctn01">
@@ -47,7 +47,7 @@
         <mxCell id="e-db" value="Reads and writes&lt;br&gt;[SQL over TLS,&lt;br&gt;Prisma]" style="verticalAlign=bottom;edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" edge="1" parent="boundary" source="ctn02" target="ctn03">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="p-visitor" value="&lt;b&gt;Prospective Borrower&lt;/b&gt;&lt;br&gt;[Unauthenticated person]&lt;br&gt;&lt;br&gt;Registers a Borrower account (UC-06)." style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;fillColor=#2563EB;strokeColor=#1E40AF;fontColor=#FFFFFF;" vertex="1" parent="1">
+        <mxCell id="p-visitor" value="&lt;b&gt;Prospective Borrower&lt;/b&gt;&lt;br&gt;[Unauthenticated person]&lt;br&gt;&lt;br&gt;Registers a Borrower account (UC-06)." style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;fillColor=#C2410C;strokeColor=#9A3412;fontColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="865" y="110" width="240" height="100" as="geometry" />
         </mxCell>
         <mxCell id="e-visitor" value="Registers&lt;br&gt;[HTTPS]" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.95;entryY=0;" edge="1" parent="1" source="p-visitor" target="ctn01">
