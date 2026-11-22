@@ -4,11 +4,15 @@ Current design: [CampusBorrow PA3 in Penpot](https://design.penpot.app/?screen=w
 
 Status on 22 November 2026: Phuc reported a positive preliminary review after the v4.1 flow repair and requested an update to PR #71 for team review. The agent has not independently verified every live interaction. Detailed scenario review and final team approval remain pending. T19 accessibility verification and T20 reconciliation are separate work.
 
-## Version 5 review update
+## Version 5.1 review update
 
-Minh’s four follow-up points are implemented in the source and reference images. Phuc confirmed that v5 ran in Penpot without reporting errors on 22 November 2026. This confirms reported execution, not a pass for every field, layout or scenario; detailed team review remains pending. The previous positive preliminary review applies to v4.1. Close the plugin, reload Penpot, reopen the same manifest URL, confirm **v5**, and click **Cập nhật review Minh** on the existing page. Wait for **Review v5 applied**. This preserves existing board IDs and links, updates known fields/layouts across role variants, and adds two expiry scenarios. Conflicting edits to affected text stop the update before changes. Repeating the update does not duplicate layers.
+S05 now displays the selected item’s Operational status and Occupancy directly beside the decision panel. The sample item is In service and Not reserved; these are distinct from the request’s Pending state. The update covers the RM and Admin boards plus rejection-reason and pickup-edit variants. S05-08 also references S14 for Manage resources. The lower-priority suggestions in this review are outside this update.
 
-Check S04 collection location; S05 proposed pickup and both deadlines in the approval panel; S06 request/Borrower/eligibility; S09 request IDs. From the review hub, also check **Pickup edit after expiry** and **Approval after old reservation expires**.
+The source and reference images are prepared. Offline migration checks from v4.1 and v5 preserve existing IDs, links and unrelated user text, reject conflicting edits before writing, and prevent duplicates on repeat runs. Reference renders for RM and Admin were inspected. Live execution of v5.1 and final team approval remain pending; Phuc’s earlier no-error report applies to v5 only.
+
+Close the plugin, reload Penpot, reopen `http://localhost:8765/manifest.json`, confirm **v5.1**, and click **Cập nhật review Minh** on the existing page. Wait for **Review v5.1 applied**. Keep the current boards; do not rerun the six-screen builder. In Present/Play, check that both RM and Admin see the two fields without opening Review request, then verify the approve/reject links still work.
+
+The prior v5 corrections remain included: S04 collection location; S05 proposed pickup and both deadlines; S06 request/Borrower/eligibility; S09 request IDs; and the two expiry scenarios.
 
 ## Review the current design
 
@@ -46,9 +50,9 @@ node tools/penpot-t18/serve.cjs
 
 The build generates `tools/penpot-t18/Start-Penpot.cmd` for the current Windows Node installation. Opening it rebuilds and starts the server; keep that console open. The launcher and generated `dist` folder are ignored by Git. The server binds to loopback and exposes only the plugin files and six base SVG previews, not other project files. No credentials are requested.
 
-The plugin is restricted to the linked PA3 file ID. Open Ctrl+Alt+P and load `http://localhost:8765/manifest.json`. If the browser requests local-network access, allow it for this local plugin. Confirm the **v5** heading.
+The plugin is restricted to the linked PA3 file ID. Open Ctrl+Alt+P and load `http://localhost:8765/manifest.json`. If the browser requests local-network access, allow it for this local plugin. Confirm the **v5.1** heading.
 
-- Existing prototype: no rebuild is needed for review. To apply a prepared update, close the plugin, reload Penpot, reopen the same URL and choose **Bổ sung prototype T18** on the existing page. Wait for **Prototype v5 ready**. Existing marked boards and matching links are retained.
+- Existing prototype: no rebuild is needed for review. To apply a prepared update, close the plugin, reload Penpot, reopen the same URL and choose **Cập nhật review Minh** on the existing page. Wait for **Review v5.1 applied**. Existing marked boards and matching links are retained.
 - Fresh reconstruction: use a blank page in the target file, choose **Dựng 6 màn hình T18**, then **Bổ sung prototype T18**. The base builder refuses an occupied page.
 - Navigation recovery: **Sửa điều hướng trên board đã dựng** restores missing base navigation without rebuilding layers. Self-navigation links are excluded.
 - Covered text/buttons: **Hiện lại chữ và nút** restores paint order in the original boards and nested groups while preserving IDs, text, geometry and links. Natural child ordering is enabled for new content.
@@ -82,4 +86,4 @@ Additional previews: [review hub](prototype-REVIEW.png), [approval confirmation]
 
 References: [Penpot plugin installation](https://help.penpot.app/plugins/getting-started/), [Plugin API](https://doc.plugins.penpot.app/interfaces/Penpot), [naturalChildOrdering](https://doc.plugins.penpot.app/interfaces/Flags). PA3 Figma screenshots provided visual references; the original PA2 file remains the historical baseline.
 
-Both image folders are generated from one source with `node tools/penpot-t18/build.cjs` then `node tools/penpot-t18/render-prototype.cjs`. The v5 migration data is pinned to reviewed commit 3621dd8; regenerate it with `node tools/penpot-t18/make-review-migration.cjs` if the v5 definitions change. The migration check requires that baseline commit in Git history.
+Both image folders are generated from one source with `node tools/penpot-t18/build.cjs` then `node tools/penpot-t18/render-prototype.cjs`. The cumulative v5.1 migration remains in `review-v5.json`, pinned to reviewed commit 3621dd8; regenerate it with `node tools/penpot-t18/make-review-migration.cjs` if the definitions change. Migration checks also use c76e000 to verify updates from the installed v5 baseline. Both baseline commits must be available in Git history.

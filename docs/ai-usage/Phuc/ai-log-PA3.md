@@ -1,5 +1,9 @@
 # PA3 AI Usage Log Doan Hong Phuc
 
+## S05 readiness and occupancy review correction - 22 November 2026
+
+Phuc authorized the remaining required T18 correction and excluded the lower-priority suggestions and T20 from this update. ChatGPT/Codex added separately labelled operational status and occupancy for the selected S05 item, carried the display to RM/Admin, rejection and pickup-edit variants, and regenerated the canonical previews. Plugin v5.1 updates existing boards through the cumulative review migration. Offline checks cover upgrades from v4.1 and the installed v5 baseline, preserved IDs/links and unrelated user edits, repeat-run safety and conflict preflight. RM/Admin reference renders were inspected; live v5.1 execution and final team approval remain pending. The prior S11-to-S14 documentation correction is retained.
+
 ## T18 screen-reference correction - 22 November 2026
 
 During T20 input checking, ChatGPT/Codex corrected the S05-08 Manage resources reference from S11 to S14 against the Kickoff screen registry. S11 is Borrower registration. The Penpot source already routes Manage resources to its role-specific resource board, so this correction changes documentation only; no plugin rerun is required. The supplied ERD, state-machine and deployment images are inputs for reconciliation, not evidence that T20 alignment or team approval is complete.

@@ -167,5 +167,5 @@ async function extendPrototype(page, send) {
   );
   penpot.selection = [frames[PROTOTYPE.entry]];
   penpot.viewport.zoomIntoView([frames[PROTOTYPE.entry]]);
-  return `Prototype v5 ready: ${created} boards added, ${added} interactions added, ${retained} retained. Start the flow "${PROTOTYPE.flowName}" with Present/Play. Sample values and outcomes are fixed; no real account or data changes occur.`;
+  return `Prototype v5.1 ready: ${created} boards added, ${added} interactions added, ${retained} retained. Start the flow "${PROTOTYPE.flowName}" with Present/Play. Sample values and outcomes are fixed; no real account or data changes occur.`;
 }

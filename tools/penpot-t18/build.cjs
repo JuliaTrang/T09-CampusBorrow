@@ -60,7 +60,7 @@ fs.writeFileSync(
       description:
         "Creates six editable PA3 boards in the designated CampusBorrow file. No credentials or image flattening.",
       version: 2,
-      code: "plugin.js?v=5",
+      code: "plugin.js?v=5.1",
       permissions: ["content:read", "content:write"],
     },
     null,

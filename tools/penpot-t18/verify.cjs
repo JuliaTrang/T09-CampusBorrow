@@ -152,8 +152,8 @@ async function verifyBase() {
   await run.run();
   assert.equal(run.messages.at(-1).type, "done", JSON.stringify(run.messages.at(-1)));
   assert.equal(run.nodes.filter((n) => n.type === "board").length, 6);
-  assert.equal(run.nodes.filter((n) => n.type === "text").length, 224);
-  assert.equal(run.nodes.filter((n) => n.type === "rectangle").length, 115);
+  assert.equal(run.nodes.filter((n) => n.type === "text").length, 229);
+  assert.equal(run.nodes.filter((n) => n.type === "rectangle").length, 116);
   assert.equal(run.nodes.flatMap((n) => n.interactions || []).length, 11);
   assertPaintOrder(run);
   // Reproduce legacy appendChild paint order, including nested button groups.

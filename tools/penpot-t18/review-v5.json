@@ -634,6 +634,31 @@
         "route": [],
         "before": {
           "type": "rect",
+          "name": "Pending queue",
+          "x": 280,
+          "y": 148,
+          "w": 560,
+          "h": 408,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Pending queue",
+          "x": 280,
+          "y": 148,
+          "w": 560,
+          "h": 548,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
           "name": "Decision panel",
           "x": 864,
           "y": 148,
@@ -1482,6 +1507,77 @@
         "size": 12,
         "color": "#455d7b",
         "weight": 400
+      },
+      {
+        "type": "rect",
+        "name": "S05-01 / Item status divider",
+        "x": 302,
+        "y": 550,
+        "w": 516,
+        "h": 1,
+        "fill": "#c9d6e6",
+        "stroke": null,
+        "r": 0
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Selected item",
+        "x": 302,
+        "y": 568,
+        "w": 516,
+        "h": 26,
+        "text": "Selected item: EQ-003 Camcorder",
+        "size": 16,
+        "color": "#102238",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Operational status label",
+        "x": 302,
+        "y": 610,
+        "w": 230,
+        "h": 22,
+        "text": "Operational status",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Operational status value",
+        "x": 302,
+        "y": 638,
+        "w": 230,
+        "h": 26,
+        "text": "In service",
+        "size": 16,
+        "color": "#007f75",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Occupancy label",
+        "x": 566,
+        "y": 610,
+        "w": 230,
+        "h": 22,
+        "text": "Occupancy",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Occupancy value",
+        "x": 566,
+        "y": 638,
+        "w": 230,
+        "h": 26,
+        "text": "Not reserved",
+        "size": 16,
+        "color": "#007f75",
+        "weight": 600
       }
     ]
   },
@@ -2777,6 +2873,31 @@
         "route": [],
         "before": {
           "type": "rect",
+          "name": "Pending queue",
+          "x": 280,
+          "y": 148,
+          "w": 560,
+          "h": 408,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Pending queue",
+          "x": 280,
+          "y": 148,
+          "w": 560,
+          "h": 548,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
           "name": "Decision panel",
           "x": 864,
           "y": 148,
@@ -3226,6 +3347,77 @@
         "size": 12,
         "color": "#455d7b",
         "weight": 400
+      },
+      {
+        "type": "rect",
+        "name": "S05-01 / Item status divider",
+        "x": 302,
+        "y": 550,
+        "w": 516,
+        "h": 1,
+        "fill": "#c9d6e6",
+        "stroke": null,
+        "r": 0
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Selected item",
+        "x": 302,
+        "y": 568,
+        "w": 516,
+        "h": 26,
+        "text": "Selected item: EQ-003 Camcorder",
+        "size": 16,
+        "color": "#102238",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Operational status label",
+        "x": 302,
+        "y": 610,
+        "w": 230,
+        "h": 22,
+        "text": "Operational status",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Operational status value",
+        "x": 302,
+        "y": 638,
+        "w": 230,
+        "h": 26,
+        "text": "In service",
+        "size": 16,
+        "color": "#007f75",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Occupancy label",
+        "x": 566,
+        "y": 610,
+        "w": 230,
+        "h": 22,
+        "text": "Occupancy",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Occupancy value",
+        "x": 566,
+        "y": 638,
+        "w": 230,
+        "h": 26,
+        "text": "Not reserved",
+        "size": 16,
+        "color": "#007f75",
+        "weight": 600
       }
     ]
   },
@@ -4936,6 +5128,31 @@
         "route": [],
         "before": {
           "type": "rect",
+          "name": "Pending queue",
+          "x": 280,
+          "y": 148,
+          "w": 560,
+          "h": 408,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Pending queue",
+          "x": 280,
+          "y": 148,
+          "w": 560,
+          "h": 548,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
           "name": "Decision panel",
           "x": 864,
           "y": 148,
@@ -5784,6 +6001,77 @@
         "size": 12,
         "color": "#455d7b",
         "weight": 400
+      },
+      {
+        "type": "rect",
+        "name": "S05-01 / Item status divider",
+        "x": 302,
+        "y": 550,
+        "w": 516,
+        "h": 1,
+        "fill": "#c9d6e6",
+        "stroke": null,
+        "r": 0
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Selected item",
+        "x": 302,
+        "y": 568,
+        "w": 516,
+        "h": 26,
+        "text": "Selected item: EQ-003 Camcorder",
+        "size": 16,
+        "color": "#102238",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Operational status label",
+        "x": 302,
+        "y": 610,
+        "w": 230,
+        "h": 22,
+        "text": "Operational status",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Operational status value",
+        "x": 302,
+        "y": 638,
+        "w": 230,
+        "h": 26,
+        "text": "In service",
+        "size": 16,
+        "color": "#007f75",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Occupancy label",
+        "x": 566,
+        "y": 610,
+        "w": 230,
+        "h": 22,
+        "text": "Occupancy",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Occupancy value",
+        "x": 566,
+        "y": 638,
+        "w": 230,
+        "h": 26,
+        "text": "Not reserved",
+        "size": 16,
+        "color": "#007f75",
+        "weight": 600
       }
     ]
   },
@@ -6048,6 +6336,31 @@
         "route": [],
         "before": {
           "type": "rect",
+          "name": "Pending queue",
+          "x": 280,
+          "y": 148,
+          "w": 560,
+          "h": 408,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Pending queue",
+          "x": 280,
+          "y": 148,
+          "w": 560,
+          "h": 548,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
           "name": "Decision panel",
           "x": 864,
           "y": 148,
@@ -6497,6 +6810,77 @@
         "size": 12,
         "color": "#455d7b",
         "weight": 400
+      },
+      {
+        "type": "rect",
+        "name": "S05-01 / Item status divider",
+        "x": 302,
+        "y": 550,
+        "w": 516,
+        "h": 1,
+        "fill": "#c9d6e6",
+        "stroke": null,
+        "r": 0
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Selected item",
+        "x": 302,
+        "y": 568,
+        "w": 516,
+        "h": 26,
+        "text": "Selected item: EQ-003 Camcorder",
+        "size": 16,
+        "color": "#102238",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Operational status label",
+        "x": 302,
+        "y": 610,
+        "w": 230,
+        "h": 22,
+        "text": "Operational status",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Operational status value",
+        "x": 302,
+        "y": 638,
+        "w": 230,
+        "h": 26,
+        "text": "In service",
+        "size": 16,
+        "color": "#007f75",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Occupancy label",
+        "x": 566,
+        "y": 610,
+        "w": 230,
+        "h": 22,
+        "text": "Occupancy",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Occupancy value",
+        "x": 566,
+        "y": 638,
+        "w": 230,
+        "h": 26,
+        "text": "Not reserved",
+        "size": 16,
+        "color": "#007f75",
+        "weight": 600
       }
     ]
   },
@@ -6755,6 +7139,31 @@
           "color": "#2563eb",
           "weight": 600,
           "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Pending queue",
+          "x": 280,
+          "y": 148,
+          "w": 560,
+          "h": 408,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Pending queue",
+          "x": 280,
+          "y": 148,
+          "w": 560,
+          "h": 548,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
         }
       },
       {
@@ -7609,6 +8018,77 @@
         "size": 12,
         "color": "#455d7b",
         "weight": 400
+      },
+      {
+        "type": "rect",
+        "name": "S05-01 / Item status divider",
+        "x": 302,
+        "y": 550,
+        "w": 516,
+        "h": 1,
+        "fill": "#c9d6e6",
+        "stroke": null,
+        "r": 0
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Selected item",
+        "x": 302,
+        "y": 568,
+        "w": 516,
+        "h": 26,
+        "text": "Selected item: EQ-003 Camcorder",
+        "size": 16,
+        "color": "#102238",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Operational status label",
+        "x": 302,
+        "y": 610,
+        "w": 230,
+        "h": 22,
+        "text": "Operational status",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Operational status value",
+        "x": 302,
+        "y": 638,
+        "w": 230,
+        "h": 26,
+        "text": "In service",
+        "size": 16,
+        "color": "#007f75",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Occupancy label",
+        "x": 566,
+        "y": 610,
+        "w": 230,
+        "h": 22,
+        "text": "Occupancy",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Occupancy value",
+        "x": 566,
+        "y": 638,
+        "w": 230,
+        "h": 26,
+        "text": "Not reserved",
+        "size": 16,
+        "color": "#007f75",
+        "weight": 600
       }
     ]
   }

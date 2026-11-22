@@ -581,6 +581,35 @@ text(
   "S05-07 / Preview explanation",
 );
 
+// Keep the selected item's readiness and occupancy visible during the decision.
+current.layers.find((n) => n.name === "Pending queue").h = 548;
+rect("S05-01 / Item status divider", 302, 550, 516, 1, C.line, null, 0);
+text(
+  "Selected item: EQ-003 Camcorder",
+  302,
+  568,
+  516,
+  26,
+  16,
+  C.ink,
+  600,
+  "S05-01 / Selected item",
+);
+text(
+  "Operational status",
+  302,
+  610,
+  230,
+  22,
+  13,
+  C.muted,
+  600,
+  "S05-01 / Operational status label",
+);
+text("In service", 302, 638, 230, 26, 16, C.teal, 600, "S05-01 / Operational status value");
+text("Occupancy", 566, 610, 230, 22, 13, C.muted, 600, "S05-01 / Occupancy label");
+text("Not reserved", 566, 638, 230, 26, 16, C.teal, 600, "S05-01 / Occupancy value");
+
 current = boards.find((b) => b.id === "S06");
 current.height += 60;
 for (const n of current.layers) {

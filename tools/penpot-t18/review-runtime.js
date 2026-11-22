@@ -1,4 +1,4 @@
-// Update only known v4.1 source layers; refuse conflicting user edits before writing.
+// Update known v4.1/v5 source layers; refuse conflicting user edits before writing.
 function reviewType(def) {
   return def.type === "rect" ? "rectangle" : def.type;
 }
@@ -75,5 +75,8 @@ async function applyReview(page, send) {
   const result = await extendPrototype(page, send);
   penpot.selection = [frames.S05];
   penpot.viewport.zoomIntoView([frames.S05]);
-  return "Review v5 applied. Existing board IDs and interactions retained. " + result;
+  return (
+    "Review v5.1 applied. S05 item status and occupancy are visible. Existing board IDs and interactions retained. " +
+    result
+  );
 }
