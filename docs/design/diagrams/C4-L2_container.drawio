@@ -18,7 +18,7 @@
           <mxGeometry x="595" y="110" width="240" height="100" as="geometry" />
         </mxCell>
         <mxCell id="boundary" value="CampusBorrow [Software System]" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4;fillColor=none;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontStyle=1;fontColor=#111827;verticalAlign=bottom;align=left;spacingLeft=10;spacingBottom=6;container=1;pointerEvents=0;" vertex="1" parent="1">
-          <mxGeometry x="60" y="320" width="1040" height="440" as="geometry" />
+          <mxGeometry x="60" y="320" width="1040" height="480" as="geometry" />
         </mxCell>
         <mxCell id="ctn01" value="&lt;b&gt;CTN-01 Web App&lt;/b&gt;&lt;br&gt;[Container: React, Vite, TypeScript (SPA)]&lt;br&gt;&lt;br&gt;Registration and UI for the three roles. Responsive from 360 to 1920 px (NFR-10). Holds no business rules; every decision is made by the API Server." style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=12;fillColor=#EFF6FF;strokeColor=#111827;fontColor=#111827;" vertex="1" parent="boundary">
           <mxGeometry x="380" y="70" width="280" height="110" as="geometry" />
@@ -29,8 +29,8 @@
         <mxCell id="ctn03" value="&lt;b&gt;CTN-03 Database&lt;/b&gt;&lt;br&gt;[Container: PostgreSQL on Supabase]&lt;br&gt;&lt;br&gt;Accounts, revoked tokens, resources, requests, bookings and history. Constraints block double reservation and overlapping approved bookings (NFR-09)." style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fontFamily=Arial;fontSize=12;fillColor=#F3EEFF;strokeColor=#111827;fontColor=#111827;" vertex="1" parent="boundary">
           <mxGeometry x="790" y="240" width="230" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="legend" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Person colour: Borrower blue, Resource&lt;br&gt;Manager green, Admin purple, Prospective&lt;br&gt;Borrower orange&lt;br&gt;Light box: container · Cylinder: data store&lt;br&gt;Dashed frame: system boundary&lt;br&gt;Arrow: request direction [protocol]&lt;br&gt;Hosting: see DEP-D (PA3 §3.5)" style="text;html=1;align=left;verticalAlign=top;fontFamily=Arial;fontSize=12;fontColor=#111827;strokeColor=#111827;fillColor=#FFFFFF;spacing=8;" vertex="1" parent="boundary">
-          <mxGeometry x="20" y="235" width="300" height="140" as="geometry" />
+        <mxCell id="legend" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Person colour: Borrower blue, Resource&lt;br&gt;Manager green, Admin purple, Prospective&lt;br&gt;Borrower orange&lt;br&gt;Light box: container · Cylinder: data store&lt;br&gt;Dashed frame: system boundary&lt;br&gt;Arrow: request direction [protocol]&lt;br&gt;Dashed arrow: scheduled call (ADR-005)&lt;br&gt;Hosting: see DEP-D (PA3 §3.5)" style="text;html=1;align=left;verticalAlign=top;fontFamily=Arial;fontSize=12;fontColor=#111827;strokeColor=#111827;fillColor=#FFFFFF;spacing=8;" vertex="1" parent="boundary">
+          <mxGeometry x="20" y="235" width="300" height="160" as="geometry" />
         </mxCell>
         <mxCell id="e-b" value="Uses&lt;br&gt;[HTTPS, web browser]" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.1;entryY=0;" edge="1" parent="1" source="p-borrower" target="ctn01">
           <mxGeometry relative="1" as="geometry" />
@@ -53,7 +53,15 @@
         <mxCell id="e-visitor" value="Registers&lt;br&gt;[HTTPS]" style="html=1;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.95;entryY=0;" edge="1" parent="1" source="p-visitor" target="ctn01">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-      </root>
+      <mxCell id="e-cron" value="Triggers ExpiryJob every minute&lt;br&gt;[pg_cron + pg_net, HTTPS POST /api/internal/jobs/expire, job secret]" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=6 4;strokeColor=#111827;fontFamily=Arial;fontSize=12;fontColor=#111827;endArrow=open;endFill=0;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.8;entryY=1;" edge="1" parent="boundary" source="ctn03" target="ctn02">
+          <mxGeometry relative="1" y="22" as="geometry">
+            <Array as="points">
+              <mxPoint x="905" y="415" />
+              <mxPoint x="604" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+</root>
     </mxGraphModel>
   </diagram>
 </mxfile>
