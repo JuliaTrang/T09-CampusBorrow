@@ -4,7 +4,7 @@ T18 · PA3 section 6.2 · WBS 3.3.2 and 3.3.3 · Draft for team review
 
 This contribution specifies the six screens selected at Kickoff: S01, S04, S05, S06, S08 and S09. Each screen has an authored design image, controls, events, validation, failure behavior and data references. It can be merged into PA3 section 6.2 after team review.
 
-The six images below now come from the same native-layer source used by the Penpot plugin, incorporating Minh’s four follow-up review points on commit 3621dd8. The previous green schematic set has been replaced with the blue Penpot layouts and consistent sample data/navigation. These are generated reference renders, not live Penpot screenshots. Phuc’s positive preliminary review covered v4.1; the v5 field/layout update still requires execution and visual confirmation in the live file. Final team approval and accessibility verification remain pending.
+The six images below now come from the same native-layer source used by the Penpot plugin, incorporating Minh’s four follow-up review points on commit 3621dd8. The previous green schematic set has been replaced with the blue Penpot layouts and consistent sample data/navigation. These are generated reference renders, not live Penpot screenshots. Phuc’s positive preliminary review covered v4.1; Phuc subsequently confirmed that the v5 update ran in Penpot without reporting errors. Detailed visual/scenario verification remains for team review. Final team approval and accessibility verification remain pending.
 
 ## PA3 design and prototype handoff
 
@@ -348,7 +348,7 @@ Rooms operate every day. P2–P3 reserves 08:15–10:15 including the 09:00–09
 
 ## Handoff and review items
 
-T18 specifications and the unified Penpot source previews incorporate Minh’s follow-up review. Plugin v5 applies the field/layout changes to existing boards; live v5 confirmation is pending before final re-review on PR #71. Phuc reported a positive preliminary review on 22 November 2026 after the v4.1 repair; the agent has not independently verified every live interaction. Final team approval, detailed scenario checks and incorporation into the main PA3 report remain pending. T19 must measure contrast and verify keyboard/focus behavior on an executable prototype; this document records design requirements, not accessibility test passes. T20 final design reconciliation remains deferred.
+T18 specifications and the unified Penpot source previews incorporate Minh’s follow-up review. Plugin v5 applies the field/layout changes to existing boards; Phuc confirmed execution without plugin errors, so the update is ready for final team re-review on PR #71. Phuc reported a positive preliminary review on 22 November 2026 after the v4.1 repair; the agent has not independently verified every live interaction. Final team approval, detailed scenario checks and incorporation into the main PA3 report remain pending. T19 must measure contrast and verify keyboard/focus behavior on an executable prototype; this document records design requirements, not accessibility test passes. T20 final design reconciliation remains deferred.
 
 For screens outside the selected six, retain the existing design-image references in PA3. S12 must use the RM/Admin history design rather than the former Borrower detail frame now named S10a. That wider image reconciliation remains a report-integration item, not an expansion of these six detailed specifications.
 

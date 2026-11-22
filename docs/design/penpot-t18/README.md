@@ -6,7 +6,7 @@ Status on 22 November 2026: Phuc reported a positive preliminary review after th
 
 ## Version 5 review update
 
-Minh’s four follow-up points are implemented in the source and reference images. Live v5 application is pending; the previous positive review applies to v4.1. Close the plugin, reload Penpot, reopen the same manifest URL, confirm **v5**, and click **Cập nhật review Minh** on the existing page. Wait for **Review v5 applied**. This preserves existing board IDs and links, updates known fields/layouts across role variants, and adds two expiry scenarios. Conflicting edits to affected text stop the update before changes. Repeating the update does not duplicate layers.
+Minh’s four follow-up points are implemented in the source and reference images. Phuc confirmed that v5 ran in Penpot without reporting errors on 22 November 2026. This confirms reported execution, not a pass for every field, layout or scenario; detailed team review remains pending. The previous positive preliminary review applies to v4.1. Close the plugin, reload Penpot, reopen the same manifest URL, confirm **v5**, and click **Cập nhật review Minh** on the existing page. Wait for **Review v5 applied**. This preserves existing board IDs and links, updates known fields/layouts across role variants, and adds two expiry scenarios. Conflicting edits to affected text stop the update before changes. Repeating the update does not duplicate layers.
 
 Check S04 collection location; S05 proposed pickup and both deadlines in the approval panel; S06 request/Borrower/eligibility; S09 request IDs. From the review hub, also check **Pickup edit after expiry** and **Approval after old reservation expires**.
 

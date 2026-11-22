@@ -2,7 +2,7 @@
 
 ## Minh follow-up review corrections - 22 November 2026
 
-Phuc authorized the four visible points in Minh’s review of 3621dd8. ChatGPT/Codex clarified expiry-first approval and the committed expiry outcome during pickup edits, separated collected requests, added missing approval/resource/request context to Penpot source and role variants, and replaced the six schematic images with one consistent Penpot render set. Plugin v5 includes an in-place migration retaining board IDs and links, two expiry scenarios, repeat-run protection and preflight for conflicting edits. Reference render inspection and offline checks are recorded in the handoff; live v5 application and final team approval remain pending. No unseen review points, T19 passes or T20 completion are asserted.
+Phuc authorized the four visible points in Minh’s review of 3621dd8. ChatGPT/Codex clarified expiry-first approval and the committed expiry outcome during pickup edits, separated collected requests, added missing approval/resource/request context to Penpot source and role variants, and replaced the six schematic images with one consistent Penpot render set. Plugin v5 includes an in-place migration retaining board IDs and links, two expiry scenarios, repeat-run protection and preflight for conflicting edits. Reference render inspection and offline checks are recorded in the handoff; Phuc subsequently confirmed that v5 ran without plugin errors. Detailed visual/scenario review and final team approval remain pending. No unseen review points, T19 passes or T20 completion are asserted.
 
 ## T18 re-review handoff - 22 November 2026
 
