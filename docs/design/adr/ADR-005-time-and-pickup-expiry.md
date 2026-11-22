@@ -42,3 +42,10 @@
 - **Sweep errors are silent:** `pg_net` sends each request asynchronously and reports no error back to `pg_cron`. The result of each call can be seen only in `net._http_response`, which keeps rows for a limited time (6 hours by default). A failed call is made up by the next run because the job is idempotent.
 - **History:** `occurred_at` records the processing time, and the exact threshold is kept in `details`.
 - **Follow-up:** SM-01 and SD-03 show expiry as a guard on handover and as a system transition. ERD-01 must have `equipment_requests.cancellation_cause` and `history_events.details` (4.3 open points E-06 and E-09, [#46](https://github.com/JuliaTrang/T09-CampusBorrow/issues/46)).
+
+## Amendment of 2026-11-22 (proposed in PR #74)
+
+This amendment clarifies two points that the decision above does not state. It takes effect when PR #74 is approved by the team.
+
+- **CO-01 order.** While CO-01 runs, its request is `ON_LOAN`, so the item has no other `APPROVED` request and an `expireIfDue` call before the change has no effect. CO-01 therefore calls `expireIfDue(resourceId, tx)` after `voidHandover` has restored `APPROVED`, in the same transaction. This replaces "and correction CO-01 … first call" in the enforcement-on-access bullet for CO-01 only (4.3 C2, C5).
+- **Refusal after an expiry.** When `expireIfDue` applies a due expiry during handover, pickup change or cancellation, the transaction commits the expiry (`CANCELLED`, `SYSTEM_EXPIRY`, `EQ_REQUEST_EXPIRED`) and the operation returns 409. In submission and approval, a due expiry of another request on the item is applied first and the operation continues with the current state; a later business refusal keeps that expiry. Only a persistence or history failure rolls everything back (FR-03-15, BR-04, UC-13 E1; 4.3 C2, 4.4).
