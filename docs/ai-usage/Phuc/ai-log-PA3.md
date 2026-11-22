@@ -44,3 +44,13 @@ Current Figma status: the user has supplied a separate PA3 file. Access and a te
 Phuc requested continuation using the [separate PA3 file](https://www.figma.com/design/XbN2utAC28sDab8KFPZXzc/CampusBorrow-T09-PA3?node-id=187-2). ChatGPT/Codex inspected the Desktop v5 UI page and the six selected frames, and exported reference screenshots. Each target frame contains a flattened image and prototype hotspots rather than editable text. A temporary write-access probe had been created and removed successfully; it did not change the screen designs.
 
 The Figma Starter MCP limit subsequently blocked a design-system search and an attempted page rename. The page name and screen designs remain unchanged. The repository specification now records the correct PA3 frame links and the remaining editable-layer, control/state and prototype-verification work. No completed Figma implementation, prototype validation or team approval is asserted.
+
+## T20 design traceability - 22 November 2026
+
+Phuc requested completion of T20 and a separate branch for team review. ChatGPT/Codex compared the PA2 v2 requirements with the available Component/Class/Sequence design, accepted ADRs, Table Spec v2, selected ERD, current T18 and updated SM-01 to SM-04. The report preserves 93 FRs (76 Must, 13 Should, 4 deferred Could), maps 12 NFRs/9 DRs/20 BRs and separates declared operation evidence from component ownership and missing source detail.
+
+The updated state diagram closed R10; staff-entry, audit/storage, class-source and transaction details remain explicit source-owner follow-ups. Phuc clarified that T18 has an agreeing comment but formal Approved review is not confirmed. No approval, merge, application test or accessibility pass is asserted.
+
+For review, the authored HTML/CSV package was converted into repository Markdown, preserving every CSV field and the supplemental tables. Five unchanged source snapshots were included with fingerprints. Checks cover counts, field preservation, links and source hashes; the repository document checker validates extensions and formatting. The branch is based on main and does not include T18 changes.
+
+See [T20 traceability](../../design/traceability/README.md).
