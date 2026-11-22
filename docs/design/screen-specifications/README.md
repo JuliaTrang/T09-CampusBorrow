@@ -4,7 +4,7 @@ T18 · PA3 section 6.2 · WBS 3.3.2 and 3.3.3 · Draft for team review
 
 This contribution specifies the six screens selected at Kickoff: S01, S04, S05, S06, S08 and S09. Each screen has an authored design image, controls, events, validation, failure behavior and data references. It can be merged into PA3 section 6.2 after team review.
 
-The six images below come from the same native-layer source used by the Penpot plugin. They incorporate the four follow-up review points on commit 3621dd8 and the subsequent S05 item-status correction in v5.1. The previous green schematic set has been replaced with the blue Penpot layouts and consistent sample data/navigation. These are generated reference renders, not live Penpot screenshots. Phuc’s positive preliminary review covered v4.1; Phuc subsequently confirmed that the v5 update ran in Penpot without reporting errors. Phuc also confirmed that the v5.1 update completed successfully in Penpot. Detailed visual/scenario verification remains for team review. Final team approval and accessibility verification remain pending.
+The six images below are rendered from the same source as the Penpot design. They are reference renders, not live Penpot screenshots. Team approval and accessibility verification are pending.
 
 ## PA3 design and prototype handoff
 
@@ -12,7 +12,7 @@ Current design: [CampusBorrow PA3 in Penpot](https://design.penpot.app/?screen=w
 
 The six selected screens retain 45 control IDs and use native editable text/shape layers. Additional boards represent role variants, dialogs, sample states and navigation context; they do not expand the six-screen specification scope. The prototype does not accept free typing or authenticate users, execute transactions, persist data or verify keyboard behavior. Main-screen navigation restores sample fixtures. The specification below remains the required application behavior; the prototype illustrates selected paths. Figma links are historical visual references.
 
-The previous Figma target was [CampusBorrow PA3 - Desktop v5 UI](https://www.figma.com/design/XbN2utAC28sDab8KFPZXzc/CampusBorrow-T09-PA3?node-id=187-2). The supplied link to node 0:1 opens the archived PA2 page. Keep the [original PA2 file](https://www.figma.com/design/xgOD9kWskBM4XbTyX26HGc/CampusBorrow-T09-SRS-PA2-wireframes) as the historical baseline; continue the editable prototype in Penpot.
+The previous Figma target was [CampusBorrow PA3 - Desktop v5 UI](https://www.figma.com/design/XbN2utAC28sDab8KFPZXzc/CampusBorrow-T09-PA3?node-id=187-2). Keep the [original PA2 file](https://www.figma.com/design/xgOD9kWskBM4XbTyX26HGc/CampusBorrow-T09-SRS-PA2-wireframes) as the historical baseline; continue the editable prototype in Penpot.
 
 | Screen                   | Historical PA3 Figma reference                                                                    |
 | ------------------------ | ------------------------------------------------------------------------------------------------- |
@@ -22,10 +22,6 @@ The previous Figma target was [CampusBorrow PA3 - Desktop v5 UI](https://www.fig
 | S06 Handover and returns | [187:13](https://www.figma.com/design/XbN2utAC28sDab8KFPZXzc/CampusBorrow-T09-PA3?node-id=187-13) |
 | S08 Room request         | [187:19](https://www.figma.com/design/XbN2utAC28sDab8KFPZXzc/CampusBorrow-T09-PA3?node-id=187-19) |
 | S09 Room requests        | [187:21](https://www.figma.com/design/XbN2utAC28sDab8KFPZXzc/CampusBorrow-T09-PA3?node-id=187-21) |
-
-Inspection on 22 November 2026 confirmed access to the PA3 file. A temporary write probe was created and removed successfully. Subsequent calls reached the Figma Starter MCP limit, including an attempted page rename; no persistent T18 design changes were applied. The page remains named Desktop v5 UI.
-
-At inspection, all six Figma frames contained flattened screen images and prototype hotspots. The subsequent Penpot reconstruction supplies editable text, control groups and sample prototype paths. Further work and team review take place in Penpot; no completed Figma implementation is asserted.
 
 ## 6.2 Shared behavior
 
@@ -348,17 +344,17 @@ Rooms operate every day. P2–P3 reserves 08:15–10:15 including the 09:00–09
 
 ## Handoff and review items
 
-T18 specifications and the unified Penpot source previews incorporate Minh’s follow-up review. Plugin v5 applies the field/layout changes to existing boards; Phuc confirmed execution without plugin errors, so the update is ready for final team re-review on PR #71. Phuc reported a positive preliminary review on 22 November 2026 after the v4.1 repair; the agent has not independently verified every live interaction. Final team approval, detailed scenario checks and incorporation into the main PA3 report remain pending. T19 must measure contrast and verify keyboard/focus behavior on an executable prototype; this document records design requirements, not accessibility test passes. T20 final design reconciliation remains deferred.
+Final team approval, detailed scenario checks and incorporation into the main PA3 report are pending. T19 must measure contrast and verify keyboard and focus behavior on an executable prototype; this document records design requirements, not accessibility test passes. T20 design reconciliation is a separate task.
 
 For screens outside the selected six, retain the existing design-image references in PA3. S12 must use the RM/Admin history design rather than the former Borrower detail frame now named S10a. That wider image reconciliation remains a report-integration item, not an expansion of these six detailed specifications.
 
-| Review item                   | Handling                                                                                                                                                                                                                                                                                                                                                                                  |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Identifier conventions        | Team decision: use UUID domain IDs and foreign keys, as specified in Table Spec v2. periods.code remains the timetable natural key; revoked_tokens.jti is a UUID primary key with no separate id. Treat identifiers as opaque in the UI. Retain the team-selected older ERD as the baseline and reconcile it with these agreed v2 changes; the unselected newer ERD is not authoritative. |
-| Purpose length                | No business maximum supplied. Keep nonblank validation; agree any transport/body-size bound in API design without silently changing the business rule.                                                                                                                                                                                                                                    |
-| Component and class alignment | Use Kickoff names as candidates. Component, Class and Sequence files are now present on main; this T18 packaging change does not perform their final cross-check. T20 alignment remains a separate task.                                                                                                                                                                                  |
-| Navigation and feedback       | Review N1/N2, proposed exact error text and confirmation focus behavior against the final prototype.                                                                                                                                                                                                                                                                                      |
-| Table constraints             | Clarify server/transaction enforcement for cross-table checks such as headcount ≤ room capacity. Rejection reasons are required on rejection even if decision_reason is nullable in other states.                                                                                                                                                                                         |
+| Review item                   | Handling                                                                                                                                                                                                                                                                                                                    |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Identifier conventions        | Team decision: use UUID domain IDs and foreign keys, as specified in Table Spec v2. periods.code remains the timetable natural key; revoked_tokens.jti is a UUID primary key with no separate id. Treat identifiers as opaque in the UI. ERD-01 (3NF, updated 22 November) and the Table Specification agree on these keys. |
+| Purpose length                | No business maximum supplied. Keep nonblank validation; agree any transport/body-size bound in API design without silently changing the business rule.                                                                                                                                                                      |
+| Component and class alignment | Use Kickoff names as candidates. Component, Class and Sequence files are now present on main; this T18 packaging change does not perform their final cross-check. T20 alignment remains a separate task.                                                                                                                    |
+| Navigation and feedback       | Review N1/N2, proposed exact error text and confirmation focus behavior against the final prototype.                                                                                                                                                                                                                        |
+| Table constraints             | Clarify server/transaction enforcement for cross-table checks such as headcount ≤ room capacity. Rejection reasons are required on rejection even if decision_reason is nullable in other states.                                                                                                                           |
 
 ## Sources and AI usage entry
 
@@ -373,40 +369,10 @@ For screens outside the selected six, retain the existing design-image reference
 
 AI usage is recorded in [Phuc's PA3 log](../../ai-usage/Phuc/ai-log-PA3.md): T18 controls, events, validation, revised schematics and Penpot reconstruction/prototype source. Verification includes source/control coverage, reference renders, graph and recovery checks, and Phuc's reported preliminary live review. Detailed team walkthrough, Component/Class alignment and T19 accessibility checks remain pending; no final team approval is asserted.
 
-## Team review follow-up — 22 November 2026
-
-The user confirmed UUID identifiers, SYSTEM_EXPIRY and the older ERD baseline with the agreed Table Spec v2 changes. These decisions guide this revision; unresolved ERD/Table/Class details remain for T20 alignment.
-
-| Review point               | Resolution / remaining work                                                                                                                                                                                                                                                     |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Stale SD labels            | Link directly to the existing SD-01–SD-05 Draw.io files; SD-05 is no longer labelled optional. See also [Sequence Diagrams](../pa3/4.4-sequence-diagrams.md).                                                                                                                   |
-| Missing controls in images | S05 includes Change pickup for RM; S06 includes Record return; S05/S06/S09 include staff navigation and sign out. Native Penpot controls now link to fixed sample confirmations/results. Phuc's preliminary review was positive; the team should verify each role and scenario. |
-| Merged deadline label      | The revised S05 schematic labels Return deadline and Collect before separately and uses different example values to demonstrate the 24-hour cap.                                                                                                                                |
-| Expired handover outcome   | S06 now distinguishes early arrival from expiry and specifies the committed CANCELLED / SYSTEM_EXPIRY outcome, reservation release and EQ_REQUEST_EXPIRED history.                                                                                                              |
-| Identifier convention      | UUID and the natural-key exceptions are documented above using Table Spec v2.                                                                                                                                                                                                   |
-| Design separation          | PA3 work moved to a separate Penpot file after the Figma MCP limit. The PA2 baseline and PA3 Figma references remain available; Penpot is the current editable prototype for team review.                                                                                       |
-
 ## Repository review
 
 Owner: Phuc. Task: T18. WBS: 3.3.2 and 3.3.3 (selected Kickoff screens). Target report section: PA3 6.2.
 
-Review the controls, permissions, validation, confirmation and failure outcomes for the six screens against the Penpot flow and its [scenario checklist](../penpot-t18/README.md#review-journeys). Confirm N1/N2 navigation, RM-only pickup changes, separate deadlines and the committed expiry outcome. The embedded images and Penpot handoff previews are generated from one source; they are not live Penpot exports. T19 accessibility verification and T20 final design alignment remain separate tasks.
-
 Related repository documents: [Screen Flow](../screen-flow/README.md), [Kickoff](../kickoff/PA3-Kickoff.md), [PA3 design artifacts](../pa3/README.md), and [Phuc PA3 AI usage log](../../ai-usage/Phuc/ai-log-PA3.md). The source PA2 v2, Table Specification and main report draft listed above are shared coursework documents outside this repository; their contents are not silently replaced with the older submitted PA2 PDF.
 
 Files: this README contains the complete specification. The retained Sxx_screen-proposal filenames now contain SVG/PNG renders generated from tools/penpot-t18/design.cjs, identical to the Penpot handoff screen previews. Change that source and run build.cjs followed by render-prototype.cjs to regenerate both locations; do not edit the generated SVGs separately.
-
-## Follow-up review of commit 3621dd8
-
-| Minh’s point                       | Revision                                                                                                                                                                              |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Expiry during pickup edit/approval | S05 specifies expiry-first ordering, committed cancellation/history, no rollback from the 409 response, and a separate collected-request case. G08 clarifies the system expiry event. |
-| Missing approval information       | S05 shows Proposed pickup, Confirmed pickup, read-only Return deadline and Collect before preview in the decision panel, including Admin variants.                                    |
-| Missing context                    | S04 shows collection location; S06 shows request ID, Borrower and handover eligibility; S09 shows distinct request IDs in queue/detail.                                               |
-| Conflicting image sets/navigation  | All six embedded SVG/PNG images use the Penpot source. S05-08 lists the full seven-item staff menu shared with S06/S09.                                                               |
-
-UUID identifiers and revoked_tokens.jti remain unchanged. The supplied review image contained only these four actionable points; no unseen comments are assumed.
-
-## Subsequent required review corrections
-
-The two required corrections are prepared for review: S05-08 opens S14 for Manage resources, and S05-01 shows the selected item’s operational status and occupancy in the main review view for RM/Admin. The same fields remain visible in the rejection-reason and pickup-edit variants. Source and reference images use v5.1, and Phuc confirmed successful application in the live Penpot file. The lower-priority review suggestions are outside this update.

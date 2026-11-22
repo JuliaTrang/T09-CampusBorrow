@@ -2,7 +2,7 @@
 
 Current design: [CampusBorrow PA3 in Penpot](https://design.penpot.app/?screen=workspace&team-id=cf924903-cff3-81f4-8008-fbc796ea80eb&file-id=cf924903-cff3-81f4-8008-fbc7ae1bf610&page-id=cf924903-cff3-81f4-8008-fbc7ae1bf611).
 
-Status on 22 November 2026: Phuc reported a positive preliminary review after the v4.1 flow repair and requested an update to PR #71 for team review. The agent has not independently verified every live interaction. Detailed scenario review and final team approval remain pending. T19 accessibility verification and T20 reconciliation are separate work.
+Status on 22 November 2026: Phuc reviewed the v4.1 flow and found it ready for team review. Not every live interaction has been checked. Detailed scenario review and final team approval are pending. T19 accessibility verification and T20 reconciliation are separate work.
 
 ## Version 5.1 review update
 
