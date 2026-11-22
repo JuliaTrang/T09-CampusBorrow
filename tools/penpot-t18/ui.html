@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="vi">
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>
+    CampusBorrow T18
+  </title>
+  <style>
+    body {
+      font: 15px/1.55 system-ui;
+      margin: 24px;
+      color: #102238;
+    }
+    h1 {
+      font-size: 22px;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: 0;
+      border-radius: 8px;
+      padding: 14px 20px;
+      font: 600 15px system-ui;
+      cursor: pointer;
+    }
+    button:disabled {
+      opacity: 0.5;
+    }
+    #status {
+      white-space: pre-wrap;
+      background: #eff6ff;
+      padding: 14px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    small {
+      color: #455d7b;
+    }
+  </style>
+  <h1>CampusBorrow · T18 · v5.1</h1>
+  <p>
+    Bổ sung Operational status và Occupancy trên S05 cho RM/Admin. Cập nhật các board hiện có, giữ
+    nguyên liên kết; không cần dựng lại.
+  </p>
+  <button id="review">Cập nhật review Minh</button>
+  <p>
+    Bổ sung các luồng Borrower, RM, Admin, hộp thoại xác nhận, kết quả và lỗi mẫu. Giữ nguyên sáu
+    board hiện có.
+  </p>
+  <button id="prototype">Bổ sung prototype T18</button>
+  <p>
+    Sau khi hoàn tất, mở Present/Play và chọn flow “T18 · Prototype review”. Đây là prototype dùng
+    dữ liệu mẫu cố định.
+  </p>
+  <p>
+    Nếu chỉ thấy khung nền mà thiếu chữ và nút, bấm nút này để sửa thứ tự lớp trên 6 board hiện có.
+  </p>
+  <button id="visuals">Hiện lại chữ và nút</button>
+  <p>
+    Nếu lần dựng trước báo lỗi addInteraction, giữ nguyên trang và bấm nút sửa bên dưới. Không cần
+    xóa board.
+  </p>
+  <button id="repair">Sửa điều hướng trên board đã dựng</button>
+  <p>
+    Tạo 6 board với chữ, hình nền nút và ô nhập thành các lớp riêng. Chạy trên một trang trống trong
+    file PA3 của bạn.
+  </p>
+  <p>Giữ phong cách PA3 và đưa các sửa đổi review vào bản dựng. Không ghi đè nội dung có sẵn.</p>
+  <button id="build">Dựng 6 màn hình T18</button>
+  <div id="status" role="status">Sẵn sàng. Việc dựng chỉ bắt đầu khi bạn bấm nút.</div>
+  <p>
+    <small
+      >Các nút nghiệp vụ là thiết kế; chưa mô phỏng xử lý dữ liệu. Cần review bố cục và prototype
+      sau khi dựng.</small
+    >
+  </p>
+  <script>
+    const button = document.getElementById("build"),
+      repair = document.getElementById("repair"),
+      visuals = document.getElementById("visuals"),
+      prototype = document.getElementById("prototype"),
+      review = document.getElementById("review"),
+      status = document.getElementById("status");
+    const run = (type) => {
+      button.disabled = true;
+      repair.disabled = true;
+      visuals.disabled = true;
+      prototype.disabled = true;
+      review.disabled = true;
+      status.textContent =
+        type === "visuals"
+          ? "Đang sửa thứ tự lớp…"
+          : type === "repair"
+            ? "Đang sửa điều hướng…"
+            : "Đang dựng…";
+      parent.postMessage({ type }, "https://design.penpot.app");
+    };
+    button.onclick = () => run("build");
+    repair.onclick = () => run("repair");
+    visuals.onclick = () => run("visuals");
+    prototype.onclick = () => run("prototype");
+    review.onclick = () => run("review");
+    window.addEventListener("message", (e) => {
+      if (e.source !== parent) return;
+      const m = e.data;
+      if (!m || !["progress", "done", "error"].includes(m.type)) return;
+      status.textContent = m.text;
+      if (m.type === "error" || m.type === "done") {
+        button.disabled = false;
+        repair.disabled = false;
+        visuals.disabled = false;
+        prototype.disabled = false;
+        review.disabled = false;
+      }
+    });
+  </script>
+</html>
