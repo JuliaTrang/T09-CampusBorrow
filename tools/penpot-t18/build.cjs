@@ -42,10 +42,14 @@ fs.writeFileSync(
     JSON.stringify(data) +
     ";\nconst PROTOTYPE=" +
     JSON.stringify(prototype) +
+    ";\nconst REVIEW_PATCH=" +
+    fs.readFileSync(path.join(__dirname, "review-v5.json"), "utf8") +
     ";\n" +
     fs.readFileSync(path.join(__dirname, "plugin-runtime.js"), "utf8") +
     "\n" +
-    fs.readFileSync(path.join(__dirname, "prototype-runtime.js"), "utf8"),
+    fs.readFileSync(path.join(__dirname, "prototype-runtime.js"), "utf8") +
+    "\n" +
+    fs.readFileSync(path.join(__dirname, "review-runtime.js"), "utf8"),
 );
 fs.copyFileSync(path.join(__dirname, "ui.html"), path.join(out, "ui.html"));
 fs.writeFileSync(
@@ -56,7 +60,7 @@ fs.writeFileSync(
       description:
         "Creates six editable PA3 boards in the designated CampusBorrow file. No credentials or image flattening.",
       version: 2,
-      code: "plugin.js?v=4.1",
+      code: "plugin.js?v=5",
       permissions: ["content:read", "content:write"],
     },
     null,

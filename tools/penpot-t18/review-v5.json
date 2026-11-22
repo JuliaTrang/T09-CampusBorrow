@@ -1,0 +1,7615 @@
+[
+  {
+    "id": "S04",
+    "beforeHeight": 900,
+    "afterHeight": 900,
+    "changes": [
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Request form",
+          "x": 280,
+          "y": 148,
+          "w": 472,
+          "h": 596,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Request form",
+          "x": 280,
+          "y": 148,
+          "w": 472,
+          "h": 636,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-02 / Purpose *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 258,
+          "w": 428,
+          "h": 22,
+          "text": "Purpose *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 298,
+          "w": 428,
+          "h": 22,
+          "text": "Purpose *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-02 / Purpose *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 286,
+          "w": 428,
+          "h": 86,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 326,
+          "w": 428,
+          "h": 86,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-02 / Purpose *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 298,
+          "w": 404,
+          "h": 70,
+          "text": "Describe what you need the equipment for",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 338,
+          "w": 404,
+          "h": 70,
+          "text": "Describe what you need the equipment for",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-03 / Proposed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 394,
+          "w": 428,
+          "h": 22,
+          "text": "Proposed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 434,
+          "w": 428,
+          "h": 22,
+          "text": "Proposed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-03 / Proposed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 422,
+          "w": 428,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 462,
+          "w": 428,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-03 / Proposed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 434,
+          "w": 404,
+          "h": 28,
+          "text": "23 Nov 2026, 10:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 474,
+          "w": 404,
+          "h": 28,
+          "text": "23 Nov 2026, 10:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-04 / Return deadline *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 490,
+          "w": 428,
+          "h": 22,
+          "text": "Return deadline *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 530,
+          "w": 428,
+          "h": 22,
+          "text": "Return deadline *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-04 / Return deadline *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 518,
+          "w": 428,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 558,
+          "w": 428,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-04 / Return deadline *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 530,
+          "w": 404,
+          "h": 28,
+          "text": "24 Nov 2026, 18:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 570,
+          "w": 404,
+          "h": 28,
+          "text": "24 Nov 2026, 18:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Pickup must be in the future and before the return deadline.",
+          "x": 302,
+          "y": 584,
+          "w": 420,
+          "h": 46,
+          "text": "Pickup must be in the future and before the return deadline.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Pickup must be in the future and before the return deadline.",
+          "x": 302,
+          "y": 624,
+          "w": 420,
+          "h": 46,
+          "text": "Pickup must be in the future and before the return deadline.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-05 / Submit request",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 650,
+          "w": 180,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 690,
+          "w": 180,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-05 / Submit request",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 662,
+          "w": 156,
+          "h": 20,
+          "text": "Submit request",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 702,
+          "w": 156,
+          "h": 20,
+          "text": "Submit request",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-06 / Back",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 498,
+          "y": 650,
+          "w": 232,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 498,
+          "y": 690,
+          "w": 232,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-06 / Back",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 510,
+          "y": 662,
+          "w": 208,
+          "h": 20,
+          "text": "Back to catalogue",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 510,
+          "y": 702,
+          "w": 208,
+          "h": 20,
+          "text": "Back to catalogue",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S04-01 / Collection location",
+        "x": 302,
+        "y": 250,
+        "w": 428,
+        "h": 24,
+        "text": "Collection location: Media lab, Building B",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "id": "S05",
+    "beforeHeight": 1120,
+    "afterHeight": 1360,
+    "changes": [
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1120,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        },
+        "after": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1360,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1055,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Manager",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1295,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Manager",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1080,
+          "w": 145,
+          "h": 20,
+          "text": "Resource Manager",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1320,
+          "w": 145,
+          "h": 20,
+          "text": "Resource Manager",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1062,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1302,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1069,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1309,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Decision panel",
+          "x": 864,
+          "y": 148,
+          "w": 384,
+          "h": 490,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Decision panel",
+          "x": 864,
+          "y": 148,
+          "w": 384,
+          "h": 700,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 268,
+          "w": 340,
+          "h": 22,
+          "text": "Confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 332,
+          "w": 340,
+          "h": 22,
+          "text": "Confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 296,
+          "w": 340,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 360,
+          "w": 340,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 308,
+          "w": 316,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 372,
+          "w": 316,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 366,
+          "w": 340,
+          "h": 22,
+          "text": "Rejection reason * when rejecting",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 584,
+          "w": 340,
+          "h": 22,
+          "text": "Rejection reason * when rejecting",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 394,
+          "w": 340,
+          "h": 76,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 612,
+          "w": 340,
+          "h": 76,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 406,
+          "w": 316,
+          "h": 60,
+          "text": "Explain why the request is rejected",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 624,
+          "w": 316,
+          "h": 60,
+          "text": "Explain why the request is rejected",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "x": 886,
+          "y": 482,
+          "w": 340,
+          "h": 48,
+          "text": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "x": 886,
+          "y": 700,
+          "w": 340,
+          "h": 48,
+          "text": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-03 / Approve",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 886,
+          "y": 558,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 886,
+          "y": 776,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-03 / Approve",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 898,
+          "y": 570,
+          "w": 186,
+          "h": 20,
+          "text": "Approve and reserve",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 898,
+          "y": 788,
+          "w": 186,
+          "h": 20,
+          "text": "Approve and reserve",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-05 / Reject",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 1110,
+          "y": 558,
+          "w": 116,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#b91c1c",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 1110,
+          "y": 776,
+          "w": 116,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#b91c1c",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-05 / Reject",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 1122,
+          "y": 570,
+          "w": 92,
+          "h": 20,
+          "text": "Reject",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 1122,
+          "y": 788,
+          "w": 92,
+          "h": 20,
+          "text": "Reject",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Approved variant - RM only",
+          "x": 280,
+          "y": 664,
+          "w": 968,
+          "h": 370,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Approved variant - RM only",
+          "x": 280,
+          "y": 904,
+          "w": 968,
+          "h": 370,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Approved request · Change pickup (RM only)",
+          "x": 302,
+          "y": 690,
+          "w": 920,
+          "h": 32,
+          "text": "Approved request · Change pickup (RM only)",
+          "size": 20,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Approved request · Change pickup (RM only)",
+          "x": 302,
+          "y": 930,
+          "w": 920,
+          "h": 32,
+          "text": "Approved request · Change pickup (RM only)",
+          "size": 20,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "b14e…c204 · EQ-001 Projector · Borrower A",
+          "x": 302,
+          "y": 732,
+          "w": 510,
+          "h": 24,
+          "text": "b14e…c204 · EQ-001 Projector · Borrower A",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "b14e…c204 · EQ-001 Projector · Borrower A",
+          "x": 302,
+          "y": 972,
+          "w": 510,
+          "h": 24,
+          "text": "b14e…c204 · EQ-001 Projector · Borrower A",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / New confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 778,
+          "w": 460,
+          "h": 22,
+          "text": "New confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 1018,
+          "w": 460,
+          "h": 22,
+          "text": "New confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / New confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 806,
+          "w": 460,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 1046,
+          "w": 460,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / New confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 818,
+          "w": 436,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 1058,
+          "w": 436,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / Change pickup",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 878,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 1118,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / Change pickup",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 890,
+          "w": 186,
+          "h": 20,
+          "text": "Change pickup",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 1130,
+          "w": 186,
+          "h": 20,
+          "text": "Change pickup",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Only while Approved, uncollected and not expired.\nReplacement must be in the future and before return.",
+          "x": 302,
+          "y": 948,
+          "w": 490,
+          "h": 48,
+          "text": "Only while Approved, uncollected and not expired.\nReplacement must be in the future and before return.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Only while Approved, uncollected and not expired.\nReplacement must be in the future and before return.",
+          "x": 302,
+          "y": 1188,
+          "w": 490,
+          "h": 48,
+          "text": "Only while Approved, uncollected and not expired.\nReplacement must be in the future and before return.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "S05-07 / Return deadline",
+          "x": 800,
+          "y": 746,
+          "w": 420,
+          "h": 24,
+          "text": "Return deadline",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "S05-07 / Return deadline",
+          "x": 800,
+          "y": 986,
+          "w": 420,
+          "h": 24,
+          "text": "Return deadline",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 600
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "24 Nov 2026, 18:00",
+          "x": 800,
+          "y": 778,
+          "w": 420,
+          "h": 28,
+          "text": "24 Nov 2026, 18:00",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "24 Nov 2026, 18:00",
+          "x": 800,
+          "y": 1018,
+          "w": 420,
+          "h": 28,
+          "text": "24 Nov 2026, 18:00",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "S05-07 / Collect before",
+          "x": 800,
+          "y": 836,
+          "w": 420,
+          "h": 24,
+          "text": "Collect before",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "S05-07 / Collect before",
+          "x": 800,
+          "y": 1076,
+          "w": 420,
+          "h": 24,
+          "text": "Collect before",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 600
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "24 Nov 2026, 08:00",
+          "x": 800,
+          "y": 868,
+          "w": 420,
+          "h": 28,
+          "text": "24 Nov 2026, 08:00",
+          "size": 19,
+          "color": "#007f75",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "24 Nov 2026, 08:00",
+          "x": 800,
+          "y": 1108,
+          "w": 420,
+          "h": 28,
+          "text": "24 Nov 2026, 08:00",
+          "size": 19,
+          "color": "#007f75",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Earlier of pickup + 24 hours and return deadline.\nAdmin and Borrower cannot change pickup.",
+          "x": 800,
+          "y": 926,
+          "w": 420,
+          "h": 60,
+          "text": "Earlier of pickup + 24 hours and return deadline.\nAdmin and Borrower cannot change pickup.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Earlier of pickup + 24 hours and return deadline.\nAdmin and Borrower cannot change pickup.",
+          "x": 800,
+          "y": 1166,
+          "w": 420,
+          "h": 60,
+          "text": "Earlier of pickup + 24 hours and return deadline.\nAdmin and Borrower cannot change pickup.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S05-01 / Proposed pickup label",
+        "x": 886,
+        "y": 260,
+        "w": 340,
+        "h": 22,
+        "text": "Proposed pickup",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Proposed pickup value",
+        "x": 886,
+        "y": 286,
+        "w": 340,
+        "h": 24,
+        "text": "23 Nov 2026, 10:00",
+        "size": 15,
+        "color": "#102238",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval return label",
+        "x": 886,
+        "y": 428,
+        "w": 340,
+        "h": 22,
+        "text": "Return deadline (read-only)",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval return value",
+        "x": 886,
+        "y": 454,
+        "w": 340,
+        "h": 24,
+        "text": "24 Nov 2026, 18:00",
+        "size": 15,
+        "color": "#102238",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval expiry label",
+        "x": 886,
+        "y": 492,
+        "w": 340,
+        "h": 22,
+        "text": "Collect before (preview)",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval expiry value",
+        "x": 886,
+        "y": 518,
+        "w": 340,
+        "h": 24,
+        "text": "24 Nov 2026, 08:00",
+        "size": 15,
+        "color": "#007f75",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Preview explanation",
+        "x": 886,
+        "y": 550,
+        "w": 340,
+        "h": 30,
+        "text": "Recalculated from the selected pickup on approval.",
+        "size": 12,
+        "color": "#455d7b",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "id": "S06",
+    "beforeHeight": 1100,
+    "afterHeight": 1160,
+    "changes": [
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1100,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        },
+        "after": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1160,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1035,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Manager",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1095,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Manager",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1060,
+          "w": 145,
+          "h": 20,
+          "text": "Resource Manager",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1120,
+          "w": 145,
+          "h": 20,
+          "text": "Resource Manager",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1042,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1102,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1049,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1109,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Approved reservation",
+          "x": 280,
+          "y": 148,
+          "w": 472,
+          "h": 360,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Approved reservation",
+          "x": 280,
+          "y": 148,
+          "w": 472,
+          "h": 420,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "S06-02 / Pickup window",
+          "x": 302,
+          "y": 268,
+          "w": 428,
+          "h": 84,
+          "text": "Confirmed pickup: 23 Nov 2026, 08:00\nCollect before: 24 Nov 2026, 08:00\nReturn deadline: 24 Nov 2026, 18:00",
+          "size": 15,
+          "color": "#102238",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "S06-02 / Pickup window",
+          "x": 302,
+          "y": 290,
+          "w": 428,
+          "h": 84,
+          "text": "Confirmed pickup: 23 Nov 2026, 08:00\nCollect before: 24 Nov 2026, 08:00\nReturn deadline: 24 Nov 2026, 18:00",
+          "size": 15,
+          "color": "#102238",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-03 / Record handover",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 378,
+          "w": 428,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 430,
+          "w": 428,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-03 / Record handover",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 390,
+          "w": 404,
+          "h": 20,
+          "text": "Record handover",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 442,
+          "w": 404,
+          "h": 20,
+          "text": "Record handover",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Confirm the person and physical handover.\nAvailable from pickup until, but not including, expiry.",
+          "x": 302,
+          "y": 446,
+          "w": 428,
+          "h": 48,
+          "text": "Confirm the person and physical handover.\nAvailable from pickup until, but not including, expiry.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Confirm the person and physical handover.\nAvailable from pickup until, but not including, expiry.",
+          "x": 302,
+          "y": 496,
+          "w": 428,
+          "h": 48,
+          "text": "Confirm the person and physical handover.\nAvailable from pickup until, but not including, expiry.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Active loan",
+          "x": 776,
+          "y": 148,
+          "w": 472,
+          "h": 360,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Active loan",
+          "x": 776,
+          "y": 148,
+          "w": 472,
+          "h": 420,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Borrower C\nReturn deadline: 21 Nov 2026, 17:00",
+          "x": 798,
+          "y": 268,
+          "w": 428,
+          "h": 64,
+          "text": "Borrower C\nReturn deadline: 21 Nov 2026, 17:00",
+          "size": 15,
+          "color": "#102238",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Borrower C\nReturn deadline: 21 Nov 2026, 17:00",
+          "x": 798,
+          "y": 268,
+          "w": 428,
+          "h": 64,
+          "text": "Request e42a…a108 · Borrower C\nOn loan · Return deadline: 21 Nov 2026, 17:00",
+          "size": 15,
+          "color": "#102238",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-04 / Record return",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 798,
+          "y": 378,
+          "w": 428,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 798,
+          "y": 430,
+          "w": 428,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-04 / Record return",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 810,
+          "y": 390,
+          "w": 404,
+          "h": 20,
+          "text": "Record return",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 810,
+          "y": 442,
+          "w": 404,
+          "h": 20,
+          "text": "Record return",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Confirm physical receipt. Inactive Borrowers and\nout-of-service items can still have returns recorded.",
+          "x": 798,
+          "y": 446,
+          "w": 428,
+          "h": 48,
+          "text": "Confirm physical receipt. Inactive Borrowers and\nout-of-service items can still have returns recorded.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Confirm physical receipt. Inactive Borrowers and\nout-of-service items can still have returns recorded.",
+          "x": 798,
+          "y": 496,
+          "w": 428,
+          "h": 48,
+          "text": "Confirm physical receipt. Inactive Borrowers and\nout-of-service items can still have returns recorded.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-06 / Too early — handover unavailable",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Message background",
+          "x": 280,
+          "y": 536,
+          "w": 472,
+          "h": 122,
+          "fill": "#eff6ff",
+          "stroke": "#a7c2f7",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Message background",
+          "x": 280,
+          "y": 596,
+          "w": 472,
+          "h": 122,
+          "fill": "#eff6ff",
+          "stroke": "#a7c2f7",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-06 / Too early — handover unavailable",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Too early — handover unavailable",
+          "x": 296,
+          "y": 550,
+          "w": 440,
+          "h": 24,
+          "text": "Too early — handover unavailable",
+          "size": 15,
+          "color": "#2563eb",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Too early — handover unavailable",
+          "x": 296,
+          "y": 610,
+          "w": 440,
+          "h": 24,
+          "text": "Too early — handover unavailable",
+          "size": 15,
+          "color": "#2563eb",
+          "weight": 700
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-06 / Too early — handover unavailable",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "The collection window has not opened yet.\nThe request remains Approved. No handover is recorded.",
+          "x": 296,
+          "y": 580,
+          "w": 440,
+          "h": 70,
+          "text": "The collection window has not opened yet.\nThe request remains Approved. No handover is recorded.",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "The collection window has not opened yet.\nThe request remains Approved. No handover is recorded.",
+          "x": 296,
+          "y": 640,
+          "w": 440,
+          "h": 70,
+          "text": "The collection window has not opened yet.\nThe request remains Approved. No handover is recorded.",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-06 / Collection window expired",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Message background",
+          "x": 776,
+          "y": 536,
+          "w": 472,
+          "h": 122,
+          "fill": "#fff1f2",
+          "stroke": "#f5a6ad",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Message background",
+          "x": 776,
+          "y": 596,
+          "w": 472,
+          "h": 122,
+          "fill": "#fff1f2",
+          "stroke": "#f5a6ad",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-06 / Collection window expired",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Collection window expired",
+          "x": 792,
+          "y": 550,
+          "w": 440,
+          "h": 24,
+          "text": "Collection window expired",
+          "size": 15,
+          "color": "#b91c1c",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Collection window expired",
+          "x": 792,
+          "y": 610,
+          "w": 440,
+          "h": 24,
+          "text": "Collection window expired",
+          "size": 15,
+          "color": "#b91c1c",
+          "weight": 700
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-06 / Collection window expired",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "This request has expired and was cancelled.\nThe reservation is released; refresh the request list.",
+          "x": 792,
+          "y": 580,
+          "w": 440,
+          "h": 70,
+          "text": "This request has expired and was cancelled.\nThe reservation is released; refresh the request list.",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "This request has expired and was cancelled.\nThe reservation is released; refresh the request list.",
+          "x": 792,
+          "y": 640,
+          "w": 440,
+          "h": 70,
+          "text": "This request has expired and was cancelled.\nThe reservation is released; refresh the request list.",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Overdue list",
+          "x": 280,
+          "y": 686,
+          "w": 968,
+          "h": 156,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Overdue list",
+          "x": 280,
+          "y": 746,
+          "w": 968,
+          "h": 156,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "S06-05 / Overdue list",
+          "x": 302,
+          "y": 708,
+          "w": 920,
+          "h": 30,
+          "text": "Overdue loans",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "S06-05 / Overdue list",
+          "x": 302,
+          "y": 768,
+          "w": 920,
+          "h": 30,
+          "text": "Overdue loans",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "EQ-004 Laptop    ·    Borrower C    ·    Return due 21 Nov 2026, 17:00",
+          "x": 302,
+          "y": 758,
+          "w": 920,
+          "h": 28,
+          "text": "EQ-004 Laptop    ·    Borrower C    ·    Return due 21 Nov 2026, 17:00",
+          "size": 14,
+          "color": "#102238",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "EQ-004 Laptop    ·    Borrower C    ·    Return due 21 Nov 2026, 17:00",
+          "x": 302,
+          "y": 818,
+          "w": 920,
+          "h": 28,
+          "text": "EQ-004 Laptop    ·    Borrower C    ·    Return due 21 Nov 2026, 17:00",
+          "size": 14,
+          "color": "#102238",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Overdue is informational. No fines or notifications are implied.",
+          "x": 302,
+          "y": 800,
+          "w": 920,
+          "h": 24,
+          "text": "Overdue is informational. No fines or notifications are implied.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Overdue is informational. No fines or notifications are implied.",
+          "x": 302,
+          "y": 860,
+          "w": 920,
+          "h": 24,
+          "text": "Overdue is informational. No fines or notifications are implied.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Confirmation design",
+          "x": 280,
+          "y": 868,
+          "w": 968,
+          "h": 164,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Confirmation design",
+          "x": 280,
+          "y": 928,
+          "w": 968,
+          "h": 164,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "S06-04 / Confirmation",
+          "x": 302,
+          "y": 892,
+          "w": 920,
+          "h": 30,
+          "text": "Confirm physical receipt of EQ-004 Laptop?",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "S06-04 / Confirmation",
+          "x": 302,
+          "y": 952,
+          "w": 920,
+          "h": 30,
+          "text": "Confirm physical receipt of EQ-004 Laptop?",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Recording a return preserves the item’s visibility and operational status.",
+          "x": 302,
+          "y": 930,
+          "w": 920,
+          "h": 24,
+          "text": "Recording a return preserves the item’s visibility and operational status.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Recording a return preserves the item’s visibility and operational status.",
+          "x": 302,
+          "y": 990,
+          "w": 920,
+          "h": 24,
+          "text": "Recording a return preserves the item’s visibility and operational status.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-04 / Confirm return",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 972,
+          "w": 190,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 1032,
+          "w": 190,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-04 / Confirm return",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 984,
+          "w": 166,
+          "h": 20,
+          "text": "Confirm return",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 1044,
+          "w": 166,
+          "h": 20,
+          "text": "Confirm return",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-04 / Cancel confirmation",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 508,
+          "y": 972,
+          "w": 120,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 508,
+          "y": 1032,
+          "w": 120,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-04 / Cancel confirmation",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 520,
+          "y": 984,
+          "w": 96,
+          "h": 20,
+          "text": "Cancel",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 520,
+          "y": 1044,
+          "w": 96,
+          "h": 20,
+          "text": "Cancel",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S06-01 / Request and borrower",
+        "x": 302,
+        "y": 254,
+        "w": 428,
+        "h": 24,
+        "text": "Request b14e…c204 · Borrower A",
+        "size": 14,
+        "color": "#102238",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S06-02 / Handover eligibility",
+        "x": 302,
+        "y": 368,
+        "w": 428,
+        "h": 46,
+        "text": "Borrower active · Item In service\nReservation held by this request · Not collected",
+        "size": 13,
+        "color": "#007f75",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "id": "S09",
+    "beforeHeight": 1060,
+    "afterHeight": 1060,
+    "changes": [
+      {
+        "route": [
+          {
+            "name": "S09-01 / Review booking",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 314,
+          "y": 370,
+          "w": 190,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 314,
+          "y": 386,
+          "w": 190,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S09-01 / Review booking",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 326,
+          "y": 382,
+          "w": 166,
+          "h": 20,
+          "text": "Review request",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 326,
+          "y": 398,
+          "w": 166,
+          "h": 20,
+          "text": "Review request",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S09-01 / Selected request ID",
+        "x": 314,
+        "y": 352,
+        "w": 480,
+        "h": 22,
+        "text": "Request 7c91…e802",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S09-01 / Competing request ID",
+        "x": 314,
+        "y": 520,
+        "w": 480,
+        "h": 22,
+        "text": "Request 8d02…f913",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S09-01 / Decision request ID",
+        "x": 886,
+        "y": 218,
+        "w": 340,
+        "h": 22,
+        "text": "Request 7c91…e802 · Pending",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "id": "REVIEW",
+    "beforeHeight": 1180,
+    "afterHeight": 1180,
+    "changes": [],
+    "additions": [
+      {
+        "type": "group",
+        "name": "Scenario / PICKUP_EXPIRED",
+        "children": [
+          {
+            "type": "rect",
+            "name": "Button background",
+            "x": 304,
+            "y": 966,
+            "w": 440,
+            "h": 44,
+            "fill": "#ffffff",
+            "stroke": "#2563eb",
+            "r": 8
+          },
+          {
+            "type": "text",
+            "name": "Button label",
+            "x": 316,
+            "y": 978,
+            "w": 416,
+            "h": 22,
+            "text": "Pickup edit after expiry",
+            "size": 14,
+            "color": "#2563eb",
+            "weight": 600,
+            "align": "center"
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "name": "Scenario / APPROVAL_EXPIRY",
+        "children": [
+          {
+            "type": "rect",
+            "name": "Button background",
+            "x": 768,
+            "y": 966,
+            "w": 440,
+            "h": 44,
+            "fill": "#ffffff",
+            "stroke": "#2563eb",
+            "r": 8
+          },
+          {
+            "type": "text",
+            "name": "Button label",
+            "x": 780,
+            "y": 978,
+            "w": 416,
+            "h": 22,
+            "text": "Approval after old reservation expires",
+            "size": 14,
+            "color": "#2563eb",
+            "weight": 600,
+            "align": "center"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "S05_A",
+    "beforeHeight": 1120,
+    "afterHeight": 1360,
+    "changes": [
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1120,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        },
+        "after": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1360,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1055,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Admin",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1295,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Admin",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1080,
+          "w": 145,
+          "h": 20,
+          "text": "Admin",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1320,
+          "w": 145,
+          "h": 20,
+          "text": "Admin",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1062,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1302,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1069,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1309,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Decision panel",
+          "x": 864,
+          "y": 148,
+          "w": 384,
+          "h": 490,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Decision panel",
+          "x": 864,
+          "y": 148,
+          "w": 384,
+          "h": 700,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 268,
+          "w": 340,
+          "h": 22,
+          "text": "Confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 332,
+          "w": 340,
+          "h": 22,
+          "text": "Confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 296,
+          "w": 340,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 360,
+          "w": 340,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 308,
+          "w": 316,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 372,
+          "w": 316,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 366,
+          "w": 340,
+          "h": 22,
+          "text": "Rejection reason * when rejecting",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 584,
+          "w": 340,
+          "h": 22,
+          "text": "Rejection reason * when rejecting",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 394,
+          "w": 340,
+          "h": 76,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 612,
+          "w": 340,
+          "h": 76,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 406,
+          "w": 316,
+          "h": 60,
+          "text": "Explain why the request is rejected",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 624,
+          "w": 316,
+          "h": 60,
+          "text": "Explain why the request is rejected",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "x": 886,
+          "y": 482,
+          "w": 340,
+          "h": 48,
+          "text": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "x": 886,
+          "y": 700,
+          "w": 340,
+          "h": 48,
+          "text": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-03 / Approve",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 886,
+          "y": 558,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 886,
+          "y": 776,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-03 / Approve",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 898,
+          "y": 570,
+          "w": 186,
+          "h": 20,
+          "text": "Approve and reserve",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 898,
+          "y": 788,
+          "w": 186,
+          "h": 20,
+          "text": "Approve and reserve",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-05 / Reject",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 1110,
+          "y": 558,
+          "w": 116,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#b91c1c",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 1110,
+          "y": 776,
+          "w": 116,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#b91c1c",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-05 / Reject",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 1122,
+          "y": 570,
+          "w": 92,
+          "h": 20,
+          "text": "Reject",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 1122,
+          "y": 788,
+          "w": 92,
+          "h": 20,
+          "text": "Reject",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 600,
+          "align": "center"
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S05-01 / Proposed pickup label",
+        "x": 886,
+        "y": 260,
+        "w": 340,
+        "h": 22,
+        "text": "Proposed pickup",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Proposed pickup value",
+        "x": 886,
+        "y": 286,
+        "w": 340,
+        "h": 24,
+        "text": "23 Nov 2026, 10:00",
+        "size": 15,
+        "color": "#102238",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval return label",
+        "x": 886,
+        "y": 428,
+        "w": 340,
+        "h": 22,
+        "text": "Return deadline (read-only)",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval return value",
+        "x": 886,
+        "y": 454,
+        "w": 340,
+        "h": 24,
+        "text": "24 Nov 2026, 18:00",
+        "size": 15,
+        "color": "#102238",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval expiry label",
+        "x": 886,
+        "y": 492,
+        "w": 340,
+        "h": 22,
+        "text": "Collect before (preview)",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval expiry value",
+        "x": 886,
+        "y": 518,
+        "w": 340,
+        "h": 24,
+        "text": "24 Nov 2026, 08:00",
+        "size": 15,
+        "color": "#007f75",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Preview explanation",
+        "x": 886,
+        "y": 550,
+        "w": 340,
+        "h": 30,
+        "text": "Recalculated from the selected pickup on approval.",
+        "size": 12,
+        "color": "#455d7b",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "id": "S06_A",
+    "beforeHeight": 1100,
+    "afterHeight": 1160,
+    "changes": [
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1100,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        },
+        "after": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1160,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1035,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Admin",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1095,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Admin",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1060,
+          "w": 145,
+          "h": 20,
+          "text": "Admin",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1120,
+          "w": 145,
+          "h": 20,
+          "text": "Admin",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1042,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1102,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1049,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1109,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Approved reservation",
+          "x": 280,
+          "y": 148,
+          "w": 472,
+          "h": 360,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Approved reservation",
+          "x": 280,
+          "y": 148,
+          "w": 472,
+          "h": 420,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "S06-02 / Pickup window",
+          "x": 302,
+          "y": 268,
+          "w": 428,
+          "h": 84,
+          "text": "Confirmed pickup: 23 Nov 2026, 08:00\nCollect before: 24 Nov 2026, 08:00\nReturn deadline: 24 Nov 2026, 18:00",
+          "size": 15,
+          "color": "#102238",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "S06-02 / Pickup window",
+          "x": 302,
+          "y": 290,
+          "w": 428,
+          "h": 84,
+          "text": "Confirmed pickup: 23 Nov 2026, 08:00\nCollect before: 24 Nov 2026, 08:00\nReturn deadline: 24 Nov 2026, 18:00",
+          "size": 15,
+          "color": "#102238",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-03 / Record handover",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 378,
+          "w": 428,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 430,
+          "w": 428,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-03 / Record handover",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 390,
+          "w": 404,
+          "h": 20,
+          "text": "Record handover",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 442,
+          "w": 404,
+          "h": 20,
+          "text": "Record handover",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Confirm the person and physical handover.\nAvailable from pickup until, but not including, expiry.",
+          "x": 302,
+          "y": 446,
+          "w": 428,
+          "h": 48,
+          "text": "Confirm the person and physical handover.\nAvailable from pickup until, but not including, expiry.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Confirm the person and physical handover.\nAvailable from pickup until, but not including, expiry.",
+          "x": 302,
+          "y": 496,
+          "w": 428,
+          "h": 48,
+          "text": "Confirm the person and physical handover.\nAvailable from pickup until, but not including, expiry.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Active loan",
+          "x": 776,
+          "y": 148,
+          "w": 472,
+          "h": 360,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Active loan",
+          "x": 776,
+          "y": 148,
+          "w": 472,
+          "h": 420,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Borrower C\nReturn deadline: 21 Nov 2026, 17:00",
+          "x": 798,
+          "y": 268,
+          "w": 428,
+          "h": 64,
+          "text": "Borrower C\nReturn deadline: 21 Nov 2026, 17:00",
+          "size": 15,
+          "color": "#102238",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Borrower C\nReturn deadline: 21 Nov 2026, 17:00",
+          "x": 798,
+          "y": 268,
+          "w": 428,
+          "h": 64,
+          "text": "Request e42a…a108 · Borrower C\nOn loan · Return deadline: 21 Nov 2026, 17:00",
+          "size": 15,
+          "color": "#102238",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-04 / Record return",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 798,
+          "y": 378,
+          "w": 428,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 798,
+          "y": 430,
+          "w": 428,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-04 / Record return",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 810,
+          "y": 390,
+          "w": 404,
+          "h": 20,
+          "text": "Record return",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 810,
+          "y": 442,
+          "w": 404,
+          "h": 20,
+          "text": "Record return",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Confirm physical receipt. Inactive Borrowers and\nout-of-service items can still have returns recorded.",
+          "x": 798,
+          "y": 446,
+          "w": 428,
+          "h": 48,
+          "text": "Confirm physical receipt. Inactive Borrowers and\nout-of-service items can still have returns recorded.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Confirm physical receipt. Inactive Borrowers and\nout-of-service items can still have returns recorded.",
+          "x": 798,
+          "y": 496,
+          "w": 428,
+          "h": 48,
+          "text": "Confirm physical receipt. Inactive Borrowers and\nout-of-service items can still have returns recorded.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-06 / Too early — handover unavailable",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Message background",
+          "x": 280,
+          "y": 536,
+          "w": 472,
+          "h": 122,
+          "fill": "#eff6ff",
+          "stroke": "#a7c2f7",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Message background",
+          "x": 280,
+          "y": 596,
+          "w": 472,
+          "h": 122,
+          "fill": "#eff6ff",
+          "stroke": "#a7c2f7",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-06 / Too early — handover unavailable",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Too early — handover unavailable",
+          "x": 296,
+          "y": 550,
+          "w": 440,
+          "h": 24,
+          "text": "Too early — handover unavailable",
+          "size": 15,
+          "color": "#2563eb",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Too early — handover unavailable",
+          "x": 296,
+          "y": 610,
+          "w": 440,
+          "h": 24,
+          "text": "Too early — handover unavailable",
+          "size": 15,
+          "color": "#2563eb",
+          "weight": 700
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-06 / Too early — handover unavailable",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "The collection window has not opened yet.\nThe request remains Approved. No handover is recorded.",
+          "x": 296,
+          "y": 580,
+          "w": 440,
+          "h": 70,
+          "text": "The collection window has not opened yet.\nThe request remains Approved. No handover is recorded.",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "The collection window has not opened yet.\nThe request remains Approved. No handover is recorded.",
+          "x": 296,
+          "y": 640,
+          "w": 440,
+          "h": 70,
+          "text": "The collection window has not opened yet.\nThe request remains Approved. No handover is recorded.",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-06 / Collection window expired",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Message background",
+          "x": 776,
+          "y": 536,
+          "w": 472,
+          "h": 122,
+          "fill": "#fff1f2",
+          "stroke": "#f5a6ad",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Message background",
+          "x": 776,
+          "y": 596,
+          "w": 472,
+          "h": 122,
+          "fill": "#fff1f2",
+          "stroke": "#f5a6ad",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-06 / Collection window expired",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Collection window expired",
+          "x": 792,
+          "y": 550,
+          "w": 440,
+          "h": 24,
+          "text": "Collection window expired",
+          "size": 15,
+          "color": "#b91c1c",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Collection window expired",
+          "x": 792,
+          "y": 610,
+          "w": 440,
+          "h": 24,
+          "text": "Collection window expired",
+          "size": 15,
+          "color": "#b91c1c",
+          "weight": 700
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-06 / Collection window expired",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "This request has expired and was cancelled.\nThe reservation is released; refresh the request list.",
+          "x": 792,
+          "y": 580,
+          "w": 440,
+          "h": 70,
+          "text": "This request has expired and was cancelled.\nThe reservation is released; refresh the request list.",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "This request has expired and was cancelled.\nThe reservation is released; refresh the request list.",
+          "x": 792,
+          "y": 640,
+          "w": 440,
+          "h": 70,
+          "text": "This request has expired and was cancelled.\nThe reservation is released; refresh the request list.",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Overdue list",
+          "x": 280,
+          "y": 686,
+          "w": 968,
+          "h": 156,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Overdue list",
+          "x": 280,
+          "y": 746,
+          "w": 968,
+          "h": 156,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "S06-05 / Overdue list",
+          "x": 302,
+          "y": 708,
+          "w": 920,
+          "h": 30,
+          "text": "Overdue loans",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "S06-05 / Overdue list",
+          "x": 302,
+          "y": 768,
+          "w": 920,
+          "h": 30,
+          "text": "Overdue loans",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "EQ-004 Laptop    ·    Borrower C    ·    Return due 21 Nov 2026, 17:00",
+          "x": 302,
+          "y": 758,
+          "w": 920,
+          "h": 28,
+          "text": "EQ-004 Laptop    ·    Borrower C    ·    Return due 21 Nov 2026, 17:00",
+          "size": 14,
+          "color": "#102238",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "EQ-004 Laptop    ·    Borrower C    ·    Return due 21 Nov 2026, 17:00",
+          "x": 302,
+          "y": 818,
+          "w": 920,
+          "h": 28,
+          "text": "EQ-004 Laptop    ·    Borrower C    ·    Return due 21 Nov 2026, 17:00",
+          "size": 14,
+          "color": "#102238",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Overdue is informational. No fines or notifications are implied.",
+          "x": 302,
+          "y": 800,
+          "w": 920,
+          "h": 24,
+          "text": "Overdue is informational. No fines or notifications are implied.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Overdue is informational. No fines or notifications are implied.",
+          "x": 302,
+          "y": 860,
+          "w": 920,
+          "h": 24,
+          "text": "Overdue is informational. No fines or notifications are implied.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Confirmation design",
+          "x": 280,
+          "y": 868,
+          "w": 968,
+          "h": 164,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Confirmation design",
+          "x": 280,
+          "y": 928,
+          "w": 968,
+          "h": 164,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "S06-04 / Confirmation",
+          "x": 302,
+          "y": 892,
+          "w": 920,
+          "h": 30,
+          "text": "Confirm physical receipt of EQ-004 Laptop?",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "S06-04 / Confirmation",
+          "x": 302,
+          "y": 952,
+          "w": 920,
+          "h": 30,
+          "text": "Confirm physical receipt of EQ-004 Laptop?",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Recording a return preserves the item’s visibility and operational status.",
+          "x": 302,
+          "y": 930,
+          "w": 920,
+          "h": 24,
+          "text": "Recording a return preserves the item’s visibility and operational status.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Recording a return preserves the item’s visibility and operational status.",
+          "x": 302,
+          "y": 990,
+          "w": 920,
+          "h": 24,
+          "text": "Recording a return preserves the item’s visibility and operational status.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-04 / Confirm return",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 972,
+          "w": 190,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 1032,
+          "w": 190,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-04 / Confirm return",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 984,
+          "w": 166,
+          "h": 20,
+          "text": "Confirm return",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 1044,
+          "w": 166,
+          "h": 20,
+          "text": "Confirm return",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-04 / Cancel confirmation",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 508,
+          "y": 972,
+          "w": 120,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 508,
+          "y": 1032,
+          "w": 120,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S06-04 / Cancel confirmation",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 520,
+          "y": 984,
+          "w": 96,
+          "h": 20,
+          "text": "Cancel",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 520,
+          "y": 1044,
+          "w": 96,
+          "h": 20,
+          "text": "Cancel",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S06-01 / Request and borrower",
+        "x": 302,
+        "y": 254,
+        "w": 428,
+        "h": 24,
+        "text": "Request b14e…c204 · Borrower A",
+        "size": 14,
+        "color": "#102238",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S06-02 / Handover eligibility",
+        "x": 302,
+        "y": 368,
+        "w": 428,
+        "h": 46,
+        "text": "Borrower active · Item In service\nReservation held by this request · Not collected",
+        "size": 13,
+        "color": "#007f75",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "id": "S09_A",
+    "beforeHeight": 1060,
+    "afterHeight": 1060,
+    "changes": [
+      {
+        "route": [
+          {
+            "name": "S09-01 / Review booking",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 314,
+          "y": 370,
+          "w": 190,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 314,
+          "y": 386,
+          "w": 190,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S09-01 / Review booking",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 326,
+          "y": 382,
+          "w": 166,
+          "h": 20,
+          "text": "Review request",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 326,
+          "y": 398,
+          "w": 166,
+          "h": 20,
+          "text": "Review request",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S09-01 / Selected request ID",
+        "x": 314,
+        "y": 352,
+        "w": 480,
+        "h": 22,
+        "text": "Request 7c91…e802",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S09-01 / Competing request ID",
+        "x": 314,
+        "y": 520,
+        "w": 480,
+        "h": 22,
+        "text": "Request 8d02…f913",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S09-01 / Decision request ID",
+        "x": 886,
+        "y": 218,
+        "w": 340,
+        "h": 22,
+        "text": "Request 7c91…e802 · Pending",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "id": "S04_READY",
+    "beforeHeight": 900,
+    "afterHeight": 900,
+    "changes": [
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Request form",
+          "x": 280,
+          "y": 148,
+          "w": 472,
+          "h": 596,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Request form",
+          "x": 280,
+          "y": 148,
+          "w": 472,
+          "h": 636,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-02 / Purpose *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 258,
+          "w": 428,
+          "h": 22,
+          "text": "Purpose *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 298,
+          "w": 428,
+          "h": 22,
+          "text": "Purpose *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-02 / Purpose *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 286,
+          "w": 428,
+          "h": 86,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 326,
+          "w": 428,
+          "h": 86,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-02 / Purpose *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 298,
+          "w": 404,
+          "h": 70,
+          "text": "Event recording",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 338,
+          "w": 404,
+          "h": 70,
+          "text": "Event recording",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-03 / Proposed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 394,
+          "w": 428,
+          "h": 22,
+          "text": "Proposed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 434,
+          "w": 428,
+          "h": 22,
+          "text": "Proposed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-03 / Proposed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 422,
+          "w": 428,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 462,
+          "w": 428,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-03 / Proposed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 434,
+          "w": 404,
+          "h": 28,
+          "text": "23 Nov 2026, 10:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 474,
+          "w": 404,
+          "h": 28,
+          "text": "23 Nov 2026, 10:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-04 / Return deadline *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 490,
+          "w": 428,
+          "h": 22,
+          "text": "Return deadline *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 530,
+          "w": 428,
+          "h": 22,
+          "text": "Return deadline *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-04 / Return deadline *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 518,
+          "w": 428,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 558,
+          "w": 428,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-04 / Return deadline *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 530,
+          "w": 404,
+          "h": 28,
+          "text": "24 Nov 2026, 18:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 570,
+          "w": 404,
+          "h": 28,
+          "text": "24 Nov 2026, 18:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Pickup must be in the future and before the return deadline.",
+          "x": 302,
+          "y": 584,
+          "w": 420,
+          "h": 46,
+          "text": "Pickup must be in the future and before the return deadline.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Pickup must be in the future and before the return deadline.",
+          "x": 302,
+          "y": 624,
+          "w": 420,
+          "h": 46,
+          "text": "Pickup must be in the future and before the return deadline.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-05 / Submit request",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 650,
+          "w": 180,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 690,
+          "w": 180,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-05 / Submit request",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 662,
+          "w": 156,
+          "h": 20,
+          "text": "Submit request",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 702,
+          "w": 156,
+          "h": 20,
+          "text": "Submit request",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-06 / Back",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 498,
+          "y": 650,
+          "w": 232,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 498,
+          "y": 690,
+          "w": 232,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S04-06 / Back",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 510,
+          "y": 662,
+          "w": 208,
+          "h": 20,
+          "text": "Back to catalogue",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 510,
+          "y": 702,
+          "w": 208,
+          "h": 20,
+          "text": "Back to catalogue",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S04-01 / Collection location",
+        "x": 302,
+        "y": 250,
+        "w": 428,
+        "h": 24,
+        "text": "Collection location: Media lab, Building B",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "id": "EQ_REASON_M",
+    "beforeHeight": 1120,
+    "afterHeight": 1360,
+    "changes": [
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1120,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        },
+        "after": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1360,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1055,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Manager",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1295,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Manager",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1080,
+          "w": 145,
+          "h": 20,
+          "text": "Resource Manager",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1320,
+          "w": 145,
+          "h": 20,
+          "text": "Resource Manager",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1062,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1302,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1069,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1309,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Decision panel",
+          "x": 864,
+          "y": 148,
+          "w": 384,
+          "h": 490,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Decision panel",
+          "x": 864,
+          "y": 148,
+          "w": 384,
+          "h": 700,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 268,
+          "w": 340,
+          "h": 22,
+          "text": "Confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 332,
+          "w": 340,
+          "h": 22,
+          "text": "Confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 296,
+          "w": 340,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 360,
+          "w": 340,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 308,
+          "w": 316,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 372,
+          "w": 316,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 366,
+          "w": 340,
+          "h": 22,
+          "text": "Rejection reason * when rejecting",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 584,
+          "w": 340,
+          "h": 22,
+          "text": "Rejection reason * when rejecting",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 394,
+          "w": 340,
+          "h": 76,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 612,
+          "w": 340,
+          "h": 76,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 406,
+          "w": 316,
+          "h": 60,
+          "text": "The requested item is needed for a\nscheduled class.",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 624,
+          "w": 316,
+          "h": 60,
+          "text": "The requested item is needed for a\nscheduled class.",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "x": 886,
+          "y": 482,
+          "w": 340,
+          "h": 48,
+          "text": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "x": 886,
+          "y": 700,
+          "w": 340,
+          "h": 48,
+          "text": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-03 / Approve",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 886,
+          "y": 558,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 886,
+          "y": 776,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-03 / Approve",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 898,
+          "y": 570,
+          "w": 186,
+          "h": 20,
+          "text": "Approve and reserve",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 898,
+          "y": 788,
+          "w": 186,
+          "h": 20,
+          "text": "Approve and reserve",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-05 / Reject",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 1110,
+          "y": 558,
+          "w": 116,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#b91c1c",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 1110,
+          "y": 776,
+          "w": 116,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#b91c1c",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-05 / Reject",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 1122,
+          "y": 570,
+          "w": 92,
+          "h": 20,
+          "text": "Reject",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 1122,
+          "y": 788,
+          "w": 92,
+          "h": 20,
+          "text": "Reject",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Approved variant - RM only",
+          "x": 280,
+          "y": 664,
+          "w": 968,
+          "h": 370,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Approved variant - RM only",
+          "x": 280,
+          "y": 904,
+          "w": 968,
+          "h": 370,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Approved request · Change pickup (RM only)",
+          "x": 302,
+          "y": 690,
+          "w": 920,
+          "h": 32,
+          "text": "Approved request · Change pickup (RM only)",
+          "size": 20,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Approved request · Change pickup (RM only)",
+          "x": 302,
+          "y": 930,
+          "w": 920,
+          "h": 32,
+          "text": "Approved request · Change pickup (RM only)",
+          "size": 20,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "b14e…c204 · EQ-001 Projector · Borrower A",
+          "x": 302,
+          "y": 732,
+          "w": 510,
+          "h": 24,
+          "text": "b14e…c204 · EQ-001 Projector · Borrower A",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "b14e…c204 · EQ-001 Projector · Borrower A",
+          "x": 302,
+          "y": 972,
+          "w": 510,
+          "h": 24,
+          "text": "b14e…c204 · EQ-001 Projector · Borrower A",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / New confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 778,
+          "w": 460,
+          "h": 22,
+          "text": "New confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 1018,
+          "w": 460,
+          "h": 22,
+          "text": "New confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / New confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 806,
+          "w": 460,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 1046,
+          "w": 460,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / New confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 818,
+          "w": 436,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 1058,
+          "w": 436,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / Change pickup",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 878,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 1118,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / Change pickup",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 890,
+          "w": 186,
+          "h": 20,
+          "text": "Change pickup",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 1130,
+          "w": 186,
+          "h": 20,
+          "text": "Change pickup",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Only while Approved, uncollected and not expired.\nReplacement must be in the future and before return.",
+          "x": 302,
+          "y": 948,
+          "w": 490,
+          "h": 48,
+          "text": "Only while Approved, uncollected and not expired.\nReplacement must be in the future and before return.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Only while Approved, uncollected and not expired.\nReplacement must be in the future and before return.",
+          "x": 302,
+          "y": 1188,
+          "w": 490,
+          "h": 48,
+          "text": "Only while Approved, uncollected and not expired.\nReplacement must be in the future and before return.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "S05-07 / Return deadline",
+          "x": 800,
+          "y": 746,
+          "w": 420,
+          "h": 24,
+          "text": "Return deadline",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "S05-07 / Return deadline",
+          "x": 800,
+          "y": 986,
+          "w": 420,
+          "h": 24,
+          "text": "Return deadline",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 600
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "24 Nov 2026, 18:00",
+          "x": 800,
+          "y": 778,
+          "w": 420,
+          "h": 28,
+          "text": "24 Nov 2026, 18:00",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "24 Nov 2026, 18:00",
+          "x": 800,
+          "y": 1018,
+          "w": 420,
+          "h": 28,
+          "text": "24 Nov 2026, 18:00",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "S05-07 / Collect before",
+          "x": 800,
+          "y": 836,
+          "w": 420,
+          "h": 24,
+          "text": "Collect before",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "S05-07 / Collect before",
+          "x": 800,
+          "y": 1076,
+          "w": 420,
+          "h": 24,
+          "text": "Collect before",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 600
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "24 Nov 2026, 08:00",
+          "x": 800,
+          "y": 868,
+          "w": 420,
+          "h": 28,
+          "text": "24 Nov 2026, 08:00",
+          "size": 19,
+          "color": "#007f75",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "24 Nov 2026, 08:00",
+          "x": 800,
+          "y": 1108,
+          "w": 420,
+          "h": 28,
+          "text": "24 Nov 2026, 08:00",
+          "size": 19,
+          "color": "#007f75",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Earlier of pickup + 24 hours and return deadline.\nAdmin and Borrower cannot change pickup.",
+          "x": 800,
+          "y": 926,
+          "w": 420,
+          "h": 60,
+          "text": "Earlier of pickup + 24 hours and return deadline.\nAdmin and Borrower cannot change pickup.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Earlier of pickup + 24 hours and return deadline.\nAdmin and Borrower cannot change pickup.",
+          "x": 800,
+          "y": 1166,
+          "w": 420,
+          "h": 60,
+          "text": "Earlier of pickup + 24 hours and return deadline.\nAdmin and Borrower cannot change pickup.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S05-01 / Proposed pickup label",
+        "x": 886,
+        "y": 260,
+        "w": 340,
+        "h": 22,
+        "text": "Proposed pickup",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Proposed pickup value",
+        "x": 886,
+        "y": 286,
+        "w": 340,
+        "h": 24,
+        "text": "23 Nov 2026, 10:00",
+        "size": 15,
+        "color": "#102238",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval return label",
+        "x": 886,
+        "y": 428,
+        "w": 340,
+        "h": 22,
+        "text": "Return deadline (read-only)",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval return value",
+        "x": 886,
+        "y": 454,
+        "w": 340,
+        "h": 24,
+        "text": "24 Nov 2026, 18:00",
+        "size": 15,
+        "color": "#102238",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval expiry label",
+        "x": 886,
+        "y": 492,
+        "w": 340,
+        "h": 22,
+        "text": "Collect before (preview)",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval expiry value",
+        "x": 886,
+        "y": 518,
+        "w": 340,
+        "h": 24,
+        "text": "24 Nov 2026, 08:00",
+        "size": 15,
+        "color": "#007f75",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Preview explanation",
+        "x": 886,
+        "y": 550,
+        "w": 340,
+        "h": 30,
+        "text": "Recalculated from the selected pickup on approval.",
+        "size": 12,
+        "color": "#455d7b",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "id": "ROOM_REASON_M",
+    "beforeHeight": 1060,
+    "afterHeight": 1060,
+    "changes": [
+      {
+        "route": [
+          {
+            "name": "S09-01 / Review booking",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 314,
+          "y": 370,
+          "w": 190,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 314,
+          "y": 386,
+          "w": 190,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S09-01 / Review booking",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 326,
+          "y": 382,
+          "w": 166,
+          "h": 20,
+          "text": "Review request",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 326,
+          "y": 398,
+          "w": 166,
+          "h": 20,
+          "text": "Review request",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S09-01 / Selected request ID",
+        "x": 314,
+        "y": 352,
+        "w": 480,
+        "h": 22,
+        "text": "Request 7c91…e802",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S09-01 / Competing request ID",
+        "x": 314,
+        "y": 520,
+        "w": 480,
+        "h": 22,
+        "text": "Request 8d02…f913",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S09-01 / Decision request ID",
+        "x": 886,
+        "y": 218,
+        "w": 340,
+        "h": 22,
+        "text": "Request 7c91…e802 · Pending",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "id": "EQ_REASON_A",
+    "beforeHeight": 1120,
+    "afterHeight": 1360,
+    "changes": [
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1120,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        },
+        "after": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1360,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1055,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Admin",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1295,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Admin",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1080,
+          "w": 145,
+          "h": 20,
+          "text": "Admin",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1320,
+          "w": 145,
+          "h": 20,
+          "text": "Admin",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1062,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1302,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1069,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1309,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Decision panel",
+          "x": 864,
+          "y": 148,
+          "w": 384,
+          "h": 490,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Decision panel",
+          "x": 864,
+          "y": 148,
+          "w": 384,
+          "h": 700,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 268,
+          "w": 340,
+          "h": 22,
+          "text": "Confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 332,
+          "w": 340,
+          "h": 22,
+          "text": "Confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 296,
+          "w": 340,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 360,
+          "w": 340,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 308,
+          "w": 316,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 372,
+          "w": 316,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 366,
+          "w": 340,
+          "h": 22,
+          "text": "Rejection reason * when rejecting",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 584,
+          "w": 340,
+          "h": 22,
+          "text": "Rejection reason * when rejecting",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 394,
+          "w": 340,
+          "h": 76,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 612,
+          "w": 340,
+          "h": 76,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 406,
+          "w": 316,
+          "h": 60,
+          "text": "The requested item is needed for a\nscheduled class.",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 624,
+          "w": 316,
+          "h": 60,
+          "text": "The requested item is needed for a\nscheduled class.",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "x": 886,
+          "y": 482,
+          "w": 340,
+          "h": 48,
+          "text": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "x": 886,
+          "y": 700,
+          "w": 340,
+          "h": 48,
+          "text": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-03 / Approve",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 886,
+          "y": 558,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 886,
+          "y": 776,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-03 / Approve",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 898,
+          "y": 570,
+          "w": 186,
+          "h": 20,
+          "text": "Approve and reserve",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 898,
+          "y": 788,
+          "w": 186,
+          "h": 20,
+          "text": "Approve and reserve",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-05 / Reject",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 1110,
+          "y": 558,
+          "w": 116,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#b91c1c",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 1110,
+          "y": 776,
+          "w": 116,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#b91c1c",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-05 / Reject",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 1122,
+          "y": 570,
+          "w": 92,
+          "h": 20,
+          "text": "Reject",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 1122,
+          "y": 788,
+          "w": 92,
+          "h": 20,
+          "text": "Reject",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 600,
+          "align": "center"
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S05-01 / Proposed pickup label",
+        "x": 886,
+        "y": 260,
+        "w": 340,
+        "h": 22,
+        "text": "Proposed pickup",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Proposed pickup value",
+        "x": 886,
+        "y": 286,
+        "w": 340,
+        "h": 24,
+        "text": "23 Nov 2026, 10:00",
+        "size": 15,
+        "color": "#102238",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval return label",
+        "x": 886,
+        "y": 428,
+        "w": 340,
+        "h": 22,
+        "text": "Return deadline (read-only)",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval return value",
+        "x": 886,
+        "y": 454,
+        "w": 340,
+        "h": 24,
+        "text": "24 Nov 2026, 18:00",
+        "size": 15,
+        "color": "#102238",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval expiry label",
+        "x": 886,
+        "y": 492,
+        "w": 340,
+        "h": 22,
+        "text": "Collect before (preview)",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval expiry value",
+        "x": 886,
+        "y": 518,
+        "w": 340,
+        "h": 24,
+        "text": "24 Nov 2026, 08:00",
+        "size": 15,
+        "color": "#007f75",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Preview explanation",
+        "x": 886,
+        "y": 550,
+        "w": 340,
+        "h": 30,
+        "text": "Recalculated from the selected pickup on approval.",
+        "size": 12,
+        "color": "#455d7b",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "id": "ROOM_REASON_A",
+    "beforeHeight": 1060,
+    "afterHeight": 1060,
+    "changes": [
+      {
+        "route": [
+          {
+            "name": "S09-01 / Review booking",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 314,
+          "y": 370,
+          "w": 190,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 314,
+          "y": 386,
+          "w": 190,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S09-01 / Review booking",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 326,
+          "y": 382,
+          "w": 166,
+          "h": 20,
+          "text": "Review request",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 326,
+          "y": 398,
+          "w": 166,
+          "h": 20,
+          "text": "Review request",
+          "size": 14,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S09-01 / Selected request ID",
+        "x": 314,
+        "y": 352,
+        "w": 480,
+        "h": 22,
+        "text": "Request 7c91…e802",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S09-01 / Competing request ID",
+        "x": 314,
+        "y": 520,
+        "w": 480,
+        "h": 22,
+        "text": "Request 8d02…f913",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S09-01 / Decision request ID",
+        "x": 886,
+        "y": 218,
+        "w": 340,
+        "h": 22,
+        "text": "Request 7c91…e802 · Pending",
+        "size": 13,
+        "color": "#455d7b",
+        "weight": 400
+      }
+    ]
+  },
+  {
+    "id": "PICKUP_EDIT",
+    "beforeHeight": 1120,
+    "afterHeight": 1360,
+    "changes": [
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1120,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        },
+        "after": {
+          "type": "rect",
+          "name": "Sidebar",
+          "x": 0,
+          "y": 0,
+          "w": 248,
+          "h": 1360,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 0
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1055,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Manager",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Demo Manager",
+          "x": 16,
+          "y": 1295,
+          "w": 145,
+          "h": 22,
+          "text": "Demo Manager",
+          "size": 14,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1080,
+          "w": 145,
+          "h": 20,
+          "text": "Resource Manager",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Resource Manager",
+          "x": 16,
+          "y": 1320,
+          "w": 145,
+          "h": 20,
+          "text": "Resource Manager",
+          "size": 12,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1062,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 166,
+          "y": 1302,
+          "w": 66,
+          "h": 34,
+          "fill": "#ffffff",
+          "stroke": "#2563eb",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S01-06 / Sign out",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1069,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 174,
+          "y": 1309,
+          "w": 50,
+          "h": 20,
+          "text": "Sign out",
+          "size": 12,
+          "color": "#2563eb",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Decision panel",
+          "x": 864,
+          "y": 148,
+          "w": 384,
+          "h": 490,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Decision panel",
+          "x": 864,
+          "y": 148,
+          "w": 384,
+          "h": 700,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 268,
+          "w": 340,
+          "h": 22,
+          "text": "Confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 332,
+          "w": 340,
+          "h": 22,
+          "text": "Confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 296,
+          "w": 340,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 360,
+          "w": 340,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-02 / Confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 308,
+          "w": 316,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 372,
+          "w": 316,
+          "h": 28,
+          "text": "23 Nov 2026, 08:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 366,
+          "w": 340,
+          "h": 22,
+          "text": "Rejection reason * when rejecting",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 886,
+          "y": 584,
+          "w": 340,
+          "h": 22,
+          "text": "Rejection reason * when rejecting",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 394,
+          "w": 340,
+          "h": 76,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 886,
+          "y": 612,
+          "w": 340,
+          "h": 76,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-04 / Rejection reason * when rejecting",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 406,
+          "w": 316,
+          "h": 60,
+          "text": "Explain why the request is rejected",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 898,
+          "y": 624,
+          "w": 316,
+          "h": 60,
+          "text": "Explain why the request is rejected",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "x": 886,
+          "y": 482,
+          "w": 340,
+          "h": 48,
+          "text": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "x": 886,
+          "y": 700,
+          "w": 340,
+          "h": 48,
+          "text": "Enter 1–500 characters after trimming.\nThe Borrower will see this reason.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-03 / Approve",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 886,
+          "y": 558,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 886,
+          "y": 776,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-03 / Approve",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 898,
+          "y": 570,
+          "w": 186,
+          "h": 20,
+          "text": "Approve and reserve",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 898,
+          "y": 788,
+          "w": 186,
+          "h": 20,
+          "text": "Approve and reserve",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-05 / Reject",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 1110,
+          "y": 558,
+          "w": 116,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#b91c1c",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 1110,
+          "y": 776,
+          "w": 116,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#b91c1c",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-05 / Reject",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 1122,
+          "y": 570,
+          "w": 92,
+          "h": 20,
+          "text": "Reject",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 1122,
+          "y": 788,
+          "w": 92,
+          "h": 20,
+          "text": "Reject",
+          "size": 14,
+          "color": "#b91c1c",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "rect",
+          "name": "Approved variant - RM only",
+          "x": 280,
+          "y": 664,
+          "w": 968,
+          "h": 370,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        },
+        "after": {
+          "type": "rect",
+          "name": "Approved variant - RM only",
+          "x": 280,
+          "y": 904,
+          "w": 968,
+          "h": 370,
+          "fill": "#ffffff",
+          "stroke": "#c9d6e6",
+          "r": 10
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Approved request · Change pickup (RM only)",
+          "x": 302,
+          "y": 690,
+          "w": 920,
+          "h": 32,
+          "text": "Approved request · Change pickup (RM only)",
+          "size": 20,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "Approved request · Change pickup (RM only)",
+          "x": 302,
+          "y": 930,
+          "w": 920,
+          "h": 32,
+          "text": "Approved request · Change pickup (RM only)",
+          "size": 20,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "b14e…c204 · EQ-001 Projector · Borrower A",
+          "x": 302,
+          "y": 732,
+          "w": 510,
+          "h": 24,
+          "text": "b14e…c204 · EQ-001 Projector · Borrower A",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "b14e…c204 · EQ-001 Projector · Borrower A",
+          "x": 302,
+          "y": 972,
+          "w": 510,
+          "h": 24,
+          "text": "b14e…c204 · EQ-001 Projector · Borrower A",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / New confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 778,
+          "w": 460,
+          "h": 22,
+          "text": "New confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "Field label",
+          "x": 302,
+          "y": 1018,
+          "w": 460,
+          "h": 22,
+          "text": "New confirmed pickup *",
+          "size": 14,
+          "color": "#102238",
+          "weight": 600
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / New confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 806,
+          "w": 460,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Field background",
+          "x": 302,
+          "y": 1046,
+          "w": 460,
+          "h": 44,
+          "fill": "#ffffff",
+          "stroke": "#7085a0",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / New confirmed pickup *",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 818,
+          "w": 436,
+          "h": 28,
+          "text": "23 Nov 2026, 15:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Field value",
+          "x": 314,
+          "y": 1058,
+          "w": 436,
+          "h": 28,
+          "text": "23 Nov 2026, 15:00",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / Change pickup",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 878,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        },
+        "after": {
+          "type": "rect",
+          "name": "Button background",
+          "x": 302,
+          "y": 1118,
+          "w": 210,
+          "h": 44,
+          "fill": "#2563eb",
+          "stroke": "#ffffff",
+          "r": 8
+        }
+      },
+      {
+        "route": [
+          {
+            "name": "S05-06 / Change pickup",
+            "type": "group"
+          }
+        ],
+        "before": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 890,
+          "w": 186,
+          "h": 20,
+          "text": "Change pickup",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        },
+        "after": {
+          "type": "text",
+          "name": "Button label",
+          "x": 314,
+          "y": 1130,
+          "w": 186,
+          "h": 20,
+          "text": "Change pickup",
+          "size": 14,
+          "color": "#ffffff",
+          "weight": 600,
+          "align": "center"
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Only while Approved, uncollected and not expired.\nReplacement must be in the future and before return.",
+          "x": 302,
+          "y": 948,
+          "w": 490,
+          "h": 48,
+          "text": "Only while Approved, uncollected and not expired.\nReplacement must be in the future and before return.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Only while Approved, uncollected and not expired.\nReplacement must be in the future and before return.",
+          "x": 302,
+          "y": 1188,
+          "w": 490,
+          "h": 48,
+          "text": "Only while Approved, uncollected and not expired.\nReplacement must be in the future and before return.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "S05-07 / Return deadline",
+          "x": 800,
+          "y": 746,
+          "w": 420,
+          "h": 24,
+          "text": "Return deadline",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "S05-07 / Return deadline",
+          "x": 800,
+          "y": 986,
+          "w": 420,
+          "h": 24,
+          "text": "Return deadline",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 600
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "24 Nov 2026, 18:00",
+          "x": 800,
+          "y": 778,
+          "w": 420,
+          "h": 28,
+          "text": "24 Nov 2026, 18:00",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "24 Nov 2026, 18:00",
+          "x": 800,
+          "y": 1018,
+          "w": 420,
+          "h": 28,
+          "text": "24 Nov 2026, 18:00",
+          "size": 19,
+          "color": "#102238",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "S05-07 / Collect before",
+          "x": 800,
+          "y": 836,
+          "w": 420,
+          "h": 24,
+          "text": "Collect before",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 600
+        },
+        "after": {
+          "type": "text",
+          "name": "S05-07 / Collect before",
+          "x": 800,
+          "y": 1076,
+          "w": 420,
+          "h": 24,
+          "text": "Collect before",
+          "size": 14,
+          "color": "#455d7b",
+          "weight": 600
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "24 Nov 2026, 08:00",
+          "x": 800,
+          "y": 868,
+          "w": 420,
+          "h": 28,
+          "text": "24 Nov 2026, 15:00",
+          "size": 19,
+          "color": "#007f75",
+          "weight": 700
+        },
+        "after": {
+          "type": "text",
+          "name": "24 Nov 2026, 08:00",
+          "x": 800,
+          "y": 1108,
+          "w": 420,
+          "h": 28,
+          "text": "24 Nov 2026, 15:00",
+          "size": 19,
+          "color": "#007f75",
+          "weight": 700
+        }
+      },
+      {
+        "route": [],
+        "before": {
+          "type": "text",
+          "name": "Earlier of pickup + 24 hours and return deadline.\nAdmin and Borrower cannot change pickup.",
+          "x": 800,
+          "y": 926,
+          "w": 420,
+          "h": 60,
+          "text": "Earlier of pickup + 24 hours and return deadline.\nAdmin and Borrower cannot change pickup.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        },
+        "after": {
+          "type": "text",
+          "name": "Earlier of pickup + 24 hours and return deadline.\nAdmin and Borrower cannot change pickup.",
+          "x": 800,
+          "y": 1166,
+          "w": 420,
+          "h": 60,
+          "text": "Earlier of pickup + 24 hours and return deadline.\nAdmin and Borrower cannot change pickup.",
+          "size": 13,
+          "color": "#455d7b",
+          "weight": 400
+        }
+      }
+    ],
+    "additions": [
+      {
+        "type": "text",
+        "name": "S05-01 / Proposed pickup label",
+        "x": 886,
+        "y": 260,
+        "w": 340,
+        "h": 22,
+        "text": "Proposed pickup",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-01 / Proposed pickup value",
+        "x": 886,
+        "y": 286,
+        "w": 340,
+        "h": 24,
+        "text": "23 Nov 2026, 10:00",
+        "size": 15,
+        "color": "#102238",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval return label",
+        "x": 886,
+        "y": 428,
+        "w": 340,
+        "h": 22,
+        "text": "Return deadline (read-only)",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval return value",
+        "x": 886,
+        "y": 454,
+        "w": 340,
+        "h": 24,
+        "text": "24 Nov 2026, 18:00",
+        "size": 15,
+        "color": "#102238",
+        "weight": 400
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval expiry label",
+        "x": 886,
+        "y": 492,
+        "w": 340,
+        "h": 22,
+        "text": "Collect before (preview)",
+        "size": 14,
+        "color": "#455d7b",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Approval expiry value",
+        "x": 886,
+        "y": 518,
+        "w": 340,
+        "h": 24,
+        "text": "24 Nov 2026, 08:00",
+        "size": 15,
+        "color": "#007f75",
+        "weight": 600
+      },
+      {
+        "type": "text",
+        "name": "S05-07 / Preview explanation",
+        "x": 886,
+        "y": 550,
+        "w": 340,
+        "h": 30,
+        "text": "Recalculated from the selected pickup on approval.",
+        "size": 12,
+        "color": "#455d7b",
+        "weight": 400
+      }
+    ]
+  }
+]

@@ -1,5 +1,9 @@
 # PA3 AI Usage Log Doan Hong Phuc
 
+## Minh follow-up review corrections - 22 November 2026
+
+Phuc authorized the four visible points in Minh’s review of 3621dd8. ChatGPT/Codex clarified expiry-first approval and the committed expiry outcome during pickup edits, separated collected requests, added missing approval/resource/request context to Penpot source and role variants, and replaced the six schematic images with one consistent Penpot render set. Plugin v5 includes an in-place migration retaining board IDs and links, two expiry scenarios, repeat-run protection and preflight for conflicting edits. Reference render inspection and offline checks are recorded in the handoff; live v5 application and final team approval remain pending. No unseen review points, T19 passes or T20 completion are asserted.
+
 ## T18 re-review handoff - 22 November 2026
 
 After the v4.1 flow repair, Phuc reported a positive preliminary review of the live Penpot prototype and requested the T18 update on the existing review branch. ChatGPT/Codex updated the specification and handoff to make Penpot the current design reference, added a role/scenario checklist, retained Figma as historical context and distinguished fixed sample behavior from required backend/accessibility behavior. The review package includes revised S05/S06/S09 schematics, native-layer plugin source, reference previews and regression checks. Offline checks passed during preparation, including flow recovery without rebuilding content. This records Phuc's preliminary feedback, not independent verification of every live path or final team approval. T19 and T20 remain separate work.

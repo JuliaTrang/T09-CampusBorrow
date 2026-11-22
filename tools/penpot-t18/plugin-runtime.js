@@ -128,9 +128,10 @@ function repairNavigation(page) {
   penpot.viewport.zoomIntoView(Object.values(frames));
   return `Repaired navigation: ${result.added} added, ${result.retained} retained; 11 links total. Kept 6 existing boards and ${texts} text layers. No layers rebuilt. Review the prototype in Penpot.`;
 }
-penpot.ui.open("CampusBorrow T18 · v4.1", ORIGIN + "/ui.html?v=4.1", { width: 480, height: 720 });
+penpot.ui.open("CampusBorrow T18 · v5", ORIGIN + "/ui.html?v=5", { width: 480, height: 720 });
 penpot.ui.onMessage(async (message) => {
-  if (!["build", "repair", "visuals", "prototype"].includes(message?.type) || busy) return;
+  if (!["build", "repair", "visuals", "prototype", "review"].includes(message?.type) || busy)
+    return;
   busy = true;
   const created = [];
   const send = (type, text) => penpot.ui.sendMessage({ type, text });
@@ -139,6 +140,10 @@ penpot.ui.onMessage(async (message) => {
       throw Error("Open the CampusBorrow PA3 file supplied by Phuc before running.");
     const page = penpot.currentPage;
     if (!page) throw Error("Open an empty page first.");
+    if (message.type === "review") {
+      send("done", await applyReview(page, send));
+      return;
+    }
     if (message.type === "prototype") {
       send("done", await extendPrototype(page, send));
       return;

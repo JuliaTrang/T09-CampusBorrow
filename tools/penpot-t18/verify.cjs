@@ -5,7 +5,7 @@ const vm = require("node:vm");
 const path = require("node:path");
 const data = require("./design.cjs");
 const source = fs.readFileSync(path.join(__dirname, "dist/plugin.js"), "utf8");
-function harness(fileId, occupied = false) {
+function harness(fileId, occupied = false, bundle = source) {
   let callback;
   const nodes = [],
     messages = [];
@@ -110,7 +110,8 @@ function harness(fileId, occupied = false) {
     },
     viewport: { zoomIntoView() {} },
   };
-  vm.runInNewContext(source, { penpot, setTimeout });
+  const context = vm.createContext({ penpot, setTimeout });
+  vm.runInContext(bundle, context);
   return {
     run: (type = "build") => callback({ type }),
     nodes,
@@ -118,6 +119,7 @@ function harness(fileId, occupied = false) {
     faults,
     createShape: shape,
     page,
+    upgrade: (code) => vm.runInNewContext(code, { penpot, setTimeout }),
   };
 }
 function assertPaintOrder(run) {
@@ -150,7 +152,7 @@ async function verifyBase() {
   await run.run();
   assert.equal(run.messages.at(-1).type, "done", JSON.stringify(run.messages.at(-1)));
   assert.equal(run.nodes.filter((n) => n.type === "board").length, 6);
-  assert.equal(run.nodes.filter((n) => n.type === "text").length, 211);
+  assert.equal(run.nodes.filter((n) => n.type === "text").length, 224);
   assert.equal(run.nodes.filter((n) => n.type === "rectangle").length, 115);
   assert.equal(run.nodes.flatMap((n) => n.interactions || []).length, 11);
   assertPaintOrder(run);

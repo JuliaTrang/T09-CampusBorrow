@@ -35,7 +35,12 @@
       color: #455d7b;
     }
   </style>
-  <h1>CampusBorrow · T18 · v4.1</h1>
+  <h1>CampusBorrow · T18 · v5</h1>
+  <p>
+    Cập nhật bốn mục review của Minh trên các board hiện có, giữ nguyên liên kết. Không cần dựng
+    lại.
+  </p>
+  <button id="review">Cập nhật review Minh</button>
   <p>
     Bổ sung các luồng Borrower, RM, Admin, hộp thoại xác nhận, kết quả và lỗi mẫu. Giữ nguyên sáu
     board hiện có.
@@ -72,12 +77,14 @@
       repair = document.getElementById("repair"),
       visuals = document.getElementById("visuals"),
       prototype = document.getElementById("prototype"),
+      review = document.getElementById("review"),
       status = document.getElementById("status");
     const run = (type) => {
       button.disabled = true;
       repair.disabled = true;
       visuals.disabled = true;
       prototype.disabled = true;
+      review.disabled = true;
       status.textContent =
         type === "visuals"
           ? "Đang sửa thứ tự lớp…"
@@ -90,6 +97,7 @@
     repair.onclick = () => run("repair");
     visuals.onclick = () => run("visuals");
     prototype.onclick = () => run("prototype");
+    review.onclick = () => run("review");
     window.addEventListener("message", (e) => {
       if (e.source !== parent) return;
       const m = e.data;
@@ -100,6 +108,7 @@
         repair.disabled = false;
         visuals.disabled = false;
         prototype.disabled = false;
+        review.disabled = false;
       }
     });
   </script>

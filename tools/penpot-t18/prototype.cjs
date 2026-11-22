@@ -220,6 +220,8 @@ const errorChoices = [
   ["Cross-session periods", "ROOM_PERIODS"],
   ["Decision changed", "STALE"],
   ["Pickup edit denied to Admin", "PICKUP_DENIED"],
+  ["Pickup edit after expiry", "PICKUP_EXPIRED"],
+  ["Approval after old reservation expires", "APPROVAL_EXPIRY"],
 ];
 errorChoices.forEach(([label, id], i) =>
   button(
@@ -259,7 +261,7 @@ for (const id of ["S05", "S06", "S09"]) {
   if (id === "S05")
     b.layers = b.layers.filter((n) => {
       const leaves = flat([n]).filter((x) => x.type !== "group");
-      return !leaves.every((x) => x.x >= 280 && x.y >= 664);
+      return !leaves.every((x) => x.x >= 280 && x.y >= 904);
     });
   routeSidebar(b, "A");
 }
@@ -528,7 +530,7 @@ for (const role of ["M", "A"]) {
       (n) =>
         !flat([n])
           .filter((x) => x.type !== "group")
-          .every((x) => x.x >= 280 && x.y >= 664),
+          .every((x) => x.x >= 280 && x.y >= 904),
     );
   setField(reason, "S05-04", "The requested item is needed for a scheduled class.");
   bind(reason.id, "S05-03 / Approve", overlay("CONFIRM_EQ_APPROVED_" + role));
@@ -613,7 +615,8 @@ const pickup = cloneScreen("PICKUP_EDIT", "S05", "M");
 routeSidebar(pickup, "M");
 setField(pickup, "S05-06", "23 Nov 2026, 15:00");
 for (const n of flat(pickup.layers))
-  if (n.type === "text" && n.text === "24 Nov 2026, 08:00") n.text = "24 Nov 2026, 15:00";
+  if (n.type === "text" && n.x === 800 && n.text === "24 Nov 2026, 08:00")
+    n.text = "24 Nov 2026, 15:00";
 bind("PICKUP_EDIT", "S05-06 / Change pickup", overlay("CONFIRM_PICKUP"));
 bind("PICKUP_EDIT", "S05-01 / Review selected", overlay("DETAIL_EQ_M"));
 bind("PICKUP_EDIT", "S05-03 / Approve", overlay("CONFIRM_EQ_APPROVED_M"));
@@ -722,6 +725,22 @@ const errors = [
     "Only a Resource Manager can change an existing confirmed pickup.\nAdmin can set pickup during initial approval.\nThe approved request and its reservation are unchanged.",
     "S05_A",
     "Back to equipment requests",
+  ],
+  [
+    "PICKUP_EXPIRED",
+    "Pickup change blocked after expiry",
+    "M",
+    "Request b14e…c204 · EQ-001 Projector\nThe collection window has expired. The request is Cancelled, its reservation is released and expiry is recorded in history.\nThe new pickup was not saved. This request cannot be revived.",
+    "EXPIRED_DETAIL",
+    "View cancelled request",
+  ],
+  [
+    "APPROVAL_EXPIRY",
+    "Expired reservation cleared before approval",
+    "M",
+    "An old uncollected reservation reached its collection deadline. It was cancelled and released, with expiry recorded in history.\nReview the current Pending request again. Approval still requires current eligibility and no active reservation or loan.",
+    "S05",
+    "Review current request",
   ],
 ];
 for (const [id, title, role, body, target, label] of errors) {

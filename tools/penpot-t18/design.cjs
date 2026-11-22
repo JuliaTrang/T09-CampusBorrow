@@ -503,4 +503,135 @@ notice(
   true,
 );
 
+// Minh's review: keep stable layer names/IDs for the in-place v5 migration.
+function leaves(nodes) {
+  return nodes.flatMap((n) => (n.children ? leaves(n.children) : [n]));
+}
+function move(node, dy) {
+  for (const n of leaves([node])) n.y += dy;
+}
+current = boards.find((b) => b.id === "S04");
+for (const n of current.layers) {
+  if (n.name === "Request form") n.h += 40;
+  else if (leaves([n]).every((l) => l.x >= 280 && l.x < 752 && l.y >= 258)) move(n, 40);
+}
+text(
+  "Collection location: Media lab, Building B",
+  302,
+  250,
+  428,
+  24,
+  14,
+  C.muted,
+  400,
+  "S04-01 / Collection location",
+);
+
+current = boards.find((b) => b.id === "S05");
+current.height += 240;
+for (const n of current.layers) {
+  const ls = leaves([n]);
+  if (n.name === "Sidebar") n.h += 240;
+  else if (ls.every((l) => l.y >= 664)) move(n, 240);
+  else if (n.name === "Decision panel") n.h = 700;
+  else if (n.name.startsWith("S05-02 /")) move(n, 64);
+  else if (
+    n.name.startsWith("S05-04 /") ||
+    n.name.startsWith("S05-03 /") ||
+    n.name.startsWith("S05-05 /")
+  )
+    move(n, 218);
+  else if (n.type === "text" && n.x === 886 && n.y === 482) move(n, 218);
+}
+text("Proposed pickup", 886, 260, 340, 22, 14, C.muted, 600, "S05-01 / Proposed pickup label");
+text("23 Nov 2026, 10:00", 886, 286, 340, 24, 15, C.ink, 400, "S05-01 / Proposed pickup value");
+text(
+  "Return deadline (read-only)",
+  886,
+  428,
+  340,
+  22,
+  14,
+  C.muted,
+  600,
+  "S05-07 / Approval return label",
+);
+text("24 Nov 2026, 18:00", 886, 454, 340, 24, 15, C.ink, 400, "S05-07 / Approval return value");
+text(
+  "Collect before (preview)",
+  886,
+  492,
+  340,
+  22,
+  14,
+  C.muted,
+  600,
+  "S05-07 / Approval expiry label",
+);
+text("24 Nov 2026, 08:00", 886, 518, 340, 24, 15, C.teal, 600, "S05-07 / Approval expiry value");
+text(
+  "Recalculated from the selected pickup on approval.",
+  886,
+  550,
+  340,
+  30,
+  12,
+  C.muted,
+  400,
+  "S05-07 / Preview explanation",
+);
+
+current = boards.find((b) => b.id === "S06");
+current.height += 60;
+for (const n of current.layers) {
+  if (n.name === "Sidebar") n.h += 60;
+  else if (leaves([n]).every((l) => l.y >= 536)) move(n, 60);
+  else if (n.name === "Approved reservation" || n.name === "Active loan") n.h += 60;
+  else if (n.name === "S06-02 / Pickup window") n.y = 290;
+  else if (n.name === "S06-03 / Record handover" || n.name === "S06-04 / Record return")
+    move(n, 52);
+  else if (n.type === "text" && n.y === 446) move(n, 50);
+  else if (n.type === "text" && n.x === 798 && n.y === 268) {
+    n.text = "Request e42a…a108 · Borrower C\nOn loan · Return deadline: 21 Nov 2026, 17:00";
+  }
+}
+text(
+  "Request b14e…c204 · Borrower A",
+  302,
+  254,
+  428,
+  24,
+  14,
+  C.ink,
+  400,
+  "S06-01 / Request and borrower",
+);
+text(
+  "Borrower active · Item In service\nReservation held by this request · Not collected",
+  302,
+  368,
+  428,
+  46,
+  13,
+  C.teal,
+  400,
+  "S06-02 / Handover eligibility",
+);
+
+current = boards.find((b) => b.id === "S09");
+for (const n of current.layers) if (n.name === "S09-01 / Review booking") move(n, 16);
+text("Request 7c91…e802", 314, 352, 480, 22, 13, C.muted, 400, "S09-01 / Selected request ID");
+text("Request 8d02…f913", 314, 520, 480, 22, 13, C.muted, 400, "S09-01 / Competing request ID");
+text(
+  "Request 7c91…e802 · Pending",
+  886,
+  218,
+  340,
+  22,
+  13,
+  C.muted,
+  400,
+  "S09-01 / Decision request ID",
+);
+
 module.exports = { boards, C };

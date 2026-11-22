@@ -11,11 +11,23 @@ const ids = [
   "S05_A",
 ];
 (async () => {
+  for (const board of require("./design.cjs").boards) {
+    const source = path.join(__dirname, "dist", board.id + ".svg");
+    const png = await sharp(source).png().toBuffer();
+    fs.writeFileSync(path.join(out, board.id + ".png"), png);
+    const canonical = path.join(
+      __dirname,
+      "../../docs/design/screen-specifications",
+      board.id + "_screen-proposal",
+    );
+    fs.copyFileSync(source, canonical + ".svg");
+    fs.writeFileSync(canonical + ".png", png);
+  }
   for (const id of ids)
     await sharp(path.join(__dirname, "dist", id + ".svg"))
       .png()
       .toFile(path.join(out, "prototype-" + id + ".png"));
-  console.log("Saved six prototype reference previews.");
+  console.log("Saved six canonical Penpot screen previews and six prototype previews.");
 })().catch((e) => {
   console.error(e);
   process.exitCode = 1;
