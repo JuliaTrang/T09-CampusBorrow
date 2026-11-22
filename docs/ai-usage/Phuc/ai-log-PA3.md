@@ -1,5 +1,9 @@
 # PA3 AI Usage Log Doan Hong Phuc
 
+## T18 screen-reference correction - 22 November 2026
+
+During T20 input checking, ChatGPT/Codex corrected the S05-08 Manage resources reference from S11 to S14 against the Kickoff screen registry. S11 is Borrower registration. The Penpot source already routes Manage resources to its role-specific resource board, so this correction changes documentation only; no plugin rerun is required. The supplied ERD, state-machine and deployment images are inputs for reconciliation, not evidence that T20 alignment or team approval is complete.
+
 ## Minh follow-up review corrections - 22 November 2026
 
 Phuc authorized the four visible points in Minh’s review of 3621dd8. ChatGPT/Codex clarified expiry-first approval and the committed expiry outcome during pickup edits, separated collected requests, added missing approval/resource/request context to Penpot source and role variants, and replaced the six schematic images with one consistent Penpot render set. Plugin v5 includes an in-place migration retaining board IDs and links, two expiry scenarios, repeat-run protection and preflight for conflicting edits. Reference render inspection and offline checks are recorded in the handoff; Phuc subsequently confirmed that v5 ran without plugin errors. Detailed visual/scenario review and final team approval remain pending. No unseen review points, T19 passes or T20 completion are asserted.
